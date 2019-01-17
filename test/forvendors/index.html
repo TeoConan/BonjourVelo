@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="../../vendors/MaterialDesign/material-components-web.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../vendors/MaterialDesign/material-components-web/dist/material-components-web.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<html>
+	<body>
+
+		<style type="text/css">
+			@import "@material/fab/mdc-fab";
+		</style>
+		<h1>Test vendros material</h1>
+
+
+		<button class=" fab-button mdc-fab" aria-label="Favorite">
+  			<span class="mdc-fab__icon material-icons">favorite</span>
+		</button>
+
+		<div class="mdc-form-field" style="margin-top: 5rem;">
+		  <div class="mdc-radio">
+		    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+		    <div class="mdc-radio__background">
+		      <div class="mdc-radio__outer-circle"></div>
+		      <div class="mdc-radio__inner-circle"></div>
+		    </div>
+		  </div>
+		  <label for="radio-1">Radio 1</label>
+
+		  <div class="mdc-radio">
+		    <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+		    <div class="mdc-radio__background">
+		      <div class="mdc-radio__outer-circle"></div>
+		      <div class="mdc-radio__inner-circle"></div>
+		    </div>
+		  </div>
+		  <label for="radio-2">Radio 2</label>
+		</div>
+
+
+
+		<div class="mdc-form-field">
+			<div class="mdc-checkbox">
+				<input type="checkbox"
+				class="mdc-checkbox__native-control"
+				id="checkbox-1"/>
+				<div class="mdc-checkbox__background">
+					<svg class="mdc-checkbox__checkmark"
+					viewBox="0 0 24 24">
+					<path class="mdc-checkbox__checkmark-path"
+					fill="none"
+					d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+					</svg>
+					<div class="mdc-checkbox__mixedmark"></div>
+				</div>
+			</div>
+			<label for="checkbox-1">Checkbox 1</label>
+		</div>
+
+
+		<div class="mdc-card mdc-elevation--z2">
+  			<!-- ... content ... -->
+  			<h1>Card</h1>
+		</div>
+
+		<style type="text/css">
+			p {
+				margin: 0;
+			}
+
+			body {
+				background-color: #f5f5f5;
+			}
+
+			.c-bcb {
+				width: 200px;
+				height: 250px;
+				margin: 5rem;
+				padding: 20px;
+				position: relative;
+			}
+
+			.c-button {
+				text-transform: none;
+				color: white;
+				border-radius: 500px;
+				padding: 10px 30px;
+				border : none;
+				font-family: Calibri;
+				font-size: 18px;
+			}
+
+			.mdc-button {
+				background-color: green;
+			}
+		</style>
+
+		<div class="c-bcb mdc-card mdc-elevation--z2">
+			<div class="inner">
+				<p class="c-title text-white">Sportive route</p>
+				<div class="divider"></div>
+				<p class="c-text text-white">Lorem ipsum dolor sit amet </p>
+
+				<button class="c-button">
+					<span class="c-button__label">Button</span>
+				</button>
+			</div>
+		</div>
+
+		<br><br/>
+
+		<button class="c-button">
+			<span class="c-button__label">Button</span>
+		</button>
+
+		<br><br/>
+
+		<button class="mdc-button mdc-button--unelevated">
+  			<span class="mdc-button__label">Button</span>
+		</button>
+
+	
+		<script type="text/javascript">
+			
+			const fabButton = document.querySelector('.fab-button');
+			mdc.ripple.MDCRipple.attachTo(fabButton);
+
+			const button = document.querySelector('.c-button');
+			mdc.ripple.MDCRipple.attachTo(button);
+
+			const mbutton = document.querySelector('.mdc-button');
+			mdc.ripple.MDCRipple.attachTo(mbutton);
+
+			// This will add a ripple to all of the buttons. 
+
+			// const buttons = document.querySelectorAll('.mdc-button');
+			// for (const button of buttons) {
+			//   mdc.ripple.MDCRipple.attachTo(button);
+			// }
+
+		</script>
+	</body>
+</html>
+
+
+
