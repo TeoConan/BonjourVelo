@@ -1,0 +1,19 @@
+$unicorn: yellow;
+$kitten: pink;
+$base-color: pink;
+
+
+
+div {
+  color: $unicorn;
+}
+p {
+  background: $kitten;
+}
+.unicorn {
+  $base-color: yellow;
+  color: $base-color;
+}
+.kitten {
+  color: $base-color;
+}
