@@ -2,13 +2,49 @@
 <html>
   <head>
     <link rel="stylesheet" href="bundle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   </head>
   <body>
-  	Hello World
 
-  	<button class="foo-button mdc-button">
-		Button
-  	</button>
+  	<button class="mdc-button foo-button">
+	  <span class="mdc-button__label">Button</span>
+	</button>
+
+	<div class="test-ripple mdc-ripple-surface"></div>
+	
+	<div class="mdc-switch">
+		<div class="mdc-switch__track"></div>
+		<div class="mdc-switch__thumb-underlay">
+			<div class="mdc-switch__thumb">
+				<input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+			</div>
+		</div>
+	</div>
+	<label for="basic-switch">off/on</label>
+
+	<div class="mdc-typography">
+	  <h1 class="mdc-typography--headline1">Big header</h1>
+	</div>
+
+	<div class="mdc-form-field">
+	  <div class="mdc-radio">
+	    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+	    <div class="mdc-radio__background">
+	      <div class="mdc-radio__outer-circle"></div>
+	      <div class="mdc-radio__inner-circle"></div>
+	    </div>
+	  </div>
+	  <label for="radio-1">Radio 1</label>
+	  <div class="mdc-radio">
+	    <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
+	    <div class="mdc-radio__background">
+	      <div class="mdc-radio__outer-circle"></div>
+	      <div class="mdc-radio__inner-circle"></div>
+	    </div>
+	  </div>
+	  <label for="radio-2">Radio 2</label>
+	</div>
+
   	<script src="bundle.js"></script>
   </body>
 

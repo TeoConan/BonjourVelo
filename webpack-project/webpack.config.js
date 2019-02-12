@@ -3,16 +3,21 @@ const path = require("path");
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 const DashboardPlugin = require("webpack-dashboard/plugin");
 const autoprefixer = require('autoprefixer');
+const dev = true;
 
 let config = {
     entry: "./src/index.js",
     mode: "development",
+    devtool: "eval-source-map",
+
     output: {
       path: path.resolve(__dirname, "./public"),
-      filename: "./bundle.js"
+      filename: "./public/bundle.js"
     },
+
     module: {
         rules: [
+        		/* SCSS */
 		        {
 		        	test: /\.scss$/,
 		        	use: [
@@ -38,11 +43,49 @@ let config = {
 		          		},
 		        	]
 		        },
+		        /* SCSS */
+		        /* FONT */
+		        {
+    				test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+    				loader: 'file-loader'
+  				},
+  				/* FONT */
+  				/* IMAGE */
+		        {
+    				test: /\.(png|jpg|gif|svg)$/,
+    				use: [
+	    				{
+	    					loader: 'url-loader',
+	    					options: {
+	    						name: '[name].[hash:7].[ext]'
+	    					}
+	    				},
+	    				{
+	    					loader: 'img-loader',
+	    					options: {
+	    						enabled: !dev
+	    					}
+	    				}
+    				]
+    	        },
+    	        /* IMAGE */
+    	        /* JS */
+    	        {
+    	        	test: /\.js$/,
+    	        	loader: 'babel-loader',
+    	        	query: {
+			          presets: ['es2015'],
+			          plugins: ['transform-object-assign']
+			        },
+    	        }
+    	        /* JS */
 			]
       	},
+
       	plugins: [
 			  new ExtractTextWebpackPlugin("general-styles.css")
       	],
+
       	devServer: {
 		  contentBase: path.resolve(__dirname, "./public"),
 		  historyApiFallback: true,
@@ -50,7 +93,7 @@ let config = {
 		  open: true,
 		  hot: true
 		},
-		devtool: "eval-source-map"
+		
   }
   module.exports = config;
 

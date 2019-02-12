@@ -6,4 +6,4 @@ Commande :
 
 	Surveillance styles.css 
 	>cd assets/stylesheets/
-	>node-sass scss/styles.scss --watch - css
+	>node-sass scss/styles.scss --watch -o css

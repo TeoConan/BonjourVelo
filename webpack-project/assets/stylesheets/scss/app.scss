@@ -1,11 +1,37 @@
-body {
-  color: blue;
-  background-color: grey;
-}
-
+@import "@material/theme/mdc-theme";
 @import "@material/button/mdc-button";
 
+
+$site-green : #85c767;
+
+@import "@material/theme/_variables.scss";
+@import "@material/switch/mdc-switch";
+@import "@material/typography/mdc-typography";
+@import "@material/form-field/mdc-form-field";
+@import "@material/radio/mdc-radio";
+
+
+.mdc-radio {
+	@include mdc-radio-checked-stroke-color($site-green);
+	@include mdc-radio-ink-color($site-green);
+}
+
 .foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
+	@include mdc-ripple-surface;
+  	@include mdc-ripple-radius-bounded;
+  	@include mdc-states;
+}
+
+.test-ripple {
+	height: 150px;
+	width: 150px;
+	background-color: grey;
+	margin-top: 15rem;
+
+	@include mdc-ripple-surface;
+  @include mdc-ripple-radius-bounded;
+  @include mdc-states-base-color(black);
+  @include mdc-states-hover-opacity(.1);
+  @include mdc-states-focus-opacity(.3);
+  @include mdc-states-press-opacity(.4);
 }
