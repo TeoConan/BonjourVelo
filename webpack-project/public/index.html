@@ -1,51 +1,181 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="bundle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="bundle.css">
   </head>
   <body>
 
-  	<button class="mdc-button foo-button">
-	  <span class="mdc-button__label">Button</span>
-	</button>
 
-	<div class="test-ripple mdc-ripple-surface"></div>
-	
-	<div class="mdc-switch">
-		<div class="mdc-switch__track"></div>
-		<div class="mdc-switch__thumb-underlay">
-			<div class="mdc-switch__thumb">
-				<input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+  	<div class="debug-box-line">
+		<div class="mdc-typography">
+	 	 <p class="mdc-typography--paragraph">Boutons</p>
+		</div>
+
+		<div class="content">
+
+			<!-- COMPONENT BUTTON -->
+			<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
+		  		<span class="mdc-button__label">Button</span>
+			</button>
+				<!--  Secondaire -->
+			<button class="mdc-button c-button-secondary mdc-elevation--z3 mdc-elevation-transition">
+		  		<span class="mdc-button__label">Button</span>
+			</button>
+			<!-- COMPONENT BUTTON -->
+
+			<!-- COMPONENT FAB -->
+			<!-- Pour modifier l'icône, changer le "favorite" par le nom de l'icône -->
+			<button class="mdc-icon-button material-icons mdc-elevation--z3">favorite</button>
+			<!-- COMPONENT FAB -->
+		</div>
+  		
+  	</div>
+
+  	<div class="debug-box-line">
+		<div class="mdc-typography">
+	 	 <p class="mdc-typography--paragraph">Cards</p>
+		</div>
+
+		<div class="content col">
+
+			<!-- COMPONENT CARD - PRESET 1 -->
+				<!-- Fluid Card / La card change de forme selon l'image -->
+			<div class="mdc-card c-card--preset-1">
+			  <h4 class="card-title">Carte fluide</h4>
+			  <p class="card-subtitle">Cette carte s'adatera selon l'image qu'elle contient.</p>
+			  <img class="card-image" src="bicycle.jpg"/>
+			</div>
+
+				<!-- Fix Card / La card ne change pas de forme selon l'image (taille fixe) -->
+			<div class="mdc-card c-card-fix c-card--preset-1">
+			  <h4 class="card-title">Carte fixe</h4>
+			  <p class="card-subtitle">Qu'importe l'image de la carte, la carte fera toujours 240px de large et 150px de haut pour l'image.</p>
+			  <div class="card-image" style="background-image: url('bicycle.jpg');"></div>
+			</div>
+			<!-- COMPONENT CARD - PRESET 1 -->
+
+			<!-- COMPONENT CARD - PRESET 2 -->
+			<div class="mdc-card c-card--preset-2">
+				<div class="inner">
+					<img class="card-image" src="bicycle.jpg"/>
+					<div class="col">
+						<h4 class="card-title">Titre de la carte</h4>
+			  			<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+			  			<p class="card-text">Quisque scelerisque massa sit amet dapibus ultrices. Proin molestie cursus mi a iaculis. Vestibulum quis lacus sit amet tortor scelerisque ultrices id sed nibh. Vivamus mollis, magna at maximus faucibus, tellus odio placerat nunc, nec mollis massa risus vel neque</p>
+			  			<div class="card-tools">
+			  				<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
+		  						<span class="mdc-button__label">Button</span>
+							</button>
+			  			</div>
+					</div>
+				</div>
+			</div>
+			<!-- COMPONENT CARD - PRESET 2 -->
+		</div>
+  		
+  	</div>
+
+  	<div class="debug-box-line">
+		<div class="mdc-typography">
+	 		<p class="mdc-typography--paragraph">Radio</p>
+		</div>
+
+		<div class="content">
+
+			<!--  COMPONENT RADIO -->
+			<div class="mdc-form-field">
+
+				<!-- Radio 1 -->
+			  <div class="mdc-radio">
+			    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+			    <div class="mdc-radio__background">
+			      <div class="mdc-radio__outer-circle"></div>
+			      <div class="mdc-radio__inner-circle"></div>
+			    </div>
+			  </div>
+			  <label for="radio-1">Radio 1</label>
+
+				<!-- Radio 2 -->
+			  <div class="mdc-radio">
+			    <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
+			    <div class="mdc-radio__background">
+			      <div class="mdc-radio__outer-circle"></div>
+			      <div class="mdc-radio__inner-circle"></div>
+			    </div>
+			  </div>
+			  <label for="radio-2">Radio 2</label>
+
+			  	<!-- Radio 3 - Color primaire -->
+			  <div class="mdc-radio c-radio-primary">
+			    <input class="mdc-radio__native-control" type="radio" id="radio-3" name="radios" checked>
+			    <div class="mdc-radio__background">
+			      <div class="mdc-radio__outer-circle"></div>
+			      <div class="mdc-radio__inner-circle"></div>
+			    </div>
+			  </div>
+			  <label for="radio-3">Radio 3</label>
+			</div>
+			<!--  COMPONENT RADIO -->
+
+		
+		</div>
+  		
+  	</div>
+	  	
+	  <div class="debug-box-line">
+			<div class="mdc-typography">
+ 				<p class="mdc-typography--paragraph">Checkbox</p>
+			</div>
+
+			<div class="content">
+				<div class="mdc-form-field">
+
+				  <div class="mdc-checkbox">
+				    <input type="checkbox"
+				           class="mdc-checkbox__native-control"
+				           id="checkbox-1"/>
+				    <div class="mdc-checkbox__background">
+				      <svg class="mdc-checkbox__checkmark"
+				           viewBox="0 0 24 24">
+				        <path class="mdc-checkbox__checkmark-path"
+				              fill="none"
+				              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+				      </svg>
+				      <div class="mdc-checkbox__mixedmark"></div>
+				    </div>
+				  </div>
+				  <label for="checkbox-1">Checkbox 1</label>
+
+				  <div class="mdc-checkbox">
+				    <input type="checkbox"
+				           class="mdc-checkbox__native-control"
+				           id="checkbox-2"/>
+				    <div class="mdc-checkbox__background">
+				      <svg class="mdc-checkbox__checkmark"
+				           viewBox="0 0 24 24">
+				        <path class="mdc-checkbox__checkmark-path"
+				              fill="none"
+				              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+				      </svg>
+				      <div class="mdc-checkbox__mixedmark"></div>
+				    </div>
+				  </div>
+				  <label for="checkbox-2">Checkbox 2</label>
+
+				</div>
 			</div>
 		</div>
-	</div>
-	<label for="basic-switch">off/on</label>
-
-	<div class="mdc-typography">
-	  <h1 class="mdc-typography--headline1">Big header</h1>
-	</div>
-
-	<div class="mdc-form-field">
-	  <div class="mdc-radio">
-	    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
-	    <div class="mdc-radio__background">
-	      <div class="mdc-radio__outer-circle"></div>
-	      <div class="mdc-radio__inner-circle"></div>
-	    </div>
-	  </div>
-	  <label for="radio-1">Radio 1</label>
-	  <div class="mdc-radio">
-	    <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
-	    <div class="mdc-radio__background">
-	      <div class="mdc-radio__outer-circle"></div>
-	      <div class="mdc-radio__inner-circle"></div>
-	    </div>
-	  </div>
-	  <label for="radio-2">Radio 2</label>
-	</div>
 
   	<script src="bundle.js"></script>
+  	<script type="text/javascript">
+  		console.log("Script inline");
+  		//import {MDCRipple} from '@material/ripple/index';
+		//const ripple = new MDCRipple(document.querySelector('.foo-button'));
+  	</script>
   </body>
 
 </html>

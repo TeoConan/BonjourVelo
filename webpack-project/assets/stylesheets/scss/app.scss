@@ -1,37 +1,248 @@
-@import "@material/theme/mdc-theme";
-@import "@material/button/mdc-button";
+/*  Debug style */
+body {
+	padding-top: 2rem;
+	background-color: #f5f5f5;
 
-
-$site-green : #85c767;
-
-@import "@material/theme/_variables.scss";
-@import "@material/switch/mdc-switch";
-@import "@material/typography/mdc-typography";
-@import "@material/form-field/mdc-form-field";
-@import "@material/radio/mdc-radio";
-
-
-.mdc-radio {
-	@include mdc-radio-checked-stroke-color($site-green);
-	@include mdc-radio-ink-color($site-green);
+	p, a, h1, h2, h3, h4 {
+		padding: 0;
+		margin: 0;
+	}
 }
 
-.foo-button {
+.debug-box-line {
+	display: flex;
+	flex-direction: column;
+	margin : 1rem 0.5rem 3rem;
+
+	& > .content {
+		display: flex;
+
+		& > * {
+			margin : 0.5rem;
+		}
+	}
+
+	& > .col {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* Functions */
+	/* Without "rem" */
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize};
+}
+
+	/*  With "rem"  */
+@function getRem($size) {
+	@return #{calculateRem($size)}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: #{$size}px; //Fallback in px
+  font-size: getRem($size);
+}
+
+
+
+/* Fonctionnal */
+@import "@material/ripple/mdc-ripple";
+@import "@material/theme/mdc-theme";
+@import "@material/typography/mdc-typography";
+@import "@material/elevation/mdc-elevation";
+
+/*  Elements */
+@import "@material/button/mdc-button";
+@import "@material/switch/mdc-switch";
+@import "@material/card/mdc-card";
+@import "@material/form-field/mdc-form-field";
+@import "@material/radio/mdc-radio";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/checkbox/mdc-checkbox";
+
+
+h4 {
+	font-family: "Heebo", sans-serif;
+	font-weight: bold;
+	@include fontSize(18);
+	padding: 0;
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	@include fontSize(14);
+}
+
+
+/* Button */
+.mdc-button {
 	@include mdc-ripple-surface;
   	@include mdc-ripple-radius-bounded;
   	@include mdc-states;
+
+	padding: 0 1.5rem;
+  	&:focus {
+  		background-color: $mdc-theme-primary;
+  	}
+
+  	&.c-button-secondary {
+  		@include mdc-button-container-fill-color($mdc-theme-accent);
+  	}
 }
 
-.test-ripple {
-	height: 150px;
-	width: 150px;
-	background-color: grey;
-	margin-top: 15rem;
+.mdc-button__label + .mdc-button__icon {
+  color: white;
+}
 
-	@include mdc-ripple-surface;
-  @include mdc-ripple-radius-bounded;
-  @include mdc-states-base-color(black);
-  @include mdc-states-hover-opacity(.1);
-  @include mdc-states-focus-opacity(.3);
-  @include mdc-states-press-opacity(.4);
+
+/*  Icon Button */
+$mdc-icon-button-size-fill: 36 !default;
+
+.mdc-icon-button {
+  @include mdc-button-container-fill-color(primary);
+  @include mdc-button-ink-color(on-primary);
+  @include mdc-states(on-primary);
+  @include fontSize(($mdc-icon-button-size-fill /2));
+
+  width: getRem($mdc-icon-button-size-fill);
+  height: getRem($mdc-icon-button-size-fill);
+  
+  padding: getRem($mdc-icon-button-size-fill / 4);
+
+  border-radius: 50%;
+  color : white;
+  
+  &:not(:disabled) {
+  	color: white;
+  }
+}
+
+/*  Card  */
+$c-card-padding : getRem(20) !default;
+$c-card-width--preset-1: getRem(240);
+$c-card-width--preset-2: getRem(1000);
+
+	/*  Preset 1 */
+	.c-card--preset-1 {
+		padding-top: $c-card-padding;
+		width: $c-card-width--preset-1;
+
+		/*  Fix  */
+		&.c-card-fix {
+			width: getRem(240);
+
+			.card-image {
+				width: 100%;
+				height: getRem(150);
+				background-size: cover;
+    			background-position: center;
+    			background-repeat: no-repeat;
+			}
+		}
+
+		& > *:not(.card-image) {
+			margin-left: $c-card-padding;
+			margin-right: $c-card-padding;
+		}
+
+		.card-title {
+			margin-bottom: getRem(8);
+		}
+
+		.card-subtitle {
+			margin-bottom: getRem(20);
+			color: #757575;
+		}
+
+		.card-image:not(.c-card-fix) {
+			max-width: 100%;
+		}
+
+
+	}
+
+	/*  Preset 2 */
+	.c-card--preset-2 {
+		padding-right: $c-card-padding;
+		width: $c-card-width--preset-2;
+		display: flex;
+
+		& > .inner {
+			display: flex;
+
+			& > .col {
+				display: flex;
+				flex-direction: column;
+			}
+			
+		}
+
+		.card-title {
+			margin-bottom: getRem(8);
+			margin-top: $c-card-padding;
+		}
+
+		.card-subtitle {
+			margin-bottom: getRem(20);
+			color: #757575;
+		}
+
+		.card-text {
+
+		}
+
+		.card-image {
+			height: getRem(240);
+			margin-right: getRem(20);
+		}
+
+		.card-tools {
+			margin-top: auto;
+			margin-left: auto;
+			display: flex;
+			padding-bottom: $c-card-padding;
+
+			& > * {
+				margin-top: auto;
+			}
+		}
+	}
+
+
+
+/*  Radio  */
+.mdc-radio {
+
+	
+
+	&.c-radio-primary {
+		.mdc-radio__outer-circle {
+			border-color : $mdc-theme-primary !important;
+		}
+
+		.mdc-radio__inner-circle {
+			border-color: $mdc-theme-primary !important;
+		}
+	}
+}
+
+
+/* Checkbox  */
+
+.mdc-checkbox {
+	.mdc-checkbox__checkmark {
+		color: white;
+	}
+
+	/* .primary {
+		@include mdc-states($mdc-theme-primary);
+		
+		.mdc-checkbox__checkmark {
+			color: black;
+		}
+	} */
+
+	
 }

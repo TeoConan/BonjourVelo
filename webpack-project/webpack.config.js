@@ -12,7 +12,7 @@ let config = {
 
     output: {
       path: path.resolve(__dirname, "./public"),
-      filename: "./public/bundle.js"
+      filename: "./bundle.js"
     },
 
     module: {
@@ -44,39 +44,11 @@ let config = {
 		        	]
 		        },
 		        /* SCSS */
-		        /* FONT */
-		        {
-    				test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-    				loader: 'file-loader'
-  				},
-  				/* FONT */
-  				/* IMAGE */
-		        {
-    				test: /\.(png|jpg|gif|svg)$/,
-    				use: [
-	    				{
-	    					loader: 'url-loader',
-	    					options: {
-	    						name: '[name].[hash:7].[ext]'
-	    					}
-	    				},
-	    				{
-	    					loader: 'img-loader',
-	    					options: {
-	    						enabled: !dev
-	    					}
-	    				}
-    				]
-    	        },
-    	        /* IMAGE */
     	        /* JS */
     	        {
     	        	test: /\.js$/,
     	        	loader: 'babel-loader',
-    	        	query: {
-			          presets: ['es2015'],
-			          plugins: ['transform-object-assign']
-			        },
+    	        	exclude: /node_modules/,
     	        }
     	        /* JS */
 			]

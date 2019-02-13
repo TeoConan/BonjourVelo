@@ -1,7 +1,4 @@
 require("../assets/stylesheets/scss/app.scss");
-
-import {MDCRipple} from '@material/ripple/index';
-const ripple = new MDCRipple(document.querySelector('.foo-button'));
-
-
 console.log('Hello world JS 1');
+import {MDCRipple} from '@material/ripple';
+const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
