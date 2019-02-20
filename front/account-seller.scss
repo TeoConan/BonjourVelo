@@ -1,0 +1,87 @@
+/* GENERAL -----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+h1, h2, h3, h4 {
+  color: black;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-family: 'Heboo', 'Bold', serif;
+  font-size: 45px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+p {
+  line-height: 20px;
+
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0  10px;
+  height: 100px;
+}
+.orange {
+  color: #e9a816;
+}
+img {
+  text-align: center;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+/* -------------------------------account-seller--------------------------------
+--------------------------------main-image------------------------------------*/
+header {
+  img {
+    top: 0;
+  }
+}
+#main-image{
+  background: url('../res/images/profilRevendeur/cycle-path-3444914_1920.jpg');
+  text-align: center;
+  background-size: cover;
+  margin-bottom: 3em;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5em;
+  left: 0;
+  top: 3em;
+}
+.overlay{
+  background-color: rgba(233,168,22, 0.85);
+  width: 100%;
+  height: 39%;
+  left: 0;
+  top: 4.7em;
+  position: absolute;
+
+  .welcome{
+    color: white;
+    font-family: 'Montserrat', 'Regular', sans-serif;
+    font-size : 1.6em;
+    margin-top: 3em;
+  }
+}
