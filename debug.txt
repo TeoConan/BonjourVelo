@@ -1,6 +1,0 @@
-ERR - DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
->npm uninstall extract-text-webpack-plugin
->npm update extract-text-webpack-plugin@4.0.0-beta.0
-
-ERR - Entrypoint undefined = extract-text-webpack-plugin-output-filename
-x	Work as well ?

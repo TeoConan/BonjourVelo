@@ -1,3 +1,0 @@
-Installer console Node
-Télécharger webpack
-Installer node-sass

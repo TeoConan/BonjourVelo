@@ -1,1 +1,0 @@
-require("../assets/stylesheets/app.scss");
