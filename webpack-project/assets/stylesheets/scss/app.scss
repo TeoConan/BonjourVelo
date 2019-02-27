@@ -28,6 +28,10 @@ body {
 	}
 }
 
+
+@import "../css/demo-mdc.css";
+
+
 /* Functions */
 	/* Without "rem" */
 @function calculateRem($size) {
@@ -57,10 +61,18 @@ body {
 @import "@material/button/mdc-button";
 @import "@material/switch/mdc-switch";
 @import "@material/card/mdc-card";
+@import "@material/floating-label/mdc-floating-label";
 @import "@material/form-field/mdc-form-field";
 @import "@material/radio/mdc-radio";
+
+@import "@material/slider/mdc-slider";
+
 @import "@material/icon-button/mdc-icon-button";
 @import "@material/checkbox/mdc-checkbox";
+@import "@material/textfield/mdc-text-field";
+@import "@material/textfield/icon/mdc-text-field-icon";
+@import "@material/textfield/helper-text/mdc-text-field-helper-text";
+@import "@material/notched-outline/mdc-notched-outline";
 
 
 h4 {
@@ -245,4 +257,41 @@ $c-card-width--preset-2: getRem(1000);
 	} */
 
 	
+}
+
+
+
+/* Inputbox */
+
+.mdc-text-field {
+	@include mdc-text-field-fill-color(transparent);
+	@include mdc-text-field-ink-color(black);
+}
+
+.mdc-text-field--outlined {
+	@include mdc-text-field-ink-color(black);
+}
+
+.demo-text-field-outlined-shaped {
+	.mdc-text-field__input {
+		padding-left: getRem(32);
+	}
+
+	.mdc-notched-outline__leading {
+		border-radius: getRem(28) 0 0 getRem(28) !important;
+	}
+
+	.mdc-notched-outline__trailing {
+		border-radius: 0 getRem(28) getRem(28) 0 !important;
+	}
+
+	&.mdc-text-field--fullwidth {
+		.mdc-text-field__input {
+			padding-left: getRem(32) !important;
+		}
+
+		.mdc-notched-outline {
+			top: 0;
+		}
+	}
 }
