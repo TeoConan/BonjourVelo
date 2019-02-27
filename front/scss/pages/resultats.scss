@@ -1,0 +1,163 @@
+@media screen and (max-device-width: 640px) {
+
+	body {
+	background-color: #f5f5f5;
+	margin: 0 13px 0 13px;
+
+	h3 {
+		font-family: 'Heebo';
+		font-weight: bold;
+		font-size: 60px;
+		display: inline-block;
+    	padding-bottom: 5px;
+    	position: relative;
+	}
+
+	h4,h5,p {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+/*type de vélo*/
+
+	.typevelo{
+		background-color: white;
+		img{
+			width: 500px;
+		}
+	}
+
+/*rayon de recherche*/
+
+	.filtre {
+		img {
+			padding-top: 20px;
+			width: 100%;
+		}
+	}
+	.slidecontainer {
+		background-color: white;
+		height: 200px;
+		display: flex;
+	}
+
+	.slider {
+		 margin: auto;
+		 -webkit-appearance: none;
+		 width: 100%;
+		 height: 25px;
+		 border-radius: 5px;
+		 background: #d3d3d3;
+		 outline: none;
+		 opacity: 0.7;
+		 -webkit-transition: .2s;
+		 transition: opacity .2s;
+	}
+
+	.slider::-webkit-slider-thumb {
+		 -webkit-appearance: none;
+		 appearance: none;
+		 width: 70px;
+		 height: 70px;
+		 border-radius: 50%;
+	     background: #E9A816;
+		 cursor: pointer;
+	}
+
+/*liste de magasins*/
+
+	/* .magasins {
+		.cartes{
+			background-color: white;
+			img {
+				width: 600px;
+			}
+		}
+	} */	
+
+	}
+}
+
+
+
+@media screen and (min-device-width: 641px) {
+
+	body {
+	/* 	background-color: #f5f5f5; */
+		margin-left : 480px;
+		margin-right: 438px;
+
+	h3 {
+		font-family: 'Heebo';
+		font-weight: bold;
+		font-size: 30px;
+		display: inline-block;
+    	padding-bottom: 5px;
+    	position: relative;
+	}
+
+	h4,h5,p {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+/*type de vélo*/
+
+	.typevelo{
+		background-color: white;
+		img{
+			width: 250px;
+		}
+	} 
+
+
+/*rayon de recherche*/
+
+	.filtre {
+		img {
+			padding-top: 20px;
+			width: 100%;
+		}
+	}
+	.slidecontainer {
+		background-color: white;
+		height: 80px;
+		display: flex;
+	}
+
+	.slider {
+		 margin: auto;
+		 -webkit-appearance: none;
+		 width: 100%;
+		 height: 7px;
+		 border-radius: 5px;
+		 background: #d3d3d3;
+		 outline: none;
+		 opacity: 0.7;
+		 -webkit-transition: .2s;
+		 transition: opacity .2s;
+	}
+
+	.slider::-webkit-slider-thumb {
+		 -webkit-appearance: none;
+		 appearance: none;
+		 width: 30px;
+		 height: 30px;
+		 border-radius: 50%;
+	     background: #E9A816;
+		 cursor: pointer;
+	}
+
+/**/
+
+/*liste de magasins*/
+
+	/* .magasins {
+		.cartes{
+			background-color: white;
+			img {
+				width: 300px;
+			}
+		}
+	} */
+	}
+}
+
