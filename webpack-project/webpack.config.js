@@ -3,16 +3,32 @@ const path = require("path");
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 const DashboardPlugin = require("webpack-dashboard/plugin");
 const autoprefixer = require('autoprefixer');
+<<<<<<< HEAD
+=======
+const dev = true;
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
 
 let config = {
     entry: "./src/index.js",
     mode: "development",
+<<<<<<< HEAD
+=======
+    devtool: "eval-source-map",
+
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
     output: {
       path: path.resolve(__dirname, "./public"),
       filename: "./bundle.js"
     },
+<<<<<<< HEAD
     module: {
         rules: [
+=======
+
+    module: {
+        rules: [
+        		/* SCSS */
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
 		        {
 		        	test: /\.scss$/,
 		        	use: [
@@ -38,11 +54,29 @@ let config = {
 		          		},
 		        	]
 		        },
+<<<<<<< HEAD
 			]
       	},
       	plugins: [
 			  new ExtractTextWebpackPlugin("general-styles.css")
       	],
+=======
+		        /* SCSS */
+    	        /* JS */
+    	        {
+    	        	test: /\.js$/,
+    	        	loader: 'babel-loader',
+    	        	exclude: /node_modules/,
+    	        }
+    	        /* JS */
+			]
+      	},
+
+      	plugins: [
+			  new ExtractTextWebpackPlugin("general-styles.css")
+      	],
+
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
       	devServer: {
 		  contentBase: path.resolve(__dirname, "./public"),
 		  historyApiFallback: true,
@@ -50,7 +84,11 @@ let config = {
 		  open: true,
 		  hot: true
 		},
+<<<<<<< HEAD
 		devtool: "eval-source-map"
+=======
+		
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
   }
   module.exports = config;
 
