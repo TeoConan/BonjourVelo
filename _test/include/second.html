@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="components.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<div class="debug-box-line">
+		<div class="mdc-typography">
+			<p class="mdc-typography--paragraph">Boutons</p>
+		</div>
+
+		<div class="content">
+
+
+			<!--  COMPONENT RADIO -->
+			<div class="mdc-form-field">
+
+				<!-- Radio 1 -->
+				<div class="mdc-radio">
+					<input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+					<div class="mdc-radio__background">
+						<div class="mdc-radio__outer-circle"></div>
+						<div class="mdc-radio__inner-circle"></div>
+					</div>
+				</div>
+				<label for="radio-1">Radio 1</label>
+
+				<!-- Radio 2 -->
+				<div class="mdc-radio">
+					<input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
+					<div class="mdc-radio__background">
+						<div class="mdc-radio__outer-circle"></div>
+						<div class="mdc-radio__inner-circle"></div>
+					</div>
+				</div>
+				<label for="radio-2">Radio 2</label>
+
+				<!-- Radio 3 - Color primaire -->
+				<div class="mdc-radio c-radio-primary">
+					<input class="mdc-radio__native-control" type="radio" id="radio-3" name="radios" checked>
+					<div class="mdc-radio__background">
+						<div class="mdc-radio__outer-circle"></div>
+						<div class="mdc-radio__inner-circle"></div>
+					</div>
+				</div>
+				<label for="radio-3">Radio 3</label>
+			</div>
+		</div></div>
+
+
+			<!-- COMPONENT CARD - PRESET 1 -->
+			<!-- Fluid Card / La card change de forme selon l'image -->
+			<div class="mdc-card c-card--preset-1">
+				<h4 class="card-title">Carte fluide</h4>
+				<p class="card-subtitle">Cette carte s'adatera selon l'image qu'elle contient.</p>
+				<img class="card-image" src="bicycle.jpg"/>
+			</div>
+
+
+
+<script src="components.js"></script>
+</body>
+
+</html>

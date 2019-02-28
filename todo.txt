@@ -1,10 +1,9 @@
 Installer console Node
-Télécharger webpack
+Tï¿½lï¿½charger webpack
 Installer node-sass
 
 Commande :
 
-	Surveillance styles.css 
+	Surveillance styles.css
 	>cd assets/stylesheets/
 	>node-sass scss/styles.scss --watch - css
-
