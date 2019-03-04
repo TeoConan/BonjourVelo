@@ -1,4 +1,16 @@
-<link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../front/css/reset.css">
+	<link rel="stylesheet" href="../front/css/normalize.css">
+	<link rel="stylesheet" href="../front/css/pages/form.css">
+	<link rel="stylesheet" href="../front/css/components.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
 <!-- Formulaire principal du site -->
 <!-- Code pour une question complexe à choix multiple -->
 
@@ -9,8 +21,8 @@
 		<div class="form-header">
 			<h2 class="form-title">Quelques questions pour trouver votre vélo...</h2>
 
-			<h3 class="form-subtitle">Que voulez-vous faire avec votre vélo ?</h3>
-			<p class="form-questiontype">Question à choix multiple</p>
+			<h3 class="form-question">Que voulez-vous faire avec votre vélo ?</h3>
+			<p class="form-question-type">Question à choix multiple</p>
 
 			<p class="form-description">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat risus metus. Proin at arcu eu erat aliquet viverra. Morbi ac sem scelerisque, feugiat lectus eget, fermentum tortor. Morbi consequat congue tristique. Etiam mollis sit amet lacus vitae convallis.
@@ -20,57 +32,97 @@
 			<div class="form-checkout">
 				<ul class="checkout">
 					<li class="step step-1 step-start">
-						<img src="" class="step-start-icon"/>
-						<div class="dot"></div>
+						<div class="dot">
+							<img src="../res/icons/flag.svg" class="step-start-icon"/>
+						</div>
 						<div class="line"></div>
 					</li>
 					<li class="step step-2">
-						<img src="" class="step-progress-icon"/>
-						<div class="dot"></div>
+						<div class="dot">
+							<img src="../res/icons/vtt.svg" class="step-progress-icon"/>
+						</div>
 						<div class="line"></div>
 					</li>
 					<!-- ... -->
 					<li class="step step-12 step-end">
-						<img src="" class="step-end-icon"/>
-						<div class="dot"></div>
-						<div class="line"></div>
+						<div class="dot">
+							<img src="../res/icons/trophy.svg" class="step-end-icon"/>
+						</div>
 					</li>
 				</ul>
 			</div>
 
 			<!-- Zone de sélection utilisateur -->
 			<div class="form-choice">
-				<div class="inner">
-					<ul class="choice-list">
-						<!-- Material component -->
-						<li class="choice-card card">
-							<img class="choice-image" src="" />
-							<div class="choice-content">
-								<p class="card-title">Vélo de course</p>
-								<p class="card-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<ul class="choice-list">
+					<!-- Material component -->
+					<li class="choice-card">
+						<div class="mdc-card c-card--preset-3">
+							<img class="card-image" src="../res/images/bike.svg"/>
+							<h4 class="card-title">Vélo de course</h4>
+							<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+							<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
+								<span class="mdc-button__label">Button</span>
+							</button>
+						</div>
+					</li>
 
-								<!-- Material component -->
-								<button class="card-confirm"></button>
-							</div>
-						</li>
+					<li class="choice-card">
+						<div class="mdc-card c-card--preset-3">
+							<img class="card-image" src="../res/images/bike.svg"/>
+							<h4 class="card-title">Vélo de course</h4>
+							<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+							<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
+								<span class="mdc-button__label">Button</span>
+							</button>
+						</div>
+					</li>
 
-						<!-- ... -->
-					</ul>
+					<li class="choice-card">
+						<div class="mdc-card c-card--preset-3">
+							<img class="card-image" src="../res/images/bike.svg"/>
+							<h4 class="card-title">Vélo de course</h4>
+							<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+							<button class="c-card-button--checked mdc-icon-button material-icons  mdc-elevation--z3">check</button>
+						</div>
+					</li>
 
-					<!-- Confirmation question -->
-					<div class="choice-confirm">
-						<!-- Material component -->
-						<button class="little-button step-back-button"></button>
-						<!-- Material component -->
-						<button class="step-confirm-button"></button>
-					</div>
+					<!-- ... -->
+				</ul>
+
+				<!-- Confirmation question -->
+				<div class="choice-confirm">
+					<!-- Material component -->
+					<button class="mdc-icon-button material-icons step-back-button mdc-elevation--z3">chevron_left</button>
+					<!-- Material component -->
+					<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition step-confirm-button">
+						<span class="mdc-button__label">Continuer</span>
+					</button>
 				</div>
+
 
 				<div class="form-landscape">
 					<!-- Shape & Background -->
 					<!-- À étudier -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="750" height="765.309" viewBox="0 0 750 765.309">
+					  <defs>
+					    <style>
+					      .cls-1 {
+					        fill: #f5f5f5;
+					        fill-rule: evenodd;
+					      }
+					    </style>
+					    <pattern id="background" patternUnits="userSpaceOnUse" width="100" height="100">
+							<image xlink:href="../res/images/background-form.png" x="0" y="0" width="100" height="100" />
+						</pattern>
+					  </defs>
+					  <path id="shape_1" data-name="shape 1" class="cls-1" d="M-502,985c148.406-42.4,504.82-35.646,636-139s78.671-213.42,186-334S627.868,310.135,813,342s282.31-25.865,272,1c0.68-17.421,37.49,776.17,42,757l-1794-1S-650.406,1027.4-502,985Z"/>
+					</svg>
+
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script src="../front/js/components.js"></script>

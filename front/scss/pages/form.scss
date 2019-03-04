@@ -1,0 +1,117 @@
+@import "../functions.scss";
+
+
+.bjv-form {
+	padding : getRem(50);
+	background-color: #cccccc;
+	.inner {
+
+	}
+
+	.form-header {
+		.form-title {
+			@include fontSize(28);
+			line-height: getRem(30);
+			@include fontFamily('Heebo');
+			font-weight: bold;
+			margin-bottom: getRem(32);
+		}
+
+		.form-question {
+			@include fontSize(24);
+			line-height: getRem(26);
+			@include fontFamily('Heebo');
+			color: var(--mdc-theme-primary);
+		}
+
+		.form-question-type {
+			@include fontSize(14);
+			line-height: getRem(16);
+			@include fontFamily('Heebo');
+			color: #757575;
+			margin-bottom: getRem(32);
+		}
+
+		.form-description {
+
+		}
+
+
+		/* Checkout */
+		.form-checkout {
+
+			margin-top: getRem(48);
+			.checkout {
+				display: flex;
+
+				.step {
+					display: flex;
+
+					.dot {
+						width: getRem(16);
+						height: getRem(16);
+						background-color: var(--mdc-theme-primary);
+						border-radius: 50%;
+						margin: 0 getRem(3);
+						position: relative;
+					}
+
+					.line {
+						height: getRem(3);
+						width: getRem(26);
+						background-color: #444444;
+						margin-top: auto;
+						margin-bottom: auto;
+					}
+
+					.step-start-icon,
+					.step-progress-icon,
+					.step-end-icon {
+					    position: absolute;
+					    bottom: 0;
+					    left: 50%;
+					    transform: translate(-50%, -50%);
+					    padding-bottom: 3px;
+					}
+
+					.step-start-icon {
+						transform: translate(-10%, -50%);
+					}
+				}
+			}
+		}
+	}
+
+	.form-choice {
+		margin-top: getRem(64);
+		padding: getRem(16);
+
+		.choice-list {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+			.choice-card {
+				margin-top: getRem(25);
+				margin-bottom: getRem(25);
+			}
+		}
+	}
+
+	.choice-confirm {
+		display: flex;
+		justify-content: space-around;
+		margin-top: getRem(16);
+
+		.mdc-button, .mdc-icon-button {
+			margin-top : auto;
+			margin-bottom: auto;
+		}
+
+		.mdc-icon-button {margin-left: auto; margin-right: getRem(10); @include fontSize(22);}
+		.mdc-button {margin-right: auto; margin-left: getRem(10);}
+	}
+
+	.form
+}
