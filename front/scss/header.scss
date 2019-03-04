@@ -1,195 +1,185 @@
+@import "../functions.scss";
 @media screen and (min-width: 0px) and (max-width: 949px) {
-  html {
-    margin: 0;
-    padding: 0;
-    body {
-      margin: 0;
-      padding: 0;
-      h1 {
-        position: fixed;
-        top: 40px;
-        left: 40px;
-        z-index: 6;
-        font-size: 20px;
-        font-weight: 900;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        > span {
-          text-transform: none;
-          opacity: .5;
-          font-weight: 300;
-          font-size: 12px;
-        }
-      }
-        input + label {
-          position: fixed;
-          top: 30px;
-          right: 40px;
-          height: 20px;
-          width: 15px;
-          z-index: 5;
-          span {
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            top: 50%;
-            margin-top: -1px;
-            left: 0;
-            display: block;
-            background: black;
-            transition: .5s;
-          }
-          span:first-child {
-            top: 3px;
-          }
-          span:last-child {
-            top: 16px;
-          }
-        }
-        label:hover {
-          cursor: pointer;
-        }
-        input:checked + label {
-          span {
-            opacity: 0;
-            top: 50%;
-          }
-          span:first-child {
-            opacity: 1;
-            transform: rotate(405deg);
-          }
-          span:last-child {
-            opacity: 1;
-            transform: rotate(-405deg);
-          }
-        }
-        input ~ nav {
-          background: white;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 3;
-          transition: .5s;
-          transition-delay: .5s;
-          overflow: hidden;
-          > ul {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            > li {
-              opacity: 0;
-              > a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: black;
-                font-weight: 700;
-                font-family: sans-serif;
-                display: block;
-              }
-            }
-          }
-        }
-        input:checked ~ nav {
-          height: 100%;
-          transition-delay: 0s;
-          > ul {
-            > li {
-              opacity: 1;
-              transition-delay: .5s;
-            }
-          }
-        }
+h1 {
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: 6;
+  font-size: getRem(20);
+  font-weight: 900;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  > span {
+    text-transform: none;
+    opacity: .5;
+    font-weight: 300;
+    font-size: getRem(12);
+  }
+}
+  input + label {
+    position: fixed;
+    top: getRem(30);
+    right: getRem(40);
+    height: getRem(20);
+    width: getRem(15);
+    z-index: 5;
+    span {
+      position: absolute;
+      width: 100%;
+      height: getRem(2);
+      top: 50%;
+      margin-top: -getRem(1);
+      left: 0;
+      display: block;
+      background: black;
+      transition: .5s;
     }
-      nav {
-        height: 5rem;
-        background-color: white;
-        width: 100%;
-        img {
-          margin: auto;
-          margin-left: 4.6rem;
-          float: left;
-         }
-        ul {
-          height: 20rem;
-          float: right;
-          display: inline-flex;
-          margin: auto;
-          width: 100%;
-          li {
-            margin: auto;
-            list-style-type: none;
-            font-family: 'Heebo', sans-serif;
-            font-size: 1rem;
-            a{
-              color: black;
-              text-decoration: none;
-              margin: auto;
-
-            }
-          }
-          a:hover {
-            color: #e9a816;
-          }
-          a:link {
-          }
-          a:visited {
-          }
-          a:active {
-            color: #e9a816;
-          }
+    span:first-child {
+      top: getRem(3);
+    }
+    span:last-child {
+      top: getRem(16);
+    }
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  input:checked + label {
+    span {
+      opacity: 0;
+      top: 50%;
+    }
+    span:first-child {
+      opacity: 1;
+      transform: rotate(405deg);
+    }
+    span:last-child {
+      opacity: 1;
+      transform: rotate(-405deg);
+    }
+  }
+  input ~ nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    transition: .5s;
+    transition-delay: .5s;
+    overflow: hidden;
+    > .navigation-menu {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      > li {
+        opacity: 0;
+        > a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: black;
+          font-weight: 700;
+          font-family: sans-serif;
+          display: block;
         }
       }
     }
   }
-@media screen and (min-width: 950px) and (max-width: 2400px) {
-  html {
-    margin: 0;
-    padding: 0;
-    body {
-      margin: 0;
-      padding: 0;
-      #burger {
-        display: none;
+  input:checked ~ nav {
+    height: 100%;
+    transition-delay: 0s;
+    > .navigation-menu {
+      > li {
+        opacity: 1;
+        transition-delay: .5s;
       }
-      nav {
-        height: 5rem;
-        background-color: white;
-        width: 100%;
-        img {
-          margin: auto;
-          margin-left: 4.6rem;
-          float: left;
-         }
-        ul {
-          height: 100%;
-          float: right;
-          display: inline-flex;
-          margin: auto;
-          margin-right: 4.6rem;
-          li {
-            margin: auto;
-            list-style-type: none;
-            font-family: 'Heebo', sans-serif;
-            font-size: 1rem;
-            margin-left: 3rem;
-            a{
-              color: black;
-              text-decoration: none;
-              margin: auto;
-            }
-          }
-          a:hover {
-            color: #e9a816;
-          }
-          a:link {
-          }
-          a:visited {
-          }
-          a:active {
-            color: #e9a816;
-          }
+    }
+  }
+}
+nav {
+  height: 5rem;
+  background-color: white;
+  width: 100%;
+  .navigation-logo {
+    margin: auto;
+    display: flex;
+   }
+  .navigation-menu {
+    height: 20rem;
+    display: inline-flex;
+    margin: auto;
+    width: 100%;
+    li {
+      list-style-type: none;
+      font-family: 'Heebo', sans-serif;
+      font-size: 1rem;
+      margin-top: 3rem;
+      a{
+        color: black;
+        text-decoration: none;
+        margin: auto;
+
+      }
+    }
+    a:hover {
+      color: #e9a816;
+    }
+    a:link {
+    }
+    a:visited {
+    }
+    a:active {
+      color: #e9a816;
+    }
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 2400px) {
+  #burger {
+    display: none;
+  }
+  nav {
+    height: 5rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    .navigation-logo {
+      margin: auto;
+      margin-left: 4.6rem;
+     }
+    .navigation-menu {
+      height: 100%;
+      display: flex;
+      padding-right: 4.375rem;
+      .navigation-trouver-velo {
+        margin-left: auto;
+      }
+      .navigation-magasins-velo {
+        margin-left: 3.75rem;
+      }
+      .navigation-espace-pro {
+        margin-left: 3.75rem;
+      }
+      li {
+        margin-top: auto;
+        margin-bottom: auto;
+        list-style-type: none;
+        font-family: 'Heebo', sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        a{
+          color: black;
+          text-decoration: none;
         }
+      }
+      a:hover {
+        color: #e9a816;
+      }
+      a:link {
+      }
+      a:visited {
+      }
+      a:active {
+        color: #e9a816;
       }
     }
   }
