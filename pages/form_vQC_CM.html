@@ -15,6 +15,7 @@
 <!-- Code pour une question complexe à choix multiple -->
 
 <div class="bjv-form">
+
 	<div class="inner">
 
 		<!-- Header formulaire : titre, question, description, checkout etc... -->
@@ -22,7 +23,7 @@
 			<h2 class="form-title">Quelques questions pour trouver votre vélo...</h2>
 
 			<h3 class="form-question">Que voulez-vous faire avec votre vélo ?</h3>
-			<p class="form-question-type">Question à choix multiple</p>
+			<p class="form-question-type">Question à choix multiple (1/12)</p>
 
 			<p class="form-description">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat risus metus. Proin at arcu eu erat aliquet viverra. Morbi ac sem scelerisque, feugiat lectus eget, fermentum tortor. Morbi consequat congue tristique. Etiam mollis sit amet lacus vitae convallis.
@@ -44,6 +45,8 @@
 						<div class="line"></div>
 					</li>
 					<!-- ... -->
+					<li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li>
+					<!-- ... -->
 					<li class="step step-12 step-end">
 						<div class="dot">
 							<img src="../res/icons/trophy.svg" class="step-end-icon"/>
@@ -51,75 +54,60 @@
 					</li>
 				</ul>
 			</div>
+		</div>
 
-			<!-- Zone de sélection utilisateur -->
-			<div class="form-choice">
-				<ul class="choice-list">
-					<!-- Material component -->
-					<li class="choice-card">
-						<div class="mdc-card c-card--preset-3">
-							<img class="card-image" src="../res/images/bike.svg"/>
-							<h4 class="card-title">Vélo de course</h4>
-							<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
-							<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
-								<span class="mdc-button__label">Button</span>
-							</button>
-						</div>
-					</li>
+		<!-- Zone de sélection utilisateur -->
+		<div class="form-choice">
+			<ul class="choice-list">
+				<!-- Material component -->
+				<li class="choice-card">
+					<div class="mdc-card c-card--preset-3">
+						<img class="card-image" src="../res/images/bike.svg"/>
+						<h4 class="card-title">Vélo de course</h4>
+						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+						<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
+							<span class="mdc-button__label">Button</span>
+						</button>
+					</div>
+				</li>
 
-					<li class="choice-card">
-						<div class="mdc-card c-card--preset-3">
-							<img class="card-image" src="../res/images/bike.svg"/>
-							<h4 class="card-title">Vélo de course</h4>
-							<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
-							<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
-								<span class="mdc-button__label">Button</span>
-							</button>
-						</div>
-					</li>
+				<li class="choice-card">
+					<div class="mdc-card c-card--preset-3">
+						<img class="card-image" src="../res/images/bike.svg"/>
+						<h4 class="card-title">Vélo de course</h4>
+						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+						<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
+							<span class="mdc-button__label">Button</span>
+						</button>
+					</div>
+				</li>
 
-					<li class="choice-card">
-						<div class="mdc-card c-card--preset-3">
-							<img class="card-image" src="../res/images/bike.svg"/>
-							<h4 class="card-title">Vélo de course</h4>
-							<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
-							<button class="c-card-button--checked mdc-icon-button material-icons  mdc-elevation--z3">check</button>
-						</div>
-					</li>
+				<li class="choice-card">
+					<div class="mdc-card c-card--preset-3">
+						<img class="card-image" src="../res/images/bike.svg"/>
+						<h4 class="card-title">Vélo de course</h4>
+						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+						<button class="c-card-button--checked mdc-icon-button material-icons  mdc-elevation--z3">check</button>
+					</div>
+				</li>
 
-					<!-- ... -->
-				</ul>
+				<!-- ... -->
 
-				<!-- Confirmation question -->
-				<div class="choice-confirm">
-					<!-- Material component -->
-					<button class="mdc-icon-button material-icons step-back-button mdc-elevation--z3">chevron_left</button>
-					<!-- Material component -->
-					<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition step-confirm-button">
-						<span class="mdc-button__label">Continuer</span>
-					</button>
-				</div>
-
-
-				<div class="form-landscape">
+				<div class="form-landscape noselect">
 					<!-- Shape & Background -->
 					<!-- À étudier -->
-					<svg xmlns="http://www.w3.org/2000/svg" width="750" height="765.309" viewBox="0 0 750 765.309">
-					  <defs>
-					    <style>
-					      .cls-1 {
-					        fill: #f5f5f5;
-					        fill-rule: evenodd;
-					      }
-					    </style>
-					    <pattern id="background" patternUnits="userSpaceOnUse" width="100" height="100">
-							<image xlink:href="../res/images/background-form.png" x="0" y="0" width="100" height="100" />
-						</pattern>
-					  </defs>
-					  <path id="shape_1" data-name="shape 1" class="cls-1" d="M-502,985c148.406-42.4,504.82-35.646,636-139s78.671-213.42,186-334S627.868,310.135,813,342s282.31-25.865,272,1c0.68-17.421,37.49,776.17,42,757l-1794-1S-650.406,1027.4-502,985Z"/>
-					</svg>
-
+					<img class="noselect" src="../res/images/background-shape-mobile-1.png"/>
 				</div>
+			</ul>
+
+			<!-- Confirmation question -->
+			<div class="choice-confirm">
+				<!-- Material component -->
+				<button class="mdc-icon-button material-icons step-back-button mdc-elevation--z3">chevron_left</button>
+				<!-- Material component -->
+				<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition step-confirm-button">
+					<span class="mdc-button__label">Continuer</span>
+				</button>
 			</div>
 		</div>
 	</div>

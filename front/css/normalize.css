@@ -1,11 +1,10 @@
-/* Functions */
-/* Without "rem" */
-/*  With "rem"  */
-/* Font face */
+
+:root {
+	--mdc-theme-confirm : #7cb342;
+}
+
 p {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.125rem;
   font-family: "Montserrat", sans-serif; }
-
-/*# sourceMappingURL=normalize.css.map */

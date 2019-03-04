@@ -1,48 +1,103 @@
-/*
-Error: Invalid CSS after "	.form": expected "{", was "}"
-        on line 117 of front/scss/pages/form.scss
-
-112: 		.mdc-icon-button {margin-left: auto; margin-right: getRem(10); @include fontSize(22);}
-113: 		.mdc-button {margin-right: auto; margin-left: getRem(10);}
-114: 	}
-115: 
-116: 	.form
-117: }
-
-Backtrace:
-front/scss/pages/form.scss:117
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:688:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	.form\": expected \"{\", was \"}\"\A         on line 117 of front/scss/pages/form.scss\A \A 112: 		.mdc-icon-button {margin-left: auto; margin-right: getRem(10); @include fontSize(22);}\A 113: 		.mdc-button {margin-right: auto; margin-left: getRem(10);}\A 114: 	}\A 115: \A 116: 	.form\A 117: }"; }
+/* Functions */
+/* Without "rem" */
+/*  With "rem"  */
+/* Font face */
+.bjv-form {
+  position: relative;
+  background-color: #f5f5f5; }
+  .bjv-form .form-landscape {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse; }
+  .bjv-form .form-header {
+    padding: 3.125rem;
+    padding-bottom: 0;
+    z-index: 10;
+    /* Checkout */ }
+    .bjv-form .form-header .form-title {
+      font-size: 28px;
+      font-size: 1.75rem;
+      line-height: 1.875rem;
+      font-family: "Heebo", sans-serif;
+      font-weight: bold;
+      margin-bottom: 2rem; }
+    .bjv-form .form-header .form-question {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.625rem;
+      font-family: "Heebo", sans-serif;
+      color: var(--mdc-theme-primary); }
+    .bjv-form .form-header .form-question-type {
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      font-family: "Heebo", sans-serif;
+      color: #757575;
+      margin-bottom: 2rem; }
+    .bjv-form .form-header .form-checkout {
+      overflow: hidden;
+      margin-top: 1.25rem; }
+      .bjv-form .form-header .form-checkout .checkout {
+        display: flex;
+        padding-top: 3.125rem; }
+        .bjv-form .form-header .form-checkout .checkout .step {
+          display: flex; }
+          .bjv-form .form-header .form-checkout .checkout .step .dot {
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--mdc-theme-primary);
+            border-radius: 50%;
+            margin: 0 0.1875rem;
+            position: relative; }
+          .bjv-form .form-header .form-checkout .checkout .step .line {
+            height: 0.1875rem;
+            width: 1.625rem;
+            background-color: #444444;
+            margin-top: auto;
+            margin-bottom: auto; }
+          .bjv-form .form-header .form-checkout .checkout .step .step-start-icon,
+          .bjv-form .form-header .form-checkout .checkout .step .step-progress-icon,
+          .bjv-form .form-header .form-checkout .checkout .step .step-end-icon {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-bottom: 3px;
+            max-height: 1.875rem;
+            max-width: 2.5rem; }
+          .bjv-form .form-header .form-checkout .checkout .step .step-start-icon {
+            transform: translate(-10%, -50%); }
+  .bjv-form .form-choice {
+    margin-top: 3.125rem;
+    padding: 1rem; }
+    .bjv-form .form-choice .choice-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .bjv-form .form-choice .choice-list .choice-card {
+        margin-top: 1.5625rem;
+        margin-bottom: 1.5625rem;
+        z-index: 10; }
+        .bjv-form .form-choice .choice-list .choice-card .c-card-button--checked {
+          background-color: var(--mdc-theme-confirm); }
+  .bjv-form .choice-confirm {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    z-index: 10; }
+    .bjv-form .choice-confirm .mdc-button, .bjv-form .choice-confirm .mdc-icon-button {
+      margin-top: auto;
+      margin-bottom: auto; }
+    .bjv-form .choice-confirm .mdc-icon-button {
+      margin-left: auto;
+      margin-right: 0.625rem;
+      font-size: 22px;
+      font-size: 1.375rem; }
+    .bjv-form .choice-confirm .mdc-button {
+      margin-right: auto;
+      margin-left: 0.625rem; }
