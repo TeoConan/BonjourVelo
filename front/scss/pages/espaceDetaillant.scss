@@ -1,13 +1,12 @@
-@media screen and (max-width: 640px) {
     body {
 
       .second-viewport {
-        height: 100vh;
+
 
 
         .left-part {
-          background-image: url(art-bicycle-bike-623919.jpg);
-          height: 50vh;
+          background-image: url(../../../res/images/art-bicycle-bike-623919.jpg);
+          height: 45vh;
           text-align: center;
           background-repeat: no-repeat;
           text-align: center;
@@ -15,15 +14,35 @@
           background-size: 500px;
           position: relative;
 
-          .form-connexion-revendeur {
+          .mdc-floating-label {
+            color: var(--mdc-theme-primary);
+          }
 
+          .mdc-text-field.mdc-text-field-2.mdc-ripple-upgraded {
+            margin-top: 1rem;
+          }
+
+          .inscription-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+          }
+
+          .mdc-button.mdc-elevation--z3.mdc-elevation-transition {
+            margin: auto;
+            margin-top: 2rem;
+          }
+
+          .mdc-text-field__input {
+            border-bottom-color: var(--mdc-theme-primary) !important;
+            color: white;
           }
 
         }
 
         .right-part {
-          background-image: url(bicycle-bike-close-up-1239402.jpg);
-          height: 50vh;
+          background-image: url(../../../res/images/bicycle-bike-close-up-1239402.jpg);
+          height: 45vh;
           text-align: center;
           background-repeat: no-repeat;
           text-align: center;
@@ -32,17 +51,54 @@
           position: relative;
 
           .form-inscription-revendeur {
+
+
             p {
               color: white;
               font-family: Montserrat;
               position: absolute;
-              top : 90%;
+              top : 8rem;
               left: 50%;
               transform: translate(-50%, -50%);
               white-space: nowrap;
             }
 
+            .mdc-icon-button.material-icons.mdc-elevation--z3 {
+              background: #2D3037;
+            }
+
           }
+
+          .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading {
+            border-color: white;
+          }
+
+          .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing  {
+            border-color: white;
+          }
+
+          .inscription-form {
+            display: flex;
+          }
+
+          .mdc-notched-outline.mdc-notched-outline--no-label {
+            margin: auto;
+          }
+
+          .mdc-text-field.text-field.demo-text-field-outlined-shaped.mdc-text-field--outlined.mdc-text-field--no-label {
+            height: 2.33rem;
+            margin-right: 1rem;
+          }
+
+          .mdc-text-field__input {
+            padding-left: 1rem;
+          }
+
+          .inner-button {
+            margin: auto;
+          }
+
+
         }
 
         h2 {
@@ -74,7 +130,6 @@
 
     }
 
-}
 
 
 @media screen and (min-width: 641px) {
@@ -88,7 +143,7 @@
 
 
       .left-part {
-        background-image: url(art-bicycle-bike-623919.jpg);
+        background-image: url(../../../res/images/art-bicycle-bike-623919.jpg);
         text-align: center;
         height: 100vh;
         width: 50%;
@@ -102,7 +157,7 @@
       }
 
       .right-part {
-        background-image: url(bicycle-bike-close-up-1239402.jpg);
+        background-image: url(../../../res/images/bicycle-bike-close-up-1239402.jpg);
         text-align: center;
         background-repeat: no-repeat;
         text-align: center;
@@ -122,9 +177,14 @@
             left: 50%;
             transform: translate(-50%, -50%);
             white-space: nowrap;
+            margin-top: 19rem;
           }
 
         }
+
+
+
+
 
     }
 
