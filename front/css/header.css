@@ -5,6 +5,20 @@
     html body {
       margin: 0;
       padding: 0; }
+      html body h1 {
+        position: fixed;
+        top: 40px;
+        left: 40px;
+        z-index: 6;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-transform: uppercase; }
+        html body h1 > span {
+          text-transform: none;
+          opacity: .5;
+          font-weight: 300;
+          font-size: 12px; }
       html body input + label {
         position: fixed;
         top: 30px;
