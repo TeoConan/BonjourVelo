@@ -18,6 +18,10 @@
       font-weight: 300;
       font-size: 0.75rem; }
 
+  #burger {
+    position: absolute;
+    z-index: -1; }
+
   input + label {
     position: fixed;
     top: 1.875rem;
@@ -55,9 +59,6 @@
 
   input ~ nav {
     background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 3;
     transition: .5s;

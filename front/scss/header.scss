@@ -16,6 +16,12 @@ h1 {
     font-size: getRem(12);
   }
 }
+
+#burger {
+  position: absolute;
+  z-index: -1;
+}
+
   input + label {
     position: fixed;
     top: getRem(30);
@@ -60,9 +66,6 @@ h1 {
   }
   input ~ nav {
     background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 3;
     transition: .5s;
