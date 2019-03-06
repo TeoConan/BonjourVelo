@@ -1,0 +1,53 @@
+@import "../functions.scss";
+
+@media screen and (max-device-width: getRem(640)) {
+	body{
+
+		.formulaire {
+			padding: 0 1rem 0 1rem;
+
+			.mdc-form-field {
+				margin: getRem(20) 0 0 0;
+				width: 100%;
+			}
+
+			.mdc-text-field--textarea {
+				margin: getRem(55) 0 getRem(40) 0;
+			}
+
+			.button {
+				.mdc-button{
+					display: flex;
+	   				margin: auto;
+	   			}
+	   		}
+		}
+
+	}
+}
+
+@media screen and (min-device-width: getRem(641)) {
+	body {
+		margin-left : getRem(480);
+		margin-right: getRem(438);
+
+		.formulaire {
+			display: flex;
+        	flex-direction: column;
+
+        	.mdc-form-field {
+				margin: getRem(20) 0 0 0;
+				width: 100%;
+			}
+
+			.mdc-text-field--textarea {
+				margin: getRem(55) 0 getRem(40) 0;
+			}
+
+        	.button {
+        		margin: auto;
+        	}
+		}
+	}
+
+}
