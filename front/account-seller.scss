@@ -94,38 +94,110 @@ header {
   left: 0;
   top: 0;
   position: absolute;
-
   .welcome{
     color: white;
     font-family: 'Montserrat', 'Regular', sans-serif;
-    font-size: getRem(1.6);
-    margin-top: getRem(3);
+    font-size: getRem(24);
+    margin-top: getRem(79);
     text-align: center;
   }
-  font-family: 'Heboo', 'Bold', serif;
-  color: red;
 }
 
-.IG {
-  color: red;
+.tittle1 {
+  color: black;
   font-family: 'Heboo', 'Bold', serif;
   margin-bottom: getRem(20);
-  margin-left: getRem(13);
+  margin-left: getRem(15);
+  font-size: getRem(24);
+  margin-top: getRem(20);
+  text-transform: uppercase;
+  margin-right: getRem(15);
+
+  .line{
+    border-bottom: getRem(1) solid black;
+    margin-top: getRem(3);
+    margin-bottom: getRem(-15);
+  }
 }
+.bcgrd {
+  background-color: #f5f5f5;
+}
+.ppm {
+  background: url("../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
+  width: getRem(150);
+  height: getRem(150);
+  border-radius: 50%;
+  background-size: cover;
+  margin-left: 28%;
+
+  .mdc-button-img-change{
+    box-sizing: border-box;
+  }
+}
+.line-account{
+  color: #8c8c8c;
+  margin-left: getRem(60);
+  margin-top: getRem(10);
+}
+
 form{
   font-family: 'Montserrat', 'Regular', sans-serif;
   background-color: #f5f5f5;
   margin-left: 0;
 
-  label {
-    margin-left: getRem(19);
-    color: #e9a816;
-    margin-bottom: getRem(13);
+  .mdc-typography--paragraph {
+    margin-left: getRem(15);
+    margin-top: getRem(20);
+  }
+  .mdc-radio-field {
+    margin-left: getRem(68);
   }
   input {
-    color: black;
-    font-family: 'Montserrat', 'Regular', sans-serif;
-    background-color: #f5f5f5;
-    margin-left: getRem(19);
+    margin-left: getRem(68);
+    margin-right: getRem(1310);
   }
+}
+.button-circle {
+  width: getRem(80); height: getRem(80);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: getRem(15);
+  border-radius: 100%;
+  display: inline-block;
+  margin-left: getRem(20);
+
+}
+
+.button-circle {
+  background-size: cover;
+  background: url("../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
+  text-align: center;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  padding: getRem(5);
+
+  .overlay-button-circle {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+    &:hover .overlay-button-circle {
+      background-color: rgba(0,0,0, 0.25);
+    }
+    &:active .overlay-button-circle {
+      background-color: rgba(0,0,0, 0.25);
+    }
+
+}
+.button-circle .button {
+  width: getRem(74); height: getRem(74);
+  border-radius: 100%;
+}
+.material-icons{
+  color: white;
+  margin-top: getRem(25);
 }
