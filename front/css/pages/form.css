@@ -90,8 +90,7 @@
       flex-wrap: wrap;
       justify-content: space-around; }
       .bjv-form .form-choice .choice-list .choice-card {
-        margin-top: 1.5625rem;
-        margin-bottom: 1.5625rem;
+        margin: 1.5625rem;
         z-index: 10; }
         .bjv-form .form-choice .choice-list .choice-card .c-card-button--checked {
           background-color: var(--mdc-theme-confirm); }
@@ -131,6 +130,9 @@
     width: 100%; }
     .bjv-form .form-header > *:not(.form-checkout) {
       width: 50%; }
+  .bjv-form .form-choice .choice-list {
+    max-width: 75%;
+    margin: auto; }
   .bjv-form .form-landscape {
     display: block; }
     .bjv-form .form-landscape img {

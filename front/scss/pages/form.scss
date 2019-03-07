@@ -128,8 +128,7 @@
 			justify-content: space-around;
 
 			.choice-card {
-				margin-top: getRem(25);
-				margin-bottom: getRem(25);
+				margin: getRem(25);
 				z-index: 10;
 
 				.c-card-button--checked {
@@ -192,7 +191,10 @@
 		}
 
 		.form-choice {
-
+			.choice-list {
+				max-width: 75%;
+				margin: auto;
+			}
 		}
 
 		.form-landscape {

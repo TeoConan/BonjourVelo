@@ -22,14 +22,14 @@
     position: absolute;
     z-index: -1; }
 
-  input + label {
-    position: fixed;
+  header input + label {
+    position: absolute;
     top: 1.875rem;
     right: 2.5rem;
     height: 1.25rem;
     width: 0.9375rem;
     z-index: 5; }
-    input + label span {
+    header input + label span {
       position: absolute;
       width: 100%;
       height: 0.125rem;
@@ -39,49 +39,45 @@
       display: block;
       background: black;
       transition: .5s; }
-    input + label span:first-child {
+    header input + label span:first-child {
       top: 0.1875rem; }
-    input + label span:last-child {
+    header input + label span:last-child {
       top: 1rem; }
-
-  label:hover {
+  header label:hover {
     cursor: pointer; }
-
-  input:checked + label span {
+  header input:checked + label span {
     opacity: 0;
     top: 50%; }
-  input:checked + label span:first-child {
+  header input:checked + label span:first-child {
     opacity: 1;
     transform: rotate(405deg); }
-  input:checked + label span:last-child {
+  header input:checked + label span:last-child {
     opacity: 1;
     transform: rotate(-405deg); }
-
-  input ~ nav {
+  header input ~ nav {
     background: white;
     width: 100%;
     z-index: 3;
     transition: .5s;
     transition-delay: .5s;
     overflow: hidden; }
-    input ~ nav > .navigation-menu {
+    header input ~ nav > .navigation-menu {
       text-align: center;
       display: flex;
       flex-direction: column; }
-      input ~ nav > .navigation-menu > li {
+      header input ~ nav > .navigation-menu > li {
         opacity: 0; }
-        input ~ nav > .navigation-menu > li > a {
+        header input ~ nav > .navigation-menu > li > a {
           text-decoration: none;
           text-transform: uppercase;
           color: black;
           font-weight: 700;
           font-family: sans-serif;
           display: block; }
-
-  input:checked ~ nav {
+  header input:checked ~ nav {
     height: 100%;
     transition-delay: 0s; }
-    input:checked ~ nav > .navigation-menu > li {
+    header input:checked ~ nav > .navigation-menu > li {
       opacity: 1;
       transition-delay: .5s; } }
 nav {

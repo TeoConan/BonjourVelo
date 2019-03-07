@@ -22,8 +22,9 @@ h1 {
   z-index: -1;
 }
 
-  input + label {
-    position: fixed;
+header {
+    input + label {
+    position: absolute;
     top: getRem(30);
     right: getRem(40);
     height: getRem(20);
@@ -98,6 +99,8 @@ h1 {
       }
     }
   }
+}
+
 }
 nav {
   height: 5rem;
