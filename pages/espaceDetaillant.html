@@ -4,59 +4,210 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title></title>
-    <link rel="stylesheet" href="espaceDetaillant.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../front/css/pages/espaceDetaillant.css">
+    <link rel="stylesheet" href="../front/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="components.min.css">
+    <link rel="stylesheet" href="../front/css/components.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </head>
   <body>
 
-      <header>
-      <input id="burger" type="checkbox" />
-      <label for="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-      </label>
-      <nav>
-        <a href="#" id="logo"><img src="logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
-        <ul>
-          <li><a href="#">TROUVEZ VOTRE VELO</a></li>
-          <li><a href="#">MAGASINS DE VELOS</a></li>
-          <li><a href="#">ESPACE PRO</a></li>
-        </ul>
-      </nav>
-    </header>
+      <!-- <header>
+        <input id="burger" type="checkbox" />
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+          <a href="#" ><img class="navigation-logo" src="../res/Images/logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
+          <ul class="navigation-menu">
+            <li class="navigation-trouver-velo"><a href="#">trouvez votre velo</a></li>
+            <li class="navigation-magasins-velo"><a href="#">magasins de velo</a></li>
+            <li class="navigation-espace-pro"><a href="#">espace pro</a></li>
+          </ul>
+        </nav>
+      </header> -->
 
       <div class="second-viewport">
         <div class="left-part">
           <h2>Connexion</h2>
           <div class="form-connexion-revendeur">
             <form>
-              N° de SIRET<br>
-              <input type="text" name="nsiret" placeholder="Lorem ipsum"><br>
-              Mot de passe<br>
-              <input type="text" name="mdp" placeholder="Lorem ipsum">
-              <button type="button" name="button"> Connexion </button>
-            </form>
+              <div class="inscription-form">
+
+                <div class="mdc-text-field">
+                  <input type="text" id="thistwo" class="mdc-text-field__input">
+                  <label class="mdc-floating-label" for="thistwo">N° de SIRET</label>
+                  <div class="mdc-line-ripple"></div>
+                </div>
+                <div class="mdc-text-field mdc-text-field-2" id="input1">
+      				    <input type="text" id="thisone" class="mdc-text-field__input">
+      				    <label class="mdc-floating-label" for="thisone">Mot de passe</label>
+      				  <div class="mdc-line-ripple"></div>
+      				  </div>
+                <div class="inner-button">
+              <button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
+                <span class="mdc-button__label">Connexion</span>
+              </button>
+                </div>
+              </div>
+             </form>
           </div>
         </div>
         <div class="right-part">
           <h2>Inscription</h2>
           <div class="form-inscription-revendeur">
             <form>
-              N° de SIRET<br>
-              <input type="text" name="nsiret-connexion" placeholder="Numéro de siret"><br>
-              <button type="button" name="button"> > </button>
+              <div class="inscription-form">
+              <div class="mdc-text-field text-field demo-text-field-outlined-shaped mdc-text-field--outlined mdc-text-field--no-label">
+        				<input type="text" id="text-field-outlined" class="mdc-text-field__input" aria-label="Text field aria label" placeholder="N° de SIRET">
+        				<div class="mdc-notched-outline mdc-notched-outline--no-label">
+        					<div class="mdc-notched-outline__leading"></div>
+        					<div class="mdc-notched-outline__trailing"></div>
+        				</div>
+        			</div>
+              <div class="inner-button">
+                <button class="mdc-icon-button material-icons mdc-elevation--z3">chevron_right</button>              </div>
+              <div class="text-inscription">
+                <p>Indiquer nous votre numéro de siret <br> pour une inscription accélérée</p>
+              </div>
+            </div>
             </form>
-            <p>Indiquer nous votre numéro de siret <br> pour une inscription accélérée</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inscription-revendeur-v2">
+      <div class="insc-v2">
+        <div class="left-block-inscription">
+          <h2>Inscription</h2>
+          <div class="divider"></div>
+          <div class="contenu-inscription">
+            <div class="left-part-insc">
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">N° de SIRET</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Département</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Localité</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Nom</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Téléphone</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+            </div>
+            <div class="right-part-insc">
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Raison sociale</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Adresse</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Site web</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Prénom</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+              <div class="mdc-text-field">
+      				  <input type="text" id="thistwo" class="mdc-text-field__input">
+      				  <label class="mdc-floating-label" for="thistwo">Adresse E-mail</label>
+      				  <div class="mdc-line-ripple"></div>
+      				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-v2">
+        <div class="right-block-informations">
+          <h2>informations du magasins</h2>
+          <div class="divider"></div>
+          <div class="contenu-inscription">
+            <div class="left-content">
+              <div class="pp-revendeur">
+                <div class="c-circle-preview c-circle">
+                	<div class="c-circle__image" style="background-image: url(../res/images/photo-mag-1.jpg);"></div>
+                	<div class="overlay"></div>
+            		</div>
+                <p>Modifier la photo de profil de votre magasin</p>
+
+                <div class="pp-3">
+                  <img src="" alt="Photo du magasin (principale)">
+                </div>
+                <div class="pp-4">
+                  <img src="" alt="Photo du magasin (principale)">
+                </div>
+              </div>
+              <div class="info-horraire">
+                <div class="mdc-text-field">
+        				  <input type="text" id="thistwo" class="mdc-text-field__input">
+        				  <label class="mdc-floating-label" for="thistwo">Horraire d'ouverture</label>
+        				  <div class="mdc-line-ripple"></div>
+        				</div>
+                <div class="mdc-text-field">
+        				  <input type="text" id="thistwo" class="mdc-text-field__input">
+        				  <label class="mdc-floating-label" for="thistwo">Horraire de fermeture</label>
+        				  <div class="mdc-line-ripple"></div>
+        				</div>
+              </div>
+            </div>
+            <div class="right-content">
+              <div class="top-content">
+                <div class="mdc-text-field">
+        				  <input type="text" id="thistwo" class="mdc-text-field__input">
+        				  <label class="mdc-floating-label" for="thistwo">Nom</label>
+        				  <div class="mdc-line-ripple"></div>
+        				</div>
+                <div class="mdc-text-field">
+        				  <input type="text" id="thistwo" class="mdc-text-field__input">
+        				  <label class="mdc-floating-label" for="thistwo">Masse salariale</label>
+        				  <div class="mdc-line-ripple"></div>
+        				</div>
+              </div>
+              <div class="bottom-content">
+                <div class="mdc-text-field">
+        				  <input type="text" id="thistwo" class="mdc-text-field__input">
+        				  <label class="mdc-floating-label" for="thistwo">Marques des vélos vendus</label>
+        				  <div class="mdc-line-ripple"></div>
+        				</div>
+                <div class="mdc-text-field">
+        				  <input type="text" id="thistwo" class="mdc-text-field__input">
+        				  <label class="mdc-floating-label" for="thistwo">Type des vélos vendus</label>
+        				  <div class="mdc-line-ripple"></div>
+        				</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <script src="components.min.js"></script>
+    </div>
+      <script src="../front/js/components.js"></script>
 
     </body>
 
