@@ -1,112 +1,48 @@
-@charset "UTF-8";
-@media screen and (max-device-width: 640px) {
-  body {
-    background-color: #f5f5f5;
-    margin: 0 13px 0 13px;
-    /*type de vélo*/
-    /*rayon de recherche*/
-    /*liste de magasins*/
-    /* .magasins {
-		.cartes{
-			background-color: white;
-			img {
-				width: 600px;
-			}
-		}
-	} */ }
-    body h3 {
-      font-family: 'Heebo';
-      font-weight: bold;
-      font-size: 60px;
-      display: inline-block;
-      padding-bottom: 5px;
-      position: relative; }
-    body h4, body h5, body p {
-      font-family: 'Montserrat', sans-serif; }
-    body .typevelo {
-      background-color: white; }
-      body .typevelo img {
-        width: 500px; }
-    body .filtre img {
-      padding-top: 20px;
-      width: 100%; }
-    body .slidecontainer {
-      background-color: white;
-      height: 200px;
-      display: flex; }
-    body .slider {
-      margin: auto;
-      -webkit-appearance: none;
-      width: 100%;
-      height: 25px;
-      border-radius: 5px;
-      background: #d3d3d3;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s; }
-    body .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background: #E9A816;
-      cursor: pointer; } }
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 110 of scss/./pages/resultats.scss
 
-@media screen and (min-device-width: 641px) {
-  body {
-    /* 	background-color: #f5f5f5; */
-    margin-left: 480px;
-    margin-right: 438px;
-    /*type de vélo*/
-    /*rayon de recherche*/
-    /**/
-    /*liste de magasins*/
-    /* .magasins {
-		.cartes{
-			background-color: white;
-			img {
-				width: 300px;
-			}
-		}
-	} */ }
-    body h3 {
-      font-family: 'Heebo';
-      font-weight: bold;
-      font-size: 30px;
-      display: inline-block;
-      padding-bottom: 5px;
-      position: relative; }
-    body h4, body h5, body p {
-      font-family: 'Montserrat', sans-serif; }
-    body .typevelo {
-      background-color: white; }
-      body .typevelo img {
-        width: 250px; }
-    body .filtre img {
-      padding-top: 20px;
-      width: 100%; }
-    body .slidecontainer {
-      background-color: white;
-      height: 80px;
-      display: flex; }
-    body .slider {
-      margin: auto;
-      -webkit-appearance: none;
-      width: 100%;
-      height: 7px;
-      border-radius: 5px;
-      background: #d3d3d3;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s; }
-    body .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: #E9A816;
-      cursor: pointer; } }
+105: /**\/
+106: 
+107: 	}
+108: }
+
+Backtrace:
+scss/./pages/resultats.scss:110
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:690:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:421:in `media_directive'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:209:in `directive'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 110 of scss/./pages/resultats.scss\A \A 105: /**/\A 106: \A 107: 	}\A 108: }"; }

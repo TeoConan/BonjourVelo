@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1915.23 966.59">
+	<defs>
+		<style>
+			.cls-1{
+				fill:none;
+				clip-rule:evenodd;
+			}
+			.cls-2{
+				clip-path:url(#clip-path);
+			}
+		</style>
+		<clipPath id="clip-path" transform="translate(-31)">
+			<path id="Forme_1" data-name="Forme 1" class="cls-1" d="M165,654.69c148.41-42.4,504.82-35.64,636-139s78.67-213.42,186-334,307.87-201.86,493-170,282.31-25.86,272,1c.68-17.42,37.49,776.17,42,757l-1794-1S16.59,697.09,165,654.69Z"/>
+		</clipPath>
+	</defs>
+	<title>test1</title>
+	<g id="Calque_2" data-name="Calque 2">
+		<g id="Calque_1-2" data-name="Calque 1">
+			<g class="cls-2">
+				<image width="1920" height="969" transform="translate(0)" xlink:href="background-form.png"/>
+			</g>
+		</g>
+	</g>
+</svg>

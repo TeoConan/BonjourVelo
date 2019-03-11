@@ -1,16 +1,48 @@
-<link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../front/css/reset.css">
+	<link rel="stylesheet" href="../front/css/normalize.css">
+	<link rel="stylesheet" href="../front/css/components.min.css">
+	<link rel="stylesheet" href="../front/css/header.css">
+	<link rel="stylesheet" href="../front/css/pages/form.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
 <!-- Formulaire principal du site -->
 <!-- Code pour une question complexe à choix multiple -->
+<header>
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+  <nav>
+    <a href="#" ><img class="navigation-logo" src="../res/images/logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
+    <ul class="navigation-menu">
+      <li class="navigation-trouver-velo"><a href="#">trouvez votre velo</a></li>
+      <li class="navigation-magasins-velo"><a href="#">magasins de velo</a></li>
+      <li class="navigation-espace-pro"><a href="#">espace pro</a></li>
+    </ul>
+  </nav>
+</header>
 
 <div class="bjv-form">
+	<div class="background-color"></div>
+
 	<div class="inner">
 
 		<!-- Header formulaire : titre, question, description, checkout etc... -->
 		<div class="form-header">
 			<h2 class="form-title">Quelques questions pour trouver votre vélo...</h2>
 
-			<h3 class="form-subtitle">Que voulez-vous faire avec votre vélo ?</h3>
-			<p class="form-questiontype">Question à choix multiple</p>
+			<h3 class="form-question">Que voulez-vous faire avec votre vélo ?</h3>
+			<p class="form-question-type">Question à choix multiple (1/12)</p>
 
 			<p class="form-description">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat risus metus. Proin at arcu eu erat aliquet viverra. Morbi ac sem scelerisque, feugiat lectus eget, fermentum tortor. Morbi consequat congue tristique. Etiam mollis sit amet lacus vitae convallis.
@@ -20,57 +52,84 @@
 			<div class="form-checkout">
 				<ul class="checkout">
 					<li class="step step-1 step-start">
-						<img src="" class="step-start-icon"/>
-						<div class="dot"></div>
+						<div class="dot">
+							<img src="../res/icons/flag.svg" class="step-start-icon"/>
+						</div>
 						<div class="line"></div>
 					</li>
 					<li class="step step-2">
-						<img src="" class="step-progress-icon"/>
-						<div class="dot"></div>
+						<div class="dot">
+							<img src="../res/icons/vtt.svg" class="step-progress-icon"/>
+						</div>
 						<div class="line"></div>
 					</li>
 					<!-- ... -->
+					<li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li>
+					<!-- ... -->
 					<li class="step step-12 step-end">
-						<img src="" class="step-end-icon"/>
-						<div class="dot"></div>
-						<div class="line"></div>
+						<div class="dot">
+							<img src="../res/icons/trophy.svg" class="step-end-icon"/>
+						</div>
 					</li>
 				</ul>
 			</div>
+		</div>
 
-			<!-- Zone de sélection utilisateur -->
-			<div class="form-choice">
-				<div class="inner">
-					<ul class="choice-list">
-						<!-- Material component -->
-						<li class="choice-card card">
-							<img class="choice-image" src="" />
-							<div class="choice-content">
-								<p class="card-title">Vélo de course</p>
-								<p class="card-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-								<!-- Material component -->
-								<button class="card-confirm"></button>
-							</div>
-						</li>
-
-						<!-- ... -->
-					</ul>
-
-					<!-- Confirmation question -->
-					<div class="choice-confirm">
-						<!-- Material component -->
-						<button class="little-button step-back-button"></button>
-						<!-- Material component -->
-						<button class="step-confirm-button"></button>
+		<!-- Zone de sélection utilisateur -->
+		<div class="form-choice">
+			<ul class="choice-list">
+				<!-- Material component -->
+				<li class="choice-card">
+					<div class="mdc-card c-card--preset-3">
+						<img class="card-image" src="../res/images/bike.svg"/>
+						<h4 class="card-title">Vélo de course</h4>
+						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+						<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
+							<span class="mdc-button__label">Button</span>
+						</button>
 					</div>
-				</div>
+				</li>
 
-				<div class="form-landscape">
+				<li class="choice-card">
+					<div class="mdc-card c-card--preset-3">
+						<img class="card-image" src="../res/images/bike.svg"/>
+						<h4 class="card-title">Vélo de course</h4>
+						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+						<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
+							<span class="mdc-button__label">Button</span>
+						</button>
+					</div>
+				</li>
+
+				<li class="choice-card">
+					<div class="mdc-card c-card--preset-3">
+						<img class="card-image" src="../res/images/bike.svg"/>
+						<h4 class="card-title">Vélo de course</h4>
+						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
+						<button class="c-card-button--checked mdc-icon-button material-icons  mdc-elevation--z3">check</button>
+					</div>
+				</li>
+
+				<!-- ... -->
+
+				<div class="form-landscape noselect">
 					<!-- Shape & Background -->
 					<!-- À étudier -->
+					<img class="noselect" src="../res/images/background-shape-mobile-2.png" height="697px" width="1723px" />
 				</div>
-			</div>
+			</ul>
 		</div>
+
+		<!-- Confirmation question -->
+			<div class="choice-confirm">
+				<!-- Material component -->
+				<button class="mdc-icon-button material-icons step-back-button mdc-elevation--z3">chevron_left</button>
+				<!-- Material component -->
+				<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition step-confirm-button">
+					<span class="mdc-button__label">Continuer</span>
+				</button>
+			</div>
 	</div>
 </div>
+
+<script src="../front/js/components.js"></script>

@@ -1,5 +1,33 @@
-body {
-  background-color: green; }
-
 html {
   margin: 0; }
+
+
+/*  Debug style */
+body {
+	padding-top: 7rem;
+	background-color: red;
+}
+
+p, a, h1, h2, h3, h4 {
+	padding: 0;
+	margin: 0;
+}
+
+.debug-box-line {
+	display: flex;
+	flex-direction: column;
+	margin : 1rem 0.5rem 3rem;
+}
+
+.debug-box-line > .content {
+	display: flex;
+}
+
+.debug-box-line > .content > * {
+	margin : 0.5rem;
+}
+
+.debug-box-line > .content > .col {
+	display: flex;
+	flex-direction: column;
+}
