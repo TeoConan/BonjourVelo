@@ -4,8 +4,8 @@ body .second-viewport .left-part {
   text-align: center;
   background-repeat: no-repeat;
   text-align: center;
-  background-position: -90px;
-  background-size: 500px;
+  background-position: -60px;
+  background-size: cover !important;
   position: relative; }
   body .second-viewport .left-part .mdc-floating-label {
     color: var(--mdc-theme-primary); }
@@ -28,7 +28,7 @@ body .second-viewport .right-part {
   background-repeat: no-repeat;
   text-align: center;
   background-position: -90px;
-  background-size: 600px;
+  background-size: cover !important;
   position: relative; }
   body .second-viewport .right-part .form-inscription-revendeur p {
     color: white;
@@ -82,7 +82,8 @@ body .inscription-revendeur-v2 h2 {
   margin-left: 1rem;
   margin-top: 3rem; }
 body .inscription-revendeur-v2 .insc-v2 {
-  background-color: #eeeee; }
+  background-color: #eeeee;
+  text-align: center; }
   body .inscription-revendeur-v2 .insc-v2 .contenu-inscription {
     text-align: center; }
   body .inscription-revendeur-v2 .insc-v2 .mdc-text-field__input {
@@ -91,12 +92,33 @@ body .inscription-revendeur-v2 .insc-v2 {
     margin-top: 1rem; }
 body .inscription-revendeur-v2 .info-v2 {
   background-color: #f5f5f5;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 3rem; }
+  body .inscription-revendeur-v2 .info-v2 .contenu-inscription .insc-button {
+    margin-top: 3rem; }
+  body .inscription-revendeur-v2 .info-v2 .contenu-inscription .mdc-text-field.mdc-ripple-upgraded {
+    margin-top: 1rem; }
+  body .inscription-revendeur-v2 .info-v2 .contenu-inscription .mdc-text-field__input {
+    width: 18rem; }
   body .inscription-revendeur-v2 .info-v2 .right-block-informations h2 {
     padding-top: 3rem; }
+  body .inscription-revendeur-v2 .info-v2 .right-block-informations .modif-pp-revendeur {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
   body .inscription-revendeur-v2 .info-v2 .pp-revendeur {
     display: flex;
     flex-direction: column; }
+    body .inscription-revendeur-v2 .info-v2 .pp-revendeur .block-pp {
+      display: flex;
+      margin-bottom: 3rem; }
+    body .inscription-revendeur-v2 .info-v2 .pp-revendeur .pp-2 {
+      margin: auto; }
+    body .inscription-revendeur-v2 .info-v2 .pp-revendeur .pp-3 {
+      margin: auto;
+      margin-left: -.5rem;
+      margin-right: -.5rem; }
+    body .inscription-revendeur-v2 .info-v2 .pp-revendeur .pp-4 {
+      margin: auto; }
     body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle-preview.c-circle {
       margin: auto; }
     body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle {
@@ -111,7 +133,11 @@ body .inscription-revendeur-v2 .info-v2 {
         background-position: center; }
       body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle.c-circle-preview {
         width: 200px;
-        height: 200px; }
+        height: 200px;
+        margin-top: 3rem; }
+      body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle.c-circle-button {
+        width: 80px;
+        height: 80px; }
       body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle .overlay {
         position: absolute;
         height: 100%;
@@ -121,6 +147,18 @@ body .inscription-revendeur-v2 .info-v2 {
         transition: background-color 0.25s ease-in-out; }
       body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle:hover .overlay {
         background-color: rgba(0, 0, 0, 0.25); }
+  body .inscription-revendeur-v2 .info-v2 .info-horraire .mdc-text-field.mdc-ripple-upgraded {
+    width: 18rem; }
+  body .inscription-revendeur-v2 .info-v2 .right-content .mdc-text-field.mdc-ripple-upgraded {
+    width: 18rem; }
+body .insc-button {
+  margin-bottom: 3rem;
+  text-align: center; }
+  body .insc-button label {
+    font-family: Montserrat; }
+  body .insc-button .checkbox-accept {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
 
 @media screen and (min-width: 641px) {
   body .second-viewport {
@@ -133,8 +171,8 @@ body .inscription-revendeur-v2 .info-v2 {
       width: 50%;
       background-repeat: no-repeat;
       text-align: center;
-      background-position: -590px;
-      background-size: 1550px;
+      background-position: -300px;
+      background-size: cover;
       position: relative;
       margin: auto; }
     body .second-viewport .right-part {
@@ -145,7 +183,7 @@ body .inscription-revendeur-v2 .info-v2 {
       height: 100vh;
       width: 50%;
       background-position: -10px;
-      background-size: 1700px;
+      background-size: cover;
       position: relative;
       margin: auto; }
       body .second-viewport .right-part .form-inscription-revendeur p {
@@ -175,6 +213,60 @@ body .inscription-revendeur-v2 .info-v2 {
       transform: translate(-50%, -50%);
       white-space: nowrap; }
     body .second-viewport button {
-      display: flex; } }
+      display: flex; }
+
+  .inscription-revendeur-v2 {
+    display: flex; }
+    .inscription-revendeur-v2 .mdc-text-field__input {
+      border-bottom-color: var(--mdc-theme-primary) !important; }
+    .inscription-revendeur-v2 .insc-v2 {
+      margin: auto;
+      width: 50% !important; }
+      .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc {
+        display: flex;
+        text-align: center;
+        margin-top: 6rem; }
+        .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc .mdc-text-field.mdc-ripple-upgraded {
+          margin-bottom: 2rem; }
+        .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc .right-part-insc {
+          margin: auto; }
+        .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc .left-part-insc {
+          margin: auto; }
+    .inscription-revendeur-v2 .info-v2 {
+      margin: auto;
+      width: 50% !important;
+      background-color: white !important; }
+      .inscription-revendeur-v2 .info-v2 h2 {
+        margin-top: 5rem; }
+      .inscription-revendeur-v2 .info-v2 .contenu-inscription-info {
+        display: flex; }
+        .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .left-content {
+          margin: auto; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .left-content .info-horraire {
+            display: flex;
+            flex-direction: column;
+            margin-top: -2rem; }
+            .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .left-content .info-horraire .mdc-text-field.mdc-ripple-upgraded {
+              margin-bottom: 3rem; }
+        .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content {
+          margin: auto;
+          width: 18rem; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content .mdc-text-field.mdc-ripple-upgraded {
+            margin-bottom: 3rem; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content .top-content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 12.3rem; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content .bottom-content {
+            display: flex;
+            flex-direction: column; } }
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  body .inscription-revendeur-v2 .insc-v2 .mdc-text-field__input {
+    width: 11rem; }
+  body .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .mdc-text-field.mdc-ripple-upgraded {
+    width: 11rem; }
+  body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle.c-circle-button {
+    height: 60px;
+    width: 60px; } }
 
 /*# sourceMappingURL=espaceDetaillant.css.map */
