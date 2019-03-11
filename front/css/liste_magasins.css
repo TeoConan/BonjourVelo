@@ -24,8 +24,7 @@
     .magasins-resultat .c-card--preset-2 {
       width: 100%;
       margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1rem; }
+      margin-bottom: 1rem; }
       .magasins-resultat .c-card--preset-2 .card-image {
         display: none; } }
 @media screen and (min-width: 931px) {
@@ -51,8 +50,7 @@
     .magasins-resultat .c-card--preset-2 {
       width: 100%;
       margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1rem; }
+      margin-bottom: 1rem; }
       .magasins-resultat .c-card--preset-2 .card-image {
         height: 14rem;
         width: 22.5rem; } }
