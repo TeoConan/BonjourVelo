@@ -4,10 +4,6 @@ ERR - DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` 
 
 ERR - Entrypoint undefined = extract-text-webpack-plugin-output-filename
 x	Work as well ?
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
 
 /*
@@ -16,5 +12,3 @@ DELETE LINE 249 ".call(this, "?http://localhost:8080")" in component.js
 ".call(this, \"?http://localhost:8080\")"
 
 */
->>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
->>>>>>> master

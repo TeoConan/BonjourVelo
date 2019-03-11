@@ -145,52 +145,6 @@ img {
   .form-account-seller {
     font-family: 'Montserrat', 'Regular', sans-serif;
     background-color: #f5f5f5;
-    margin-left: 0; }
-    .form-account-seller .mdc-typography--paragraph {
-      margin-left: 0.9375rem;
-      margin-top: 1.25rem; }
-    .form-account-seller .mdc-radio-field {
-      margin-left: 4.25rem; }
-    .form-account-seller input {
-      margin-left: 4.25rem;
-      margin-right: 81.875rem; }
-    .form-account-seller .mdc-button {
-      margin-left: 7.125rem;
-      margin-top: 2.375rem; }
-  .button-circle-account-seller {
-    width: 5rem;
-    height: 5rem;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    margin: 0.9375rem;
-    border-radius: 100%;
-    display: inline-block;
-    margin-left: 1.25rem; }
-  .button-circle-account-seller {
-    background-size: cover;
-    background: url("../../../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
-    text-align: center;
-    background-size: cover;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 0.3125rem; }
-    .button-circle-account-seller .overlay-button-circle-account-seller {
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      position: absolute; }
-    .button-circle-account-seller:hover .overlay-button-circle-account-seller {
-      background-color: rgba(0, 0, 0, 0.25); }
-    .button-circle-account-seller:active .overlay-button-circle-account-seller {
-      background-color: rgba(0, 0, 0, 0.25); }
-  .button-circle-account-seller .button {
-    width: 4.625rem;
-    height: 4.625rem;
-    border-radius: 100%; }
-  .material-icons {
-    color: white;
-    margin-top: 1.5625rem; }
-  .type-account-seller .form-account-seller form .mdc-button-type-account-seller .mdc-button {
-    margin-left: 2.625rem; } }
+    margin-left: 1.1875rem; }
+
+/*# sourceMappingURL=account-seller.css.map */

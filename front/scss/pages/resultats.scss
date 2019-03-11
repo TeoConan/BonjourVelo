@@ -1,15 +1,17 @@
-@media screen and (max-device-width: 640px) {
+@import "../functions.scss";
+
+@media screen and (max-device-width: getRem(640)) {
 
 	body {
 	background-color: #f5f5f5;
-	margin: 0 13px 0 13px;
+	margin: 0 getRem(15) 0 getRem(15);
 
 	h3 {
 		font-family: 'Heebo';
 		font-weight: bold;
-		font-size: 60px;
+		font-size: getRem(25);
 		display: inline-block;
-    	padding-bottom: 5px;
+    	padding-bottom: getRem(5);
     	position: relative;
 	}
 
@@ -17,81 +19,44 @@
 		font-family: 'Montserrat', sans-serif;
 	}
 
-/*type de vélo*/
-
-	.typevelo{
-		background-color: white;
-		img{
-			width: 500px;
-		}
+/*carte type de velo*/
+	
+	.c-card--preset-1 {
+		padding-top: 0;
 	}
 
 /*rayon de recherche*/
 
 	.filtre {
 		img {
-			padding-top: 20px;
+			padding-top: getRem(20);
 			width: 100%;
 		}
-	}
-	.slidecontainer {
-		background-color: white;
-		height: 200px;
-		display: flex;
-	}
-
-	.slider {
-		 margin: auto;
-		 -webkit-appearance: none;
-		 width: 100%;
-		 height: 25px;
-		 border-radius: 5px;
-		 background: #d3d3d3;
-		 outline: none;
-		 opacity: 0.7;
-		 -webkit-transition: .2s;
-		 transition: opacity .2s;
-	}
-
-	.slider::-webkit-slider-thumb {
-		 -webkit-appearance: none;
-		 appearance: none;
-		 width: 70px;
-		 height: 70px;
-		 border-radius: 50%;
-	     background: #E9A816;
-		 cursor: pointer;
-	}
-
-/*liste de magasins*/
-
-	/* .magasins {
-		.cartes{
+		.mdc-card {
 			background-color: white;
-			img {
-				width: 600px;
-			}
+			border-radius: 2px;	
+
 		}
-	} */	
 
 	}
-}
+
+/*cartes magasins*/
 
 
 
-@media screen and (min-device-width: 641px) {
+@media screen and (min-device-width: getRem(641)) {
 
 	body {
 	/* 	background-color: #f5f5f5; */
-		margin-left : 480px;
-		margin-right: 438px;
+		margin-left : getRem(480);
+		margin-right: getRem(438);
 
 	h3 {
 		font-family: 'Heebo';
 		font-weight: bold;
-		font-size: 30px;
+		font-size: getRem(30);
 		display: inline-block;
-    	padding-bottom: 5px;
+    	padding-bottom: getRem(5);
     	position: relative;
 	}
 
@@ -99,27 +64,18 @@
 		font-family: 'Montserrat', sans-serif;
 	}
 
-/*type de vélo*/
-
-	.typevelo{
-		background-color: white;
-		img{
-			width: 250px;
-		}
-	} 
-
 
 /*rayon de recherche*/
 
 	.filtre {
 		img {
-			padding-top: 20px;
+			padding-top: getRem(20);
 			width: 100%;
 		}
 	}
 	.slidecontainer {
 		background-color: white;
-		height: 80px;
+		height: getRem(80);
 		display: flex;
 	}
 
@@ -127,8 +83,8 @@
 		 margin: auto;
 		 -webkit-appearance: none;
 		 width: 100%;
-		 height: 7px;
-		 border-radius: 5px;
+		 height: getRem(7);
+		 border-radius: getRem(5);
 		 background: #d3d3d3;
 		 outline: none;
 		 opacity: 0.7;
@@ -139,8 +95,8 @@
 	.slider::-webkit-slider-thumb {
 		 -webkit-appearance: none;
 		 appearance: none;
-		 width: 30px;
-		 height: 30px;
+		 width: getRem(30);
+		 height: getRem(30);
 		 border-radius: 50%;
 	     background: #E9A816;
 		 cursor: pointer;
@@ -148,16 +104,6 @@
 
 /**/
 
-/*liste de magasins*/
-
-	/* .magasins {
-		.cartes{
-			background-color: white;
-			img {
-				width: 300px;
-			}
-		}
-	} */
 	}
 }
 

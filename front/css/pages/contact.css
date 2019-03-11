@@ -1,0 +1,31 @@
+/* Functions */
+/* Without "rem" */
+/*  With "rem"  */
+/* Font face */
+@media screen and (max-device-width: 40rem) {
+  body .formulaire {
+    padding: 0 1rem 0 1rem; }
+    body .formulaire .mdc-form-field {
+      margin: 1.25rem 0 0 0;
+      width: 100%; }
+    body .formulaire .mdc-text-field--textarea {
+      margin: 3.4375rem 0 2.5rem 0; }
+    body .formulaire .button .mdc-button {
+      display: flex;
+      margin: auto; } }
+@media screen and (min-device-width: 40.0625rem) {
+  body {
+    margin-left: 30rem;
+    margin-right: 27.375rem; }
+    body .formulaire {
+      display: flex;
+      flex-direction: column; }
+      body .formulaire .mdc-form-field {
+        margin: 1.25rem 0 0 0;
+        width: 100%; }
+      body .formulaire .mdc-text-field--textarea {
+        margin: 3.4375rem 0 2.5rem 0; }
+      body .formulaire .button {
+        margin: auto; } }
+
+/*# sourceMappingURL=contact.css.map */
