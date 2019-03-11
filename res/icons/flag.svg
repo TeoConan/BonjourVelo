@@ -1,0 +1,16 @@
+<svg id="drapeau" xmlns="http://www.w3.org/2000/svg" width="18.844" height="28.844" viewBox="0 0 18.844 28.844">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed1c24;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #444;
+      }
+    </style>
+  </defs>
+  <path id="Forme_1" data-name="Forme 1" class="cls-1" d="M60.4,394.57V377l15.684,8.787Z" transform="translate(-57.25 -377)"/>
+  <rect id="Rectangle_arrondi_2" data-name="Rectangle arrondi 2" class="cls-2" width="3.281" height="28.844" rx="0.5" ry="0.5"/>
+</svg>
