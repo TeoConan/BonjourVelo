@@ -28,6 +28,9 @@
 	                                  supported by Chrome and Opera */
 }
 
+:root {
+	--mdc-theme-confirm : #4caf50;
+}
 
 
 /* Fonctionnal */
@@ -106,6 +109,10 @@ $mdc-icon-button-size-fill: 36 !default;
 
   &:not(:disabled) {
   	color: white;
+  }
+
+  &.mdc-icon-button--checked {
+  	background-color: var(--mdc-theme-confirm);
   }
 }
 

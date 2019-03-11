@@ -1,15 +1,15 @@
 require("../assets/stylesheets/scss/app.scss");
 
-var selectRipple = '.mdc-ripple';
-var selectButton = '.mdc-button';
-var selectIconButton = '.mdc-icon-button';
+var selectRipple = '.mdc-ripple:not(.no-ripple)';
+var selectButton = '.mdc-button:not(.no-ripple)';
+var selectIconButton = '.mdc-icon-button:not(.no-ripple)';
 var selectTextField = '.mdc-text-field';
 var selectHelperText = '.mdc-text-field-helper-text';
-var selectTextFieldIcon = '.mdc-text-field-icon';
+var selectTextFieldIcon = '.mdc-text-field-icon:not(.no-ripple)';
 var selectNotchedOutline = '.mdc-notched-outline';
-var selectFloatingLabel = '.mdc-floating-label';
+var selectFloatingLabel = '.mdc-floating-label:not(.no-ripple)';
 var selectSlider = '.mdc-slider';
-var selectPagination = '.c-pagination dot';
+var selectPagination = '.c-pagination dot:not(.no-ripple)';
 var selectRipple = [
 	selectRipple, selectButton, selectPagination
 	
