@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-body {
-  color: blue;
-  background-color: grey;
-}
-
-@import "@material/button/mdc-button";
-
-.foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
-=======
 /*  Debug style */
 body {
 	padding-top: 2rem;
@@ -43,7 +30,6 @@ body {
 
 
 =======
->>>>>>> 2722175ec6e3e2ec58c284e9d374371ca137e1cb
 @import "../css/demo-mdc.css";
 
 
@@ -374,10 +360,6 @@ $c-card-width--preset-2: getRem(1000);
 			top: 0;
 		}
 	}
-<<<<<<< HEAD
->>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
-}
-=======
 }
 
 /* Correction fullwidth */
@@ -470,4 +452,3 @@ $c-card-width--preset-2: getRem(1000);
 		}
 	}
 }
->>>>>>> 2722175ec6e3e2ec58c284e9d374371ca137e1cb
