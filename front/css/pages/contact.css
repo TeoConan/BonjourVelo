@@ -9,22 +9,34 @@
       margin: 1.25rem 0 0 0;
       width: 100%; }
     body .formulaire .mdc-text-field--textarea {
-      margin: 3.4375rem 0 2.5rem 0; }
+      margin: 3.4375rem 0 2.5rem 0;
+      width: 100%; }
     body .formulaire .button .mdc-button {
       display: flex;
       margin: auto; } }
 
-@media screen and (min-device-width: 40.0625rem) {
-  body {
-    margin-left: 30rem;
-    margin-right: 27.375rem; }
-    body .formulaire {
-      display: flex;
-      flex-direction: column; }
-      body .formulaire .mdc-form-field {
-        margin: 1.25rem 0 0 0;
-        width: 100%; }
-      body .formulaire .mdc-text-field--textarea {
-        margin: 3.4375rem 0 2.5rem 0; }
-      body .formulaire .button {
-        margin: auto; } }
+@media screen and (min-device-width: 48rem) {
+  body .formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem 0 10rem; }
+    body .formulaire .mdc-form-field {
+      margin: 1.25rem 0 0 0;
+      width: 100%; }
+    body .formulaire .mdc-text-field--textarea {
+      margin: 3.4375rem 0 2.5rem 0; }
+    body .formulaire .button {
+      margin: auto; } }
+
+@media screen and (min-device-width: 90rem) {
+  body .formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 0 28.6875rem 0 28.6875rem; }
+    body .formulaire .mdc-form-field {
+      margin: 1.25rem 0 0 0;
+      width: 100%; }
+    body .formulaire .mdc-text-field--textarea {
+      margin: 3.4375rem 0 2.5rem 0; }
+    body .formulaire .button {
+      margin: auto; } }

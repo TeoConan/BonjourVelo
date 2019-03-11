@@ -2,7 +2,6 @@
 
 @media screen and (max-device-width: getRem(640)) {
 	body{
-
 		.formulaire {
 			padding: 0 1rem 0 1rem;
 
@@ -13,6 +12,7 @@
 
 			.mdc-text-field--textarea {
 				margin: getRem(55) 0 getRem(40) 0;
+				width: 100%;
 			}
 
 			.button {
@@ -26,14 +26,38 @@
 	}
 }
 
-@media screen and (min-device-width: getRem(641)) {
+@media screen and (min-device-width: getRem(768)) {
 	body {
-		margin-left : getRem(480);
-		margin-right: getRem(438);
 
 		.formulaire {
 			display: flex;
         	flex-direction: column;
+        	padding: 0 getRem(160) 0 getRem(160);
+
+        	.mdc-form-field {
+				margin: getRem(20) 0 0 0;
+				width: 100%;
+			}
+
+			.mdc-text-field--textarea {
+				margin: getRem(55) 0 getRem(40) 0;
+			}
+
+        	.button {
+        		margin: auto;
+        	}
+		}
+	}
+
+}
+
+@media screen and (min-device-width: getRem(1440)) {
+	body {
+
+		.formulaire {
+			display: flex;
+        	flex-direction: column;
+        	padding: 0 getRem(459) 0 getRem(459);
 
         	.mdc-form-field {
 				margin: getRem(20) 0 0 0;

@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>Résultats</title>
 	<link rel="icon" type="image/png" href="" />
+	<link rel="stylesheet" href="../front/css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="../front/css/components.min.css">
@@ -14,11 +15,26 @@
 </head>
 
 <body>
+
+	 <div class="popup" id="popup" style="display: none">
+		<div class="inner">
+				<div class="title">
+					<h1>Électrique</h1>
+					<img src="../res/icons/cross-out.svg" id="close">
+				</div>
+				<div class="message">
+					<img src="../res/images/electrique.jpg" alt="electrique">
+					<p>Quisque scelerisque massa sit amet dapibus ultrices. Proin molestie cursus mi a iaculis. Vestibulum quis lacus sit amet tortor scelerisque ultrices id sed nibh. Vivamus mollis, magna at maximus faucibus, tellus odio placerat nunc, nec mollis massa risus vel neque. Quisque scelerisque massa sit amet dapibus ultrices. Proin molestie cursus mi a iaculis. Vestibulum quis lacus sit amet tortor scelerisque ultrices id sed nibh. Vivamus mollis, magna at maximus faucibus, tellus odio placerat nunc, nec mollis massa risus vel neque. Proin molestie cursus mi a iaculis. Vestibulum quis lacus sit amet tortor scelerisque ultrices id sed nibh. </p>
+				</div>	
+		</div>
+	</div> 
+
+
 	<div class="block-container">
 		<h3>3 résultats</h3>
 		<div class="typevelo">
 			
-			<div class="mdc-card c-card-fix c-card--preset-1">
+			<div class="mdc-card c-card-fix c-card--preset-1" id="linkpopup">
 				<div class="card-image" style="background-image: url('../res/images/electrique.jpg');"></div>
 				<h4 class="card-title">Electrique</h4>
 			</div>
@@ -115,5 +131,6 @@
 		</div>
 	</div>
 <script src="../front/js/components.js"></script>
+<script src="../front/js/popup.js"></script>
 </body>
 </html>

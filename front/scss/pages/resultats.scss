@@ -34,11 +34,14 @@
 		}
 		.mdc-card {
 			background-color: white;
-			border-radius: 2px;	
+			border-radius: getRem(2);	
 
 		}
 
 	}
+
+	}
+}
 
 /*cartes magasins*/
 
@@ -63,6 +66,68 @@
 	h4,h5,p {
 		font-family: 'Montserrat', sans-serif;
 	}
+
+	/*popup*/
+	.popup {
+		background-color: rgba(0,0,0,0.5);
+		position: fixed;
+    	z-index: 999;
+    	height: 100vh;
+   	 	width: 100vw;
+		top: 0; 
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	
+
+		.inner{
+			width: getRem(500);
+			background: #ffffff;
+			border-radius: getRem(8);
+			height: auto;
+			padding: 0 getRem(50);
+			z-index: 999;
+			position: fixed;
+			box-shadow: getRem(0) getRem(0) getRem(20) #00000054;
+			top: 50%;
+			transform: translate(-60%, -50%);
+			left: 50%;
+		
+			.title{
+				display: flex;
+				margin-bottom: getRem(20);
+    			margin-top: getRem(30);
+
+    			h1 {
+    				font-family: 'Heebo';
+    				text-align: center;
+    				margin: auto;
+    				font-size: getRem(22);
+    			}
+				img {
+					height: getRem(20);
+					width: getRem(20);
+					cursor: pointer;
+				}
+			}
+			.message{
+				margin-bottom: getRem(40);
+				img {
+					display: flex;
+					margin: auto;
+					width: getRem(500);
+					margin-bottom: getRem(40);
+				}
+				p {
+					text-align: justify;
+					line-height: getRem(22);
+				}
+			}
+		} 
+
+
+	}	
+
 
 
 /*rayon de recherche*/
