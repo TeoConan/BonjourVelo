@@ -6,9 +6,8 @@
   z-index: -1;
 }
 
-header {
-    input + label {
-    position: absolute;
+  input + label {
+    position: fixed;
     top: getRem(30);
     right: getRem(40);
     height: getRem(20);
@@ -82,8 +81,6 @@ header {
       }
     }
   }
-}
-
 }
 nav {
   height: 5rem;

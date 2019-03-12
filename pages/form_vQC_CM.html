@@ -15,22 +15,6 @@
 
 <!-- Formulaire principal du site -->
 <!-- Code pour une question complexe à choix multiple -->
-<header>
-  <input id="burger" type="checkbox" />
-  <label for="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-  </label>
-  <nav>
-    <a href="#" ><img class="navigation-logo" src="../res/images/logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
-    <ul class="navigation-menu">
-      <li class="navigation-trouver-velo"><a href="#">trouvez votre velo</a></li>
-      <li class="navigation-magasins-velo"><a href="#">magasins de velo</a></li>
-      <li class="navigation-espace-pro"><a href="#">espace pro</a></li>
-    </ul>
-  </nav>
-</header>
 
 <div class="bjv-form" id="bjvForm">
 	<div class="background-color"></div>
@@ -52,28 +36,23 @@
 			<div class="form-checkout">
 				<ul class="checkout">
 					<li class="step step-1 step-start">
-						<div class="dot">
-							<img src="../res/icons/flag.svg" class="step-start-icon"/>
-						</div>
+						<img src="" class="step-start-icon"/>
+						<div class="dot"></div>
 						<div class="line"></div>
 					</li>
 					<li class="step step-2">
-						<div class="dot">
-							<img src="../res/icons/vtt.svg" class="step-progress-icon"/>
-						</div>
+						<img src="" class="step-progress-icon"/>
+						<div class="dot"></div>
 						<div class="line"></div>
 					</li>
 					<!-- ... -->
-					<li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li><li class="step"><div class="dot"></div><div class="line"></div></li>
-					<!-- ... -->
 					<li class="step step-12 step-end">
-						<div class="dot">
-							<img src="../res/icons/trophy.svg" class="step-end-icon"/>
-						</div>
+						<img src="" class="step-end-icon"/>
+						<div class="dot"></div>
+						<div class="line"></div>
 					</li>
 				</ul>
 			</div>
-		</div>
 
 		<!-- Zone de sélection utilisateur -->
 		<div class="form-choice">
@@ -108,12 +87,18 @@
 					</div>
 				</li>
 
-				<!-- ... -->
+					<!-- Confirmation question -->
+					<div class="choice-confirm">
+						<!-- Material component -->
+						<button class="little-button step-back-button"></button>
+						<!-- Material component -->
+						<button class="step-confirm-button"></button>
+					</div>
+				</div>
 
-				<div class="form-landscape noselect">
+				<div class="form-landscape">
 					<!-- Shape & Background -->
 					<!-- À étudier -->
-					<img class="noselect" src="../res/images/background-shape-mobile-2.png" height="697px" width="1723px" />
 				</div>
 			</ul>
 		</div>
@@ -127,6 +112,7 @@
 					<span class="mdc-button__label">Continuer</span>
 				</button>
 			</div>
+		</div>
 	</div>
 </div>
 

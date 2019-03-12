@@ -1,78 +1,62 @@
 /* Functions */
-	/* Without "rem" */
+    /* Without "rem" */
 @function calculateRem($size) {
   $remSize: $size / 16;
   @return #{$remSize};
 }
-
-	/*  With "rem"  */
+    /*  With "rem"  */
 @function getRem($size) {
-	@return #{calculateRem($size)}rem;
+    @return #{calculateRem($size)}rem;
 }
-
 @mixin fontSize($size) {
   font-size: #{$size}px; //Fallback in px
   font-size: getRem($size);
 }
-
 @mixin fontFamily($family) {
-	font-family: '#{$family}', sans-serif;
+    font-family: '#{$family}', sans-serif;
 }
-
 @mixin noSelect() {
-	  -webkit-touch-callout: none; /* iOS Safari */
-	    -webkit-user-select: none; /* Safari */
-	     -khtml-user-select: none; /* Konqueror HTML */
-	       -moz-user-select: none; /* Firefox */
-	        -ms-user-select: none; /* Internet Explorer/Edge */
-	            user-select: none; /* Non-prefixed version, currently
-	                                  supported by Chrome and Opera */
+      -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
 }
-
-
 /* Font face */
-
 // =============================================================================
 // String Replace
 // =============================================================================
-
 @function str-replace($string, $search, $replace: "") {
-	$index: str-index($string, $search);
-
-	@if $index {
-		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-	}
-
-	@return $string;
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    @return $string;
 }
-
 // =============================================================================
 // Font Face
 // =============================================================================
-
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-	$src: null;
-
-	$extmods: (
-		eot: "?",
-		svg: "#" + str-replace($name, " ", "_")
-	);
-
-	$formats: (
-		otf: "opentype",
-		ttf: "truetype"
-	);
-
-	@each $ext in $exts {
-		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-	}
-
-	@font-face {
-		font-family: quote($name);
-		font-style: $style;
-		font-weight: $weight;
-		src: $src;
-	}
+    $src: null;
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_")
+    );
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
 }

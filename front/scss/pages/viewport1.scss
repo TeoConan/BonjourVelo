@@ -1,8 +1,10 @@
 @media screen and (max-device-width: 640px) {
 
+  body {
+
   .main-viewport {
     height: 100vh;
-    background-image: url(weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
+    background-image: url(../../../res/images/weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 2750px;
@@ -43,6 +45,8 @@
 
 
 
+  }
+
 }
 
 @media screen and (min-device-width: 641px) {
@@ -53,7 +57,7 @@ body {
 
   .main-viewport {
     height: 100vh;
-    background-image: url(weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
+    background-image: url(../../../res/images/weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 2000px;
@@ -83,8 +87,8 @@ body {
     left: 50%;
     transform: translate(-50%, 50%);
 
-    button {
-      background: #E9A816;
+    .mdc-button__label {
+      color: black;
     }
 
   }

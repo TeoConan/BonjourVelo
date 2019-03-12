@@ -13,6 +13,7 @@
     body .formulaire .button .mdc-button {
       display: flex;
       margin: auto; } }
+
 @media screen and (min-device-width: 40.0625rem) {
   body {
     margin-left: 30rem;
@@ -27,5 +28,3 @@
         margin: 3.4375rem 0 2.5rem 0; }
       body .formulaire .button {
         margin: auto; } }
-
-/*# sourceMappingURL=contact.css.map */
