@@ -82,10 +82,17 @@
     }
   }
 }
+
+
 nav {
-  height: 5rem;
+  height: 10vh;
   background-color: white;
   width: 100%;
+
+  & > a {
+    display: flex;
+  }
+
   .navigation-logo {
     margin: auto;
     display: flex;
@@ -124,7 +131,7 @@ nav {
     display: none;
   }
   nav {
-    height: 5rem;
+    height: 10vh;
     background-color: white;
     width: 100%;
     display: flex;
