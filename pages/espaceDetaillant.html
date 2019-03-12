@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr" >
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title></title>
-    <link rel="stylesheet" href="espaceDetaillant.css">
-    <link rel="stylesheet" href="reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="components.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link rel="stylesheet" href="../front/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="../front/css/components.min.css">
+  <link rel="stylesheet" href="../front/css/pages/espaceDetaillant.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  </head>
-  <body>
+</head>
+<body>
 
-      <header>
-      <input id="burger" type="checkbox" />
-      <label for="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-      </label>
-      <nav>
-        <a href="#" id="logo"><img src="logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
-        <ul>
-          <li><a href="#">TROUVEZ VOTRE VELO</a></li>
-          <li><a href="#">MAGASINS DE VELOS</a></li>
-          <li><a href="#">ESPACE PRO</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <input id="burger" type="checkbox" />
+    <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a href="#" ><img class="navigation-logo" src="../res/images/logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
+      <ul class="navigation-menu">
+        <li class="navigation-trouver-velo"><a href="#">trouvez votre velo</a></li>
+        <li class="navigation-magasins-velo"><a href="#">magasins de velo</a></li>
+        <li class="navigation-espace-pro"><a href="#">espace pro</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div class="second-viewport">
-        <div class="left-part">
-          <h2>Connexion</h2>
-          <div class="form-connexion-revendeur">
-            <form>
-              N° de SIRET<br>
-              <input type="text" name="nsiret" placeholder="Lorem ipsum"><br>
-              Mot de passe<br>
-              <input type="text" name="mdp" placeholder="Lorem ipsum">
-              <button type="button" name="button"> Connexion </button>
-            </form>
-          </div>
-        </div>
-        <div class="right-part">
-          <h2>Inscription</h2>
-          <div class="form-inscription-revendeur">
-            <form>
-              N° de SIRET<br>
-              <input type="text" name="nsiret-connexion" placeholder="Numéro de siret"><br>
-              <button type="button" name="button"> > </button>
-            </form>
-            <p>Indiquer nous votre numéro de siret <br> pour une inscription accélérée</p>
-          </div>
-        </div>
+  <div class="second-viewport">
+    <div class="left-part">
+      <h2>Connexion</h2>
+      <div class="form-connexion-revendeur">
+        <form>
+          N° de SIRET<br>
+          <input type="text" name="nsiret" placeholder="Lorem ipsum"><br>
+          Mot de passe<br>
+          <input type="text" name="mdp" placeholder="Lorem ipsum">
+          <button type="button" name="button"> Connexion </button>
+        </form>
       </div>
+    </div>
+    <div class="right-part">
+      <h2>Inscription</h2>
+      <div class="form-inscription-revendeur">
+        <form>
+          N° de SIRET<br>
+          <input type="text" name="nsiret-connexion" placeholder="Numéro de siret"><br>
+          <button type="button" name="button"> > </button>
+        </form>
+        <p>Indiquer nous votre numéro de siret <br> pour une inscription accélérée</p>
+      </div>
+    </div>
+  </div>
 
-      <script src="components.min.js"></script>
+  <script src="../front/js/components.js"></script>
 
-    </body>
+</body>
 
 </html>

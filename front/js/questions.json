@@ -1,0 +1,160 @@
+{
+	"version": 1,
+	"questions" : [
+
+		{
+			"position": 1,
+			"question": "Que voulez-vous faire avec votre vélo ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "radio",
+			"display": "card",
+			"additionnalClass" : "",
+			"canSkip": false,
+			"minChoices": 1,
+			"clientChoice": null,
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Me déplacer",
+					"additionnalClass" : "",
+					"subText": "Lorem ipsum dolor sit amet,",
+					"textButton": "default"
+				},
+				{
+					"position": 2,
+					"icon": "res/icons/river.svg",
+					"text": "Me balader",
+					"subText": "Lorem ipsum dolor sit amet,"
+				},
+				{
+					"position": 3,
+					"icon": "res/icons/soccer-player.svg",
+					"text": "Faire du sport",
+					"subText": "Lorem ipsum dolor sit amet,"
+				},
+				{
+					"position": 4,
+					"icon": "res/icons/beach.svg",
+					"text": "Voyager",
+					"subText": "Lorem ipsum dolor sit amet,"
+				}
+			]
+		},
+
+		{
+			"position": 2,
+			"question": "Dans le cadre d'un déplacement, quelle est la distance quotidienne envisagée ? (aller + retour)",
+			"subText": "Lorem ipsum dolor sit amet",
+			"type": "input",
+			"canSkip": true
+		},
+
+		{
+			"position": 3,
+			"question": "Dans le cadre d'un déplacement, allez-vous le combiner avec un autre moyen de transport ?",
+			"subText": "Lorem ipsum dolor sit amet",
+			"type": "radio",
+			"canSkip": false,
+			"choices": [
+				{
+					"position": 1,
+					"text": "Oui"
+				},
+				{
+					"position": 2,
+					"text": "Non"
+				}
+			]
+		},
+
+		{
+			"position": 4,
+			"question": "Quel type de moyen de transport combiné ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "checkbox",
+			"display": "card",
+			"require": "response 3.2",
+			"canSkip": false,
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Train"
+				},
+				{
+					"position": 2,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Tam"
+				},
+				{
+					"position": 3,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Bus"
+				},
+				{
+					"position": 4,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Métro"
+				},
+				{
+					"position": 5,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Voiture"
+				},
+				{
+					"position": 6,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Camping-car"
+				},
+				{
+					"position": 7,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Avion"
+				}
+			]
+		},
+
+		{
+			"position": 5,
+			"question": "Sur votre futur vélo, vous vous voyez plutôt comment ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "radio",
+			"display": "card",
+			"canSkip": false,
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Sportive route",
+					"subText": "Guidon de type \"dropbar\"",
+					"textButton": "default"
+				},
+				{
+					"position": 2,
+					"icon": "res/icons/river.svg",
+					"text": "Sportive fitness",
+					"subText": "Guidon de type \"flatbar\""
+				},
+				{
+					"position": 3,
+					"icon": "res/icons/soccer-player.svg",
+					"text": "Trekking / VTC",
+					"subText": "Lorem ipsum dolor sit amet,"
+				},
+				{
+					"position": 4,
+					"icon": "res/icons/beach.svg",
+					"text": "Confort",
+					"subText": "Un petit style \"moustache\" pour vous accompagner ?,"
+				},
+				{
+					"position": 5,
+					"icon": "res/icons/beach.svg",
+					"text": "Hollandais",
+					"subText": "Lorem ipsum dolor sit amet,"
+				}
+			]
+		}
+	]
+}
