@@ -408,6 +408,7 @@
 .inscription-revendeur-v2 {
   display: flex;
 
+
   .mdc-text-field__input {
     border-bottom-color: var(--mdc-theme-primary) !important;
   }
@@ -441,7 +442,6 @@
     .info-v2 {
       margin: auto;
       width: 50%!important;
-      background-color: white!important;
 
       h2 {
         margin-top: 5rem;
