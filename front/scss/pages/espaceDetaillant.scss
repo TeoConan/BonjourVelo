@@ -1,7 +1,6 @@
     body {
 
 
-
       .second-viewport {
 
 
@@ -12,7 +11,7 @@
           text-align: center;
           background-repeat: no-repeat;
           text-align: center;
-          background-position: -60px;
+          background-position: -30px;
           background-size: cover!important;
           position: relative;
 
@@ -168,10 +167,13 @@
         text-align: center;
         padding-bottom: 3rem;
 
+          }
+
         .contenu-inscription {
 
           .insc-button {
             margin-top: 3rem;
+
           }
 
           .mdc-text-field.mdc-ripple-upgraded {
@@ -313,12 +315,29 @@
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
 
+      }
+    }
+
+    .insc-button {
+
+
+      .checkbox-accept {
+        display: flex;
+
+        label {
+          margin: auto auto auto 0;
+
+        }
+
+        .mdc-checkbox {
+          margin: auto 0 auto auto;
+        }
 
       }
     }
 
 
-    }
+
 
 
 
@@ -339,7 +358,7 @@
         width: 50%;
         background-repeat: no-repeat;
         text-align: center;
-        background-position: -300px;
+        background-position: -290px;
         background-size: cover;
         position: relative;
         margin: auto;
@@ -492,8 +511,11 @@
     }
 
 
+  }
 
-}
+
+
+
 
 
 @media screen and (min-width: 600px) and (max-width: 1280px) {
