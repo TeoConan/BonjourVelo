@@ -63,31 +63,175 @@ img {
     display: none; }
   .background-profil-account {
     display: none; }
-  .account-seller-computer {
-    display: flex; }
-    .account-seller-computer .account-seller-card {
-      height: 33%;
-      margin: 15.625rem 15.1875rem;
-      margin-right: 50%;
-      flex-direction: column;
-      align-items: center; }
-      .account-seller-computer .account-seller-card .account-seller-card-one {
-        justify-content: center; }
-        .account-seller-computer .account-seller-card .account-seller-card-one .mdc-card .inner .card-title {
-          text-transform: uppercase; }
-  .card-image {
-    background: url("../../../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
-    display: block;
-    float: left;
+  /**
+  * Default border for card effect
+  *
+  * @type List
+  */
+  /**
+  * Clamp `$value` between `$min` and `$max`
+  *
+  * @param {Number} $value
+  * @param {Number} $min
+  * @param {Number} $max
+  *
+  * @return {Number}
+  */
+  /**
+  * Return a paper bottom-shadow
+  *
+  * @param {Number} $level - depth level
+  *
+  * @return {List}
+  */
+  /**
+  * Return a paper top-shadow
+  *
+  * @param {Number} $level - depth level
+  *
+  * @return {List}
+  */
+  /**
+  * Define a paper-like shadow
+  *
+  * @param {Number} $level (0) - depth level
+  *
+  * @requires {function} clamp
+  * @requires {function} paper-shadow-top
+  * @requires {function} paper-shadow-bottom
+  */
+  /**
+  * Define a paper border
+  *
+  * @param {List} $sides (())
+  *
+  * @requires {variable} $paper-card-border
+  */
+  /**
+  * Create a card effect
+  *
+  * @param {Number} $level - depth level
+  * @param {List} $sides - border sides
+  */
+  /**
+  * Size an element
+  *
+  * @param {Number} $width
+  * @param {Number} $height ($width)
+  */
+  /**
+  * Example
+  */
+  .card {
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    background: white;
+    width: 35rem;
+    height: 15.625rem;
     display: flex;
-    width: 9.375rem;
-    height: 9.375rem;
+    flex-direction: column;
+    padding: 3rem; }
+  .card--z-0 {
+    border: 1px solid #eee; }
+  .card--z-1 {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+    border: 1px solid #eee; }
+  .card--z-2 {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2);
+    border: 1px solid #eee; }
+  .card--z-3 {
+    box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19), 0 12px 15px rgba(0, 0, 0, 0.24);
+    border: 1px solid #eee; }
+  .card--animated {
+    animation: paper-card 5s infinite alternate; }
+  @keyframes paper-card {
+    30% {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26); }
+    60% {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2); }
+    100% {
+      box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19), 0 12px 15px rgba(0, 0, 0, 0.24); } }
+  .card .card-title {
+    text-transform: uppercase;
+    margin-top: -1rem; }
+  .raw {
+    display: flex; }
+  .column-1 {
+    width: 40%; }
+  .column-2 {
+    width: 60%; }
+  .profil-image-modification-computer {
+    background: url("../../../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
+    width: 0.9375rem;
+    height: 0.9375rem;
     border-radius: 50%;
-    background-size: cover; } }
+    background-size: cover;
+    margin-left: 5%;
+    padding: 5rem; }
+  .mdc-button-img-change {
+    box-sizing: border-box; }
+  .button-circle-account-seller {
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 1rem; }
+  .button-circle-account-seller {
+    background-size: cover;
+    background: url("../../../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
+    text-align: center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    padding: Rem(5); }
+    .button-circle-account-seller .overlay-button-circle-account-seller {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute; }
+    .button-circle-account-seller:hover .overlay-button-circle-account-seller {
+      background-color: rgba(0, 0, 0, 0.25); }
+    .button-circle-account-seller:active .overlay-button-circle-account-seller {
+      background-color: rgba(0, 0, 0, 0.25); }
+  .button-circle-account-seller .button {
+    border-radius: 100%; }
+  .material-icons {
+    color: white;
+    margin-top: 0.4375rem; }
+  .button-circle-account-seller-computer {
+    display: flex;
+    margin-top: 0.8125rem;
+    margin-left: 0.625rem; }
+  .input-information-magasin {
+    display: flex; }
+    .input-information-magasin input {
+      padding: 5rem 5rem 5rem 5rem; }
+  .mdc-text-field--textarea {
+    padding: 1rem 10rem 1rem 10rem;
+    width: 100%; }
+  .mdc-notched-outline {
+    height: 45%; }
+  .card--z-0 .card-title .raw {
+    display: flex; }
+  .column-g-1 {
+    width: 100%; }
+  .column-g-2 {
+    width: 100%; }
+  .mdc-radio-1 {
+    margin-left: -1rem; }
+  .mdc-radio-field {
+    margin-left: -2rem; }
+  .debug-box-line {
+    margin: 1rem .5rem 1.5rem; } }
 
+/* -------------------------------account-seller--------------------------------
+--------------------------------main-image-account-seller------------------------------------*/
 @media screen and (max-width: 640px) {
-  /* -------------------------------account-seller--------------------------------
-  --------------------------------main-image-account-seller------------------------------------*/
   .account-seller-computer {
     display: none; }
   .main-image-account-seller {
@@ -145,6 +289,52 @@ img {
   .form-account-seller {
     font-family: 'Montserrat', 'Regular', sans-serif;
     background-color: #f5f5f5;
-    margin-left: 1.1875rem; }
-
-/*# sourceMappingURL=account-seller.css.map */
+    margin-left: 0; }
+    .form-account-seller .mdc-typography--paragraph {
+      margin-left: 0.9375rem;
+      margin-top: 1.25rem; }
+    .form-account-seller .mdc-radio-field {
+      margin-left: 4.25rem; }
+    .form-account-seller input {
+      margin-left: 4.25rem;
+      margin-right: 81.875rem; }
+    .form-account-seller .mdc-button {
+      margin-left: 7.125rem;
+      margin-top: 2.375rem; }
+  .button-circle-account-seller {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 0.9375rem;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 1.25rem; }
+  .button-circle-account-seller {
+    background-size: cover;
+    background: url("../../../res/images/profilRevendeur/bicycle-1850008_1920.jpg");
+    text-align: center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.3125rem; }
+    .button-circle-account-seller .overlay-button-circle-account-seller {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute; }
+    .button-circle-account-seller:hover .overlay-button-circle-account-seller {
+      background-color: rgba(0, 0, 0, 0.25); }
+    .button-circle-account-seller:active .overlay-button-circle-account-seller {
+      background-color: rgba(0, 0, 0, 0.25); }
+  .button-circle-account-seller .button {
+    width: 4.625rem;
+    height: 4.625rem;
+    border-radius: 100%; }
+  .material-icons {
+    color: white;
+    margin-top: 1.5625rem; }
+  .type-account-seller .form-account-seller form .mdc-button-type-account-seller .mdc-button {
+    margin-left: 2.625rem; } }
