@@ -1,48 +1,73 @@
-/*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 110 of scss/./pages/resultats.scss
+/* Functions */
+/* Without "rem" */
+/*  With "rem"  */
+/* Font face */
+@media screen and (max-device-width: 40rem) {
+  body {
+    background-color: #f5f5f5;
+    margin: 0 0.9375rem 0 0.9375rem;
+    /*carte type de velo*/
+    /*rayon de recherche*/ }
+    body h3 {
+      font-family: 'Heebo';
+      font-weight: bold;
+      font-size: 1.5625rem;
+      display: inline-block;
+      padding-bottom: 0.3125rem;
+      position: relative; }
+    body h4, body h5, body p {
+      font-family: 'Montserrat', sans-serif; }
+    body .c-card--preset-1 {
+      padding-top: 0; }
+    body .filtre img {
+      padding-top: 1.25rem;
+      width: 100%; }
+    body .filtre .mdc-slider {
+      background-color: white;
+      border-radius: 2px; }
+      body .filtre .mdc-slider .mdc-slider__thumb-container {
+        color: #E9A816; } }
 
-105: /**\/
-106: 
-107: 	}
-108: }
-
-Backtrace:
-scss/./pages/resultats.scss:110
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:690:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:421:in `media_directive'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:209:in `directive'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 110 of scss/./pages/resultats.scss\A \A 105: /**/\A 106: \A 107: 	}\A 108: }"; }
+/*cartes magasins*/
+@media screen and (min-device-width: 40.0625rem) {
+  body {
+    /* 	background-color: #f5f5f5; */
+    margin-left: 30rem;
+    margin-right: 27.375rem;
+    /*rayon de recherche*/
+    /**/ }
+    body h3 {
+      font-family: 'Heebo';
+      font-weight: bold;
+      font-size: 1.875rem;
+      display: inline-block;
+      padding-bottom: 0.3125rem;
+      position: relative; }
+    body h4, body h5, body p {
+      font-family: 'Montserrat', sans-serif; }
+    body .filtre img {
+      padding-top: 1.25rem;
+      width: 100%; }
+    body .slidecontainer {
+      background-color: white;
+      height: 5rem;
+      display: flex; }
+    body .slider {
+      margin: auto;
+      -webkit-appearance: none;
+      width: 100%;
+      height: 0.4375rem;
+      border-radius: 0.3125rem;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s; }
+    body .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 1.875rem;
+      height: 1.875rem;
+      border-radius: 50%;
+      background: #E9A816;
+      cursor: pointer; } }
