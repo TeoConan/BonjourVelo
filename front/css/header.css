@@ -3,33 +3,18 @@
 /*  With "rem"  */
 /* Font face */
 @media screen and (min-width: 0px) and (max-width: 949px) {
-  h1 {
-    position: fixed;
-    top: 2.5rem;
-    left: 2.5rem;
-    z-index: 6;
-    font-size: 1.25rem;
-    font-weight: 900;
-    font-family: sans-serif;
-    text-transform: uppercase; }
-    h1 > span {
-      text-transform: none;
-      opacity: .5;
-      font-weight: 300;
-      font-size: 0.75rem; }
-
   #burger {
     position: absolute;
     z-index: -1; }
 
-  header input + label {
+  input + label {
     position: absolute;
     top: 1.875rem;
     right: 2.5rem;
     height: 1.25rem;
-    width: 0.9375rem;
-    z-index: 5; }
-    header input + label span {
+    z-index: 5;
+    width: 1.25rem; }
+    input + label span {
       position: absolute;
       width: 100%;
       height: 0.125rem;
@@ -39,51 +24,59 @@
       display: block;
       background: black;
       transition: .5s; }
-    header input + label span:first-child {
+    input + label span:first-child {
       top: 0.1875rem; }
-    header input + label span:last-child {
+    input + label span:last-child {
       top: 1rem; }
-  header label:hover {
+
+  label:hover {
     cursor: pointer; }
-  header input:checked + label span {
+
+  input:checked + label span {
     opacity: 0;
     top: 50%; }
-  header input:checked + label span:first-child {
+  input:checked + label span:first-child {
     opacity: 1;
     transform: rotate(405deg); }
-  header input:checked + label span:last-child {
+  input:checked + label span:last-child {
     opacity: 1;
     transform: rotate(-405deg); }
-  header input ~ nav {
+
+  input ~ nav {
     background: white;
     width: 100%;
     z-index: 3;
     transition: .5s;
     transition-delay: .5s;
-    overflow: hidden; }
-    header input ~ nav > .navigation-menu {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; }
+    input ~ nav > .navigation-menu {
       text-align: center;
       display: flex;
       flex-direction: column; }
-      header input ~ nav > .navigation-menu > li {
+      input ~ nav > .navigation-menu > li {
         opacity: 0; }
-        header input ~ nav > .navigation-menu > li > a {
+        input ~ nav > .navigation-menu > li > a {
           text-decoration: none;
           text-transform: uppercase;
           color: black;
           font-weight: 700;
           font-family: sans-serif;
           display: block; }
-  header input:checked ~ nav {
+
+  input:checked ~ nav {
     height: 100%;
     transition-delay: 0s; }
-    header input:checked ~ nav > .navigation-menu > li {
+    input:checked ~ nav > .navigation-menu > li {
       opacity: 1;
       transition-delay: .5s; } }
 nav {
   height: 5rem;
   background-color: white;
   width: 100%; }
+  nav > a {
+    display: flex; }
   nav .navigation-logo {
     margin: auto;
     display: flex; }
@@ -106,7 +99,7 @@ nav {
     nav .navigation-menu a:active {
       color: #e9a816; }
 
-@media screen and (min-width: 950px) and (max-width: 2400px) {
+@media screen and (min-width: 950px) {
   #burger {
     display: none; }
 

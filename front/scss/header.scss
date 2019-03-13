@@ -1,35 +1,18 @@
 @import "functions.scss";
 @media screen and (min-width: 0px) and (max-width: 949px) {
-h1 {
-  position: fixed;
-  top: 2.5rem;
-  left: 2.5rem;
-  z-index: 6;
-  font-size: getRem(20);
-  font-weight: 900;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  > span {
-    text-transform: none;
-    opacity: .5;
-    font-weight: 300;
-    font-size: getRem(12);
-  }
-}
 
 #burger {
   position: absolute;
   z-index: -1;
 }
 
-header {
-    input + label {
+  input + label {
     position: absolute;
     top: getRem(30);
     right: getRem(40);
     height: getRem(20);
-    width: getRem(15);
     z-index: 5;
+    width: 1.25rem;
     span {
       position: absolute;
       width: 100%;
@@ -72,6 +55,8 @@ header {
     transition: .5s;
     transition-delay: .5s;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     > .navigation-menu {
       text-align: center;
       display: flex;
@@ -101,11 +86,16 @@ header {
   }
 }
 
-}
+
 nav {
   height: 5rem;
   background-color: white;
   width: 100%;
+
+  & > a {
+    display: flex;
+  }
+
   .navigation-logo {
     margin: auto;
     display: flex;
@@ -139,7 +129,7 @@ nav {
     }
   }
 }
-@media screen and (min-width: 950px) and (max-width: 2400px) {
+@media screen and (min-width: 950px) {
   #burger {
     display: none;
   }

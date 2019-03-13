@@ -1,75 +1,197 @@
-@media screen and (max-width: 640px) {
-  body .second-viewport {
-    height: 100vh; }
-    body .second-viewport .left-part {
-      background-image: url(art-bicycle-bike-623919.jpg);
-      height: 50vh;
-      text-align: center;
+body .second-viewport .left-part {
+  background-image: url(../../../res/images/art-bicycle-bike-623919.jpg);
+  height: 45vh;
+  text-align: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: -30px;
+  background-size: cover !important;
+  position: relative; }
+  body .second-viewport .left-part .mdc-floating-label {
+    color: var(--mdc-theme-primary); }
+  body .second-viewport .left-part .mdc-text-field.mdc-text-field-2.mdc-ripple-upgraded {
+    margin-top: 1rem; }
+  body .second-viewport .left-part .inscription-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem; }
+  body .second-viewport .left-part .mdc-button.mdc-elevation--z3.mdc-elevation-transition {
+    margin: auto;
+    margin-top: 2rem; }
+  body .second-viewport .left-part .mdc-text-field__input {
+    border-bottom-color: var(--mdc-theme-primary) !important;
+    color: white; }
+body .second-viewport .right-part {
+  background-image: url(../../../res/images/bicycle-bike-close-up-1239402.jpg);
+  height: 45vh;
+  text-align: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: -90px;
+  background-size: cover !important;
+  position: relative; }
+  body .second-viewport .right-part .form-inscription-revendeur p {
+    color: white;
+    font-family: Montserrat;
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; }
+  body .second-viewport .right-part .form-inscription-revendeur .mdc-icon-button.material-icons.mdc-elevation--z3 {
+    background: #2D3037; }
+  body .second-viewport .right-part .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading {
+    border-color: white; }
+  body .second-viewport .right-part .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: white; }
+  body .second-viewport .right-part .inscription-form {
+    display: flex; }
+  body .second-viewport .right-part .mdc-notched-outline.mdc-notched-outline--no-label {
+    margin: auto; }
+  body .second-viewport .right-part .mdc-text-field.text-field.demo-text-field-outlined-shaped.mdc-text-field--outlined.mdc-text-field--no-label {
+    height: 2.33rem;
+    margin-right: 1rem; }
+  body .second-viewport .right-part .mdc-text-field__input {
+    padding-left: 1rem; }
+  body .second-viewport .right-part .inner-button {
+    margin: auto; }
+body .second-viewport h2 {
+  font-family: Montserrat;
+  color: white;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; }
+body .second-viewport form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; }
+body .second-viewport button {
+  display: flex; }
+body .inscription-revendeur-v2 h2 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 3rem; }
+body .inscription-revendeur-v2 .insc-v2 {
+  background-color: #eeeee;
+  text-align: center; }
+  body .inscription-revendeur-v2 .insc-v2 .contenu-inscription {
+    text-align: center; }
+  body .inscription-revendeur-v2 .insc-v2 .mdc-text-field__input {
+    width: 18rem; }
+  body .inscription-revendeur-v2 .insc-v2 .mdc-text-field.mdc-ripple-upgraded {
+    margin-top: 1rem; }
+body .inscription-revendeur-v2 .info-v2 {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-bottom: 3rem; }
+body .inscription-revendeur-v2 .contenu-inscription .insc-button {
+  margin-top: 3rem; }
+body .inscription-revendeur-v2 .contenu-inscription .mdc-text-field.mdc-ripple-upgraded {
+  margin-top: 1rem; }
+body .inscription-revendeur-v2 .contenu-inscription .mdc-text-field__input {
+  width: 18rem; }
+body .inscription-revendeur-v2 .right-block-informations h2 {
+  padding-top: 3rem; }
+body .inscription-revendeur-v2 .right-block-informations .modif-pp-revendeur {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+body .inscription-revendeur-v2 .pp-revendeur {
+  display: flex;
+  flex-direction: column; }
+  body .inscription-revendeur-v2 .pp-revendeur .block-pp {
+    display: flex;
+    margin-bottom: 3rem; }
+  body .inscription-revendeur-v2 .pp-revendeur .pp-2 {
+    margin: auto; }
+  body .inscription-revendeur-v2 .pp-revendeur .pp-3 {
+    margin: auto;
+    margin-left: -.5rem;
+    margin-right: -.5rem; }
+  body .inscription-revendeur-v2 .pp-revendeur .pp-4 {
+    margin: auto; }
+  body .inscription-revendeur-v2 .pp-revendeur .c-circle-preview.c-circle {
+    margin: auto; }
+  body .inscription-revendeur-v2 .pp-revendeur .c-circle {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative; }
+    body .inscription-revendeur-v2 .pp-revendeur .c-circle .c-circle__image {
       background-repeat: no-repeat;
-      text-align: center;
-      background-position: -90px;
-      background-size: 500px;
-      position: relative; }
-    body .second-viewport .right-part {
-      background-image: url(bicycle-bike-close-up-1239402.jpg);
-      height: 50vh;
-      text-align: center;
-      background-repeat: no-repeat;
-      text-align: center;
-      background-position: -90px;
-      background-size: 600px;
-      position: relative; }
-      body .second-viewport .right-part .form-inscription-revendeur p {
-        color: white;
-        font-family: Montserrat;
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        white-space: nowrap; }
-    body .second-viewport h2 {
-      font-family: Montserrat;
-      color: white;
-      font-size: 28px;
-      text-transform: uppercase;
-      text-align: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      background-position: center; }
+    body .inscription-revendeur-v2 .pp-revendeur .c-circle.c-circle-preview {
+      width: 200px;
+      height: 200px;
+      margin-top: 3rem; }
+    body .inscription-revendeur-v2 .pp-revendeur .c-circle.c-circle-button {
+      width: 80px;
+      height: 80px; }
+    body .inscription-revendeur-v2 .pp-revendeur .c-circle .overlay {
       position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap; }
-    body .second-viewport form {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap; }
-    body .second-viewport button {
-      display: flex; } }
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: background-color 0.25s ease-in-out; }
+    body .inscription-revendeur-v2 .pp-revendeur .c-circle:hover .overlay {
+      background-color: rgba(0, 0, 0, 0.25); }
+body .inscription-revendeur-v2 .info-horraire .mdc-text-field.mdc-ripple-upgraded {
+  width: 18rem; }
+body .inscription-revendeur-v2 .right-content .mdc-text-field.mdc-ripple-upgraded {
+  width: 18rem; }
+
+.insc-button {
+  margin-bottom: 3rem;
+  text-align: center; }
+  .insc-button label {
+    font-family: Montserrat; }
+  .insc-button .checkbox-accept {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+
+.insc-button .checkbox-accept {
+  display: flex; }
+  .insc-button .checkbox-accept label {
+    margin: auto auto auto 0; }
+  .insc-button .checkbox-accept .mdc-checkbox {
+    margin: auto 0 auto auto; }
+
 @media screen and (min-width: 641px) {
   body .second-viewport {
     height: 100vh;
     display: flex; }
     body .second-viewport .left-part {
-      background-image: url(art-bicycle-bike-623919.jpg);
+      background-image: url(../../../res/images/art-bicycle-bike-623919.jpg);
       text-align: center;
       height: 100vh;
       width: 50%;
       background-repeat: no-repeat;
       text-align: center;
-      background-position: -590px;
-      background-size: 1550px;
+      background-position: -290px;
+      background-size: cover;
       position: relative;
       margin: auto; }
     body .second-viewport .right-part {
-      background-image: url(bicycle-bike-close-up-1239402.jpg);
+      background-image: url(../../../res/images/bicycle-bike-close-up-1239402.jpg);
       text-align: center;
       background-repeat: no-repeat;
       text-align: center;
       height: 100vh;
       width: 50%;
       background-position: -10px;
-      background-size: 1700px;
+      background-size: cover;
       position: relative;
       margin: auto; }
       body .second-viewport .right-part .form-inscription-revendeur p {
@@ -79,7 +201,8 @@
         top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
-        white-space: nowrap; }
+        white-space: nowrap;
+        margin-top: 19rem; }
     body .second-viewport h2 {
       font-family: Montserrat;
       color: white;
@@ -98,169 +221,59 @@
       transform: translate(-50%, -50%);
       white-space: nowrap; }
     body .second-viewport button {
-      display: flex; } }
-@media screen and (min-width: 0px) and (max-width: 949px) {
-  html {
-    margin: 0;
-    padding: 0; }
+      display: flex; }
 
-  html body {
-    margin: 0;
-    padding: 0; }
-
-  html body input + label {
-    position: fixed;
-    top: 30px;
-    right: 40px;
-    height: 20px;
-    width: 15px;
-    z-index: 5; }
-
-  html body input + label span {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 50%;
-    margin-top: -1px;
-    left: 0;
-    display: block;
-    background: black;
-    transition: .5s; }
-
-  html body input + label span:first-child {
-    top: 3px; }
-
-  html body input + label span:last-child {
-    top: 16px; }
-
-  html body label:hover {
-    cursor: pointer; }
-
-  html body input:checked + label span {
-    opacity: 0;
-    top: 50%; }
-
-  html body input:checked + label span:first-child {
-    opacity: 1;
-    transform: rotate(405deg); }
-
-  html body input:checked + label span:last-child {
-    opacity: 1;
-    transform: rotate(-405deg); }
-
-  html body input ~ nav {
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3;
-    transition: .5s;
-    transition-delay: .5s;
-    overflow: hidden; }
-
-  html body input ~ nav > ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column; }
-
-  html body input ~ nav > ul > li {
-    opacity: 0; }
-
-  html body input ~ nav > ul > li > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 700;
-    font-family: sans-serif;
-    display: block; }
-
-  html body input:checked ~ nav {
-    height: 100%;
-    transition-delay: 0s; }
-
-  html body input:checked ~ nav > ul > li {
-    opacity: 1;
-    transition-delay: .5s; }
-
-  html nav {
-    height: 5rem;
-    background-color: white;
-    width: 100%; }
-
-  html nav img {
-    margin: auto;
-    margin-left: 4.6rem;
-    float: left; }
-
-  html nav ul {
-    height: 20rem;
-    float: right;
-    display: inline-flex;
-    margin: auto;
-    width: 100%; }
-
-  html nav ul li {
-    margin: auto;
-    list-style-type: none;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1rem; }
-
-  html nav ul li a {
-    color: black;
-    text-decoration: none;
-    margin: auto; }
-
-  html nav ul a:hover {
-    color: #e9a816; }
-
-  html nav ul a:active {
-    color: #e9a816; } }
-@media screen and (min-width: 950px) and (max-width: 2400px) {
-  html {
-    margin: 0;
-    padding: 0; }
-
-  html body {
-    margin: 0;
-    padding: 0; }
-
-  html body #burger {
-    display: none; }
-
-  html body nav {
-    height: 5rem;
-    background-color: white;
-    width: 100%; }
-
-  html body nav img {
-    margin: auto;
-    margin-left: 4.6rem;
-    float: left; }
-
-  html body nav ul {
-    height: 100%;
-    float: right;
-    display: inline-flex;
-    margin: auto;
-    margin-right: 4.6rem; }
-
-  html body nav ul li {
-    margin: auto;
-    list-style-type: none;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1rem;
-    margin-left: 3rem; }
-
-  html body nav ul li a {
-    color: black;
-    text-decoration: none;
-    margin: auto; }
-
-  html body nav ul a:hover {
-    color: #e9a816; }
-
-  html body nav ul a:active {
-    color: #e9a816; } }
+  .inscription-revendeur-v2 {
+    display: flex; }
+    .inscription-revendeur-v2 .mdc-text-field__input {
+      border-bottom-color: var(--mdc-theme-primary) !important; }
+    .inscription-revendeur-v2 .insc-v2 {
+      margin: auto;
+      width: 50% !important; }
+      .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc {
+        display: flex;
+        text-align: center;
+        margin-top: 6rem; }
+        .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc .mdc-text-field.mdc-ripple-upgraded {
+          margin-bottom: 2rem; }
+        .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc .right-part-insc {
+          margin: auto; }
+        .inscription-revendeur-v2 .insc-v2 .contenu-inscription-insc .left-part-insc {
+          margin: auto; }
+    .inscription-revendeur-v2 .info-v2 {
+      margin: auto;
+      width: 50% !important; }
+      .inscription-revendeur-v2 .info-v2 h2 {
+        margin-top: 5rem; }
+      .inscription-revendeur-v2 .info-v2 .contenu-inscription-info {
+        display: flex; }
+        .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .left-content {
+          margin: auto; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .left-content .info-horraire {
+            display: flex;
+            flex-direction: column;
+            margin-top: -2rem; }
+            .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .left-content .info-horraire .mdc-text-field.mdc-ripple-upgraded {
+              margin-bottom: 3rem; }
+        .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content {
+          margin: auto;
+          width: 18rem; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content .mdc-text-field.mdc-ripple-upgraded {
+            margin-bottom: 3rem; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content .top-content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 12.3rem; }
+          .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .right-content .bottom-content {
+            display: flex;
+            flex-direction: column; } }
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  body .inscription-revendeur-v2 .insc-v2 .mdc-text-field__input {
+    width: 11rem; }
+  body .inscription-revendeur-v2 .info-v2 .contenu-inscription-info .mdc-text-field.mdc-ripple-upgraded {
+    width: 11rem; }
+  body .inscription-revendeur-v2 .info-v2 .pp-revendeur .c-circle.c-circle-button {
+    height: 60px;
+    width: 60px; } }
 
 /*# sourceMappingURL=espaceDetaillant.css.map */

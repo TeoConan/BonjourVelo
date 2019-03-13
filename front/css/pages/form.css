@@ -6,6 +6,8 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 3.125rem; }
+  .bjv-form .inner {
+    padding-top: 2rem; }
   .bjv-form .background-color {
     position: absolute;
     height: 100%;

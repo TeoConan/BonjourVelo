@@ -5,6 +5,10 @@
 	overflow: hidden;
 	padding-bottom: getRem(50);
 
+	.inner {
+		padding-top: getRem(32);
+	}
+
 	.background-color {
 		position: absolute;
 		height: 100%;

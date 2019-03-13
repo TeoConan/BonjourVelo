@@ -1,48 +1,22 @@
-<<<<<<< HEAD
-require("../assets/stylesheets/app.scss");
-=======
 require("../assets/stylesheets/scss/app.scss");
 
-var selectRipple = '.mdc-ripple:not(.no-ripple)';
-var selectButton = '.mdc-button:not(.no-ripple)';
-var selectIconButton = '.mdc-icon-button:not(.no-ripple)';
+var selectButton = '.mdc-button';
 var selectTextField = '.mdc-text-field';
 var selectHelperText = '.mdc-text-field-helper-text';
-var selectTextFieldIcon = '.mdc-text-field-icon:not(.no-ripple)';
+var selectTextFieldIcon = '.mdc-text-field-icon';
 var selectNotchedOutline = '.mdc-notched-outline';
-var selectFloatingLabel = '.mdc-floating-label:not(.no-ripple)';
+var selectFloatingLabel = '.mdc-floating-label';
 var selectSlider = '.mdc-slider';
-var selectPagination = '.c-pagination dot:not(.no-ripple)';
-var selectRipple = [
-	selectRipple, selectButton, selectPagination
-	
-];
-
-import {MDCRipple} from '@material/ripple';
-/* Ripple */
-for (var i =0;i < selectRipple.length; i++) {
-	console.log("Ripple " + selectRipple[i]);
-	if ($(selectRipple[i]).length) {
-		$(selectButton).each(function( index ) {
-		  	new MDCRipple(this);
-		});
-	}
-}
-	
-
 
 /* Buttons */
+import {MDCRipple} from '@material/ripple';
 if ($(selectButton).length) {
-	var buttons = [];
-	var mdcButtons = [];
-	$(selectButton).each(function( index ) {
-	  	buttons[index] = this;
-	  	mdcButtons[index] = new MDCRipple(this);
-	});
+	const buttonRipple = new MDCRipple(document.querySelector(selectButton));
 }
 
 /* Script inputbox */
 import {MDCTextField} from '@material/textfield';
+
 if ($(selectTextField).length) {
 	var textFields = [];
 	var mdcTextFields = [];
@@ -86,7 +60,3 @@ if ($(selectSlider).length) {
 	});
 }
 <<<<<<< HEAD
-
->>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
-=======
->>>>>>> 2722175ec6e3e2ec58c284e9d374371ca137e1cb

@@ -5,8 +5,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="page-index.css">
-	<link rel="stylesheet" href="bundle.css">
+	<link rel="stylesheet" href="../front/css/pages/espaceDetaillant.css">
+	<link rel="stylesheet" href="../front/css/components.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -32,11 +32,6 @@
 			<!-- COMPONENT FAB -->
 			<!-- Pour modifier l'icône, changer le "favorite" par le nom de l'icône -->
 			<button class="mdc-icon-button material-icons mdc-elevation--z3">favorite</button>
-			<!-- COMPONENT FAB -->
-
-			<!-- COMPONENT FAB CONFIRM -->
-			<!-- Pour modifier l'icône, changer le "favorite" par le nom de l'icône -->
-			<button class="mdc-icon-button material-icons mdc-icon-button--checked mdc-elevation--z3">favorite</button>
 			<!-- COMPONENT FAB -->
 		</div>
 
@@ -186,43 +181,6 @@
 
 	<div class="debug-box-line">
 		<div class="mdc-typography">
-			<p class="mdc-typography--paragraph">Checkbox</p>
-		</div>
-
-		<div class="content">
-			<!-- COMPONENT PAGINATION -->
-			<div class="c-pagination" style="margin: 0 auto;">
-				<div class="pagination-control pagination--previous">
-					<a href="#"><img src="chevron-left.svg"></a>
-				</div>
-				<ul class="indexation">
-					<li>
-						<a class="dot">
-							<p class="mdc-typography--paragraph">4</p>
-						</a>
-					</li>
-					<li>
-						<a class="dot">
-							<p class="mdc-typography--paragraph">5</p>
-						</a>
-					</li>
-					<li>
-						<a class="dot">
-							<p class="mdc-typography--paragraph">6</p>
-						</a>
-					</li>
-				</ul>
-				<div class="pagination-control pagination--next">
-					<a href="#"><img src="chevron-right.svg"></a>
-				</div>
-			</div>
-			<!-- COMPONENT PAGINATION -->
-		</div>
-	</div>
-
-
-	<div class="debug-box-line">
-		<div class="mdc-typography">
 			<p class="mdc-typography--paragraph">Inputbox</p>
 		</div>
 
@@ -233,7 +191,7 @@
 				<!-- Input 1 -->
 				<div class="mdc-text-field">
 				  <input type="text" id="thistwo" class="mdc-text-field__input">
-				  <label class="mdc-floating-label" for="thistwo">One input</label>
+				  <label class="mdc-floating-label" for="thistwo">Rolololo</label>
 				  <div class="mdc-line-ripple"></div>
 				</div>
 				<!-- Input 1 -->
@@ -246,7 +204,7 @@
 				<!-- Input 1 -->
 				<div class="mdc-text-field mdc-text-field-2" id="input1">
 				  <input type="text" id="thisone" class="mdc-text-field__input">
-				  <label class="mdc-floating-label" for="thisone">Second input</label>
+				  <label class="mdc-floating-label" for="thisone">Nanananana</label>
 				  <div class="mdc-line-ripple"></div>
 				</div>
 				<!-- Input 1 -->
@@ -362,23 +320,7 @@
 		</div>
 	</div>
 
-	<div class="debug-box-line">
-		<div class="mdc-typography">
-			<p class="mdc-typography--paragraph">Inputbox rounded full width</p>
-		</div>
-
-		<div class="content">
-			<!-- COMPONENT INPUT OUTLINED SHAPED -->
-			<div class="mdc-text-field mdc-text-field--fullwidth">
-				<input type="text" id="thistwo" class="mdc-text-field__input">
-				<label class="mdc-floating-label" for="thistwo">Nom</label>
-				<div class="mdc-line-ripple"></div>
-			</div>
-			<!-- COMPONENT INPUT OUTLINED SHAPED -->
-		</div>
-	</div>
-
-	<div class="debug-box-line">
+		<div class="debug-box-line">
 		<div class="mdc-typography">
 			<p class="mdc-typography--paragraph">Slider</p>
 		</div>
@@ -408,33 +350,23 @@
 	</div>
 
 	<div class="debug-box-line">
-		<div class="mdc-typography">
-			<p class="mdc-typography--paragraph">Slider</p>
-		</div>
-
-		<div class="content">
-			<!-- COMPONENT SLIDER -->
-			<div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider"
-			     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-			     aria-label="Select Value">
-			  <div class="mdc-slider__track-container">
-			    <div class="mdc-slider__track"></div>
-			  </div>
-			  <div class="mdc-slider__thumb-container">
-			    <div class="mdc-slider__pin">
-			      <span class="mdc-slider__pin-value-marker"></span>
-			    </div>
-			    <svg class="mdc-slider__thumb" width="21" height="21">
-			      <circle cx="10.5" cy="10.5" r="7.875"></circle>
-			    </svg>
-			    <div class="mdc-slider__focus-ring"></div>
-			  </div>
-			</div>
-			<!-- COMPONENT SLIDER -->
-		</div>
+	<div class="mdc-typography">
+		<p class="mdc-typography--paragraph">Profil picture</p>
 	</div>
 
-<script src="bundle.js"></script>
+	<div class="content">
+		<!-- Profil <picture> -->
+
+		<div class="c-circle-preview c-circle">
+    	<div class="c-circle__image" style="background-image: url(../res/images/photo-mag-1.jpg);"></div>
+    	<div class="overlay"></div>
+		</div>
+
+
+	</div>
+</div>
+
+<script src="../front/js/components.js"></script>
 </body>
 
 </html>

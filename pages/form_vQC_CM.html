@@ -6,7 +6,7 @@
   	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../front/css/reset.css">
 	<link rel="stylesheet" href="../front/css/normalize.css">
-	<link rel="stylesheet" href="../front/css/components.min.css">
+	<link rel="stylesheet" href="../front/css/components.css">
 	<link rel="stylesheet" href="../front/css/header.css">
 	<link rel="stylesheet" href="../front/css/pages/form.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,7 +32,7 @@
   </nav>
 </header>
 
-<div class="bjv-form">
+<div class="bjv-form" id="bjvForm">
 	<div class="background-color"></div>
 
 	<div class="inner">
@@ -41,10 +41,10 @@
 		<div class="form-header">
 			<h2 class="form-title">Quelques questions pour trouver votre vélo...</h2>
 
-			<h3 class="form-question">Que voulez-vous faire avec votre vélo ?</h3>
-			<p class="form-question-type">Question à choix multiple (1/12)</p>
+			<h3 class="form-question" id="formTitle">Que voulez-vous faire avec votre vélo ?</h3>
+			<p class="form-question-type" id="formType">Question à choix multiple (1/12)</p>
 
-			<p class="form-description">
+			<p class="form-description" id="formDescr">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat risus metus. Proin at arcu eu erat aliquet viverra. Morbi ac sem scelerisque, feugiat lectus eget, fermentum tortor. Morbi consequat congue tristique. Etiam mollis sit amet lacus vitae convallis.
 			</p>
 
@@ -84,9 +84,7 @@
 						<img class="card-image" src="../res/images/bike.svg"/>
 						<h4 class="card-title">Vélo de course</h4>
 						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
-						<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
-							<span class="mdc-button__label">Button</span>
-						</button>
+						<button class="c-toggle-button no-ripple c-card-button material-icons mdc-elevation--z3 mdc-button">Confirmer</button>
 					</div>
 				</li>
 
@@ -95,9 +93,7 @@
 						<img class="card-image" src="../res/images/bike.svg"/>
 						<h4 class="card-title">Vélo de course</h4>
 						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
-						<button class="c-card-button mdc-button mdc-elevation--z3 mdc-elevation-transition">
-							<span class="mdc-button__label">Button</span>
-						</button>
+						<button class="c-toggle-button no-ripple c-card-button material-icons mdc-elevation--z3 mdc-button">Confirmer</button>
 					</div>
 				</li>
 
@@ -106,7 +102,9 @@
 						<img class="card-image" src="../res/images/bike.svg"/>
 						<h4 class="card-title">Vélo de course</h4>
 						<p class="card-subtitle">Lorem ipsul dolor sit amet, consectetur adapiscing elit.</p>
-						<button class="c-card-button--checked mdc-icon-button material-icons  mdc-elevation--z3">check</button>
+						<button checked="checked" class="c-toggle-button no-ripple c-card-button c-card-button--checked mdc-icon-button--checked mdc-icon-button material-icons  mdc-elevation--z3">check
+							<span class="mdc-button__label" style="display: none;">Button</span>
+						</button>
 					</div>
 				</li>
 
@@ -123,9 +121,9 @@
 		<!-- Confirmation question -->
 			<div class="choice-confirm">
 				<!-- Material component -->
-				<button class="mdc-icon-button material-icons step-back-button mdc-elevation--z3">chevron_left</button>
+				<button class="mdc-icon-button material-icons step-back-button mdc-elevation--z3" id="formStepBack">chevron_left</button>
 				<!-- Material component -->
-				<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition step-confirm-button">
+				<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition step-confirm-button" id="formConfirm">
 					<span class="mdc-button__label">Continuer</span>
 				</button>
 			</div>
@@ -133,3 +131,4 @@
 </div>
 
 <script src="../front/js/components.js"></script>
+<script src="../front/js/form.js"></script>

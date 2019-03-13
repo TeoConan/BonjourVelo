@@ -1,7 +1,0 @@
-@import "functions.scss";
-
-p {
-	@include fontSize(16);
-	line-height: getRem(18);
-	@include fontFamily('Montserrat');
-}
