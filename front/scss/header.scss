@@ -7,11 +7,12 @@
 }
 
   input + label {
-    position: fixed;
+    position: absolute;
     top: getRem(30);
     right: getRem(40);
     height: getRem(20);
     z-index: 5;
+    width: 1.25rem;
     span {
       position: absolute;
       width: 100%;
@@ -54,6 +55,8 @@
     transition: .5s;
     transition-delay: .5s;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     > .navigation-menu {
       text-align: center;
       display: flex;
@@ -85,7 +88,7 @@
 
 
 nav {
-  height: 10vh;
+  height: 5rem;
   background-color: white;
   width: 100%;
 
@@ -126,12 +129,12 @@ nav {
     }
   }
 }
-@media screen and (min-width: 950px) and (max-width: 2400px) {
+@media screen and (min-width: 950px) {
   #burger {
     display: none;
   }
   nav {
-    height: 10vh;
+    height: 5rem;
     background-color: white;
     width: 100%;
     display: flex;

@@ -39,27 +39,19 @@
       footer .right-col .reseau-titre {
         text-align: center;
         margin-top: 2rem; }
-      footer .right-col .reseaux li a:hover path {
-        fill: #e9a816; }
-      footer .right-col .reseaux li a:active {
-        fill: #e9a816; }
-      footer .right-col .reseaux .reseau-haut {
+      footer .right-col .reseaux {
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
         margin: auto; }
-        footer .right-col .reseaux .reseau-haut .social-link {
+        footer .right-col .reseaux .social-link {
           height: 3rem;
           margin-right: 1rem;
           margin-left: 1rem; }
-      footer .right-col .reseaux .reseau-bas {
-        list-style-type: none;
-        display: flex;
-        margin-top: 1rem;
-        padding-left: 3rem; }
-        footer .right-col .reseaux .reseau-bas .social-link {
-          height: 3rem;
-          margin-right: 1rem;
-          margin-left: 1rem; } }
+        footer .right-col .reseaux li a:hover path {
+          fill: #e9a816; }
+        footer .right-col .reseaux li a:active {
+          fill: #e9a816; } }
 footer .reseaux li {
   width: 60px; }
 
@@ -126,23 +118,12 @@ footer .reseaux li {
       footer .right-col .reseaux {
         display: flex;
         flex-wrap: wrap; }
+        footer .right-col .reseaux .social-link {
+          margin-right: 1rem;
+          margin-left: 1rem; }
         footer .right-col .reseaux li a:hover path {
           fill: #e9a816; }
         footer .right-col .reseaux li a:active {
-          fill: #e9a816; }
-        footer .right-col .reseaux .reseau-haut {
-          list-style-type: none;
-          display: flex;
-          margin-bottom: 1rem; }
-          footer .right-col .reseaux .reseau-haut .social-link {
-            margin-right: 1rem;
-            margin-left: 1rem; }
-        footer .right-col .reseaux .reseau-bas {
-          list-style-type: none;
-          display: flex; }
-          footer .right-col .reseaux .reseau-bas .social-link {
-            margin-left: 3rem;
-            margin-right: 1rem;
-            margin-left: 1rem; } }
+          fill: #e9a816; } }
 
 /*# sourceMappingURL=footer.css.map */

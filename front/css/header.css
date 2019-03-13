@@ -8,11 +8,12 @@
     z-index: -1; }
 
   input + label {
-    position: fixed;
+    position: absolute;
     top: 1.875rem;
     right: 2.5rem;
     height: 1.25rem;
-    z-index: 5; }
+    z-index: 5;
+    width: 1.25rem; }
     input + label span {
       position: absolute;
       width: 100%;
@@ -47,7 +48,9 @@
     z-index: 3;
     transition: .5s;
     transition-delay: .5s;
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; }
     input ~ nav > .navigation-menu {
       text-align: center;
       display: flex;
@@ -69,7 +72,7 @@
       opacity: 1;
       transition-delay: .5s; } }
 nav {
-  height: 10vh;
+  height: 5rem;
   background-color: white;
   width: 100%; }
   nav > a {
@@ -96,12 +99,12 @@ nav {
     nav .navigation-menu a:active {
       color: #e9a816; }
 
-@media screen and (min-width: 950px) and (max-width: 2400px) {
+@media screen and (min-width: 950px) {
   #burger {
     display: none; }
 
   nav {
-    height: 10vh;
+    height: 5rem;
     background-color: white;
     width: 100%;
     display: flex; }
