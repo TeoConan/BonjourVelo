@@ -1,21 +1,5 @@
 @import "functions.scss";
 @media screen and (min-width: 0px) and (max-width: 949px) {
-h1 {
-  position: fixed;
-  top: 2.5rem;
-  left: 2.5rem;
-  z-index: 6;
-  font-size: getRem(20);
-  font-weight: 900;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  > span {
-    text-transform: none;
-    opacity: .5;
-    font-weight: 300;
-    font-size: getRem(12);
-  }
-}
 
 #burger {
   position: absolute;
@@ -27,7 +11,6 @@ h1 {
     top: getRem(30);
     right: getRem(40);
     height: getRem(20);
-    width: getRem(15);
     z-index: 5;
     span {
       position: absolute;
@@ -99,10 +82,17 @@ h1 {
     }
   }
 }
+
+
 nav {
-  height: 5rem;
+  height: 10vh;
   background-color: white;
   width: 100%;
+
+  & > a {
+    display: flex;
+  }
+
   .navigation-logo {
     margin: auto;
     display: flex;
@@ -141,7 +131,7 @@ nav {
     display: none;
   }
   nav {
-    height: 5rem;
+    height: 10vh;
     background-color: white;
     width: 100%;
     display: flex;

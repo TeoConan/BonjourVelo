@@ -60,6 +60,9 @@
           height: 3rem;
           margin-right: 1rem;
           margin-left: 1rem; } }
+footer .reseaux li {
+  width: 60px; }
+
 @media screen and (min-width: 881px) {
   footer {
     background-color: #2D3037;
