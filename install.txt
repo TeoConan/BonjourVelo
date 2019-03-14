@@ -1,8 +1,0 @@
-Installer NodeJS (console)
-Télécharger le dossier webpack-project (via Git)
-	Ouvrir la console Git, cd jusqu'au dossier qui contiendra le projet
-	"git clone https://github.com/TeoConan/BonjourVelo"
-	Executez "git checkout [prénom]"
-Dans la console, cd jusqu'au dossier webpack
-Dans la console taper "npm install -g node-sass"
-Lancer le serveur avec la commande "npm start"

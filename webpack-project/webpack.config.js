@@ -3,16 +3,21 @@ const path = require("path");
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 const DashboardPlugin = require("webpack-dashboard/plugin");
 const autoprefixer = require('autoprefixer');
+const dev = true;
 
 let config = {
     entry: "./src/index.js",
     mode: "development",
+    devtool: "eval-source-map",
+
     output: {
       path: path.resolve(__dirname, "./public"),
       filename: "./bundle.js"
     },
+
     module: {
         rules: [
+        		/* SCSS */
 		        {
 		        	test: /\.scss$/,
 		        	use: [
@@ -38,11 +43,21 @@ let config = {
 		          		},
 		        	]
 		        },
+		        /* SCSS */
+    	        /* JS */
+    	        {
+    	        	test: /\.js$/,
+    	        	loader: 'babel-loader',
+    	        	exclude: /node_modules/,
+    	        }
+    	        /* JS */
 			]
       	},
+
       	plugins: [
 			  new ExtractTextWebpackPlugin("general-styles.css")
       	],
+
       	devServer: {
 		  contentBase: path.resolve(__dirname, "./public"),
 		  historyApiFallback: true,
@@ -50,7 +65,7 @@ let config = {
 		  open: true,
 		  hot: true
 		},
-		devtool: "eval-source-map"
+		
   }
   module.exports = config;
 
@@ -147,3 +162,6 @@ let config = {
 		devtool: "eval-source-map"
   }
   module.exports = config;
+
+
+  */
