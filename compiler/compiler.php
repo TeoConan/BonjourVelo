@@ -129,6 +129,14 @@ function getDistantPage($url) {
 	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 	$data = curl_exec($ch);
 	curl_close($ch);
+
+	if (!$data) {
+		pr("");
+		pr("> Cannot load distant page (" . $url . ")");
+		pr("> Please check host is running, abording");
+		exit;
+	}
+
 	return $data;
 }
 
