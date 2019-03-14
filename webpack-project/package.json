@@ -14,6 +14,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
+    "autoprefixer": "^9.4.5",
+=======
     "@material/ripple": "^0.44.0",
     "autoprefixer": "^9.4.5",
     "babel-core": "^6.26.3",
@@ -21,6 +24,7 @@
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
     "css-hot-loader": "^1.4.3",
     "css-loader": "^2.1.0",
     "dev-server": "^0.1.0",
@@ -36,10 +40,14 @@
   },
   "dependencies": {
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+<<<<<<< HEAD
+    "material-components-web": "^0.43.0",
+=======
     "imagemin": "^5.0.0",
     "img-loader": "^3.0.1",
     "material-components-web": "^0.43.0",
     "url-loader": "^1.1.2",
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
     "webpack-cli": "^3.2.1"
   }
 }

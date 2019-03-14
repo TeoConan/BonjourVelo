@@ -1,58 +1,33 @@
-@media screen and (max-device-width: 640px) {
-  .main-viewport {
-    height: 100vh;
-    background-image: url(weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 2750px;
-    position: relative;
-    background-position: -750px; }
-
-  .main-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    color: white; }
-    .main-title h1 {
-      color: white;
-      font-size: 70px;
+body .main-viewport {
+  height: 90vh;
+  background-image: url(../../../res/images/weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -13rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  body .main-viewport .main-title {
+    margin: auto; }
+    body .main-viewport .main-title h1 {
+      font-family: Heebo;
+      color: var(--mdc-theme-background);
+      font-size: 2rem;
       text-align: center;
-      font-family: Heebo; }
+      margin-left: .5rem;
+      margin-right: .5rem;
+      text-transform: uppercase; }
+  body .main-viewport .button-form {
+    text-align: center;
+    margin: auto;
+    top: 80% !important;
+    margin: 5rem; }
 
-  .button-form {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 50%); }
-    .button-form button {
-      background: #E9A816; } }
-@media screen and (min-device-width: 641px) {
+@media screen and (min-width: 600px) and (max-width: 1280px) {
   body .main-viewport {
-    height: 100vh;
-    background-image: url(weelz-velo-cycliste-urbain-paris-2018-1576.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 2000px;
-    position: relative; }
-  body .main-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap; }
-    body .main-title h1 {
-      color: white;
-      font-size: 58px;
-      text-align: center;
-      font-family: Heebo; }
-  body .button-form {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 50%); }
-    body .button-form button {
-      background: #E9A816; } }
+    background-position: 0rem; } }
+@media screen and (min-width: 641px) {
+  body .main-viewport {
+    background-position: 0rem; } }
 
 /*# sourceMappingURL=viewport1.css.map */

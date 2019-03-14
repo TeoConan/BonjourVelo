@@ -6,4 +6,12 @@ Commande :
 
 	Surveillance styles.css
 	>cd assets/stylesheets/
+<<<<<<< HEAD
+<<<<<<< HEAD
 	>node-sass scss/styles.scss --watch - css
+=======
+	>node-sass scss/styles.scss --watch -o css
+>>>>>>> 2a6011b7f49205c645d9f90e3b8c29b648c96b3f
+=======
+	>node-sass scss/styles.scss --watch - css
+>>>>>>> 2722175ec6e3e2ec58c284e9d374371ca137e1cb
