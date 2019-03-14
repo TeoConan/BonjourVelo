@@ -124,11 +124,14 @@
 		margin-top: getRem(50);
 		padding: getRem(16);
 		position: relative;
+		display: flex;
+		min-height: 650px;
 
 		.choice-list {
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
+			margin: auto auto 0 auto;
 			justify-content: space-around;
 
 			.choice-card {
@@ -187,7 +190,7 @@
 @media (min-width: 1024px) {
 	.bjv-form {
 		.form-header {
-			width: 100%;
+			width: 75%;
 
 			& > *:not(.form-checkout) {
 				width: 50%;
@@ -208,11 +211,25 @@
 				transform: translate(-15%, 0);
 			}
 		}
+
+		.form-header > *:not(.form-checkout) {
+			max-width: 650px;
+		}
 	}
 }
 
 @media (min-width: 1440px) {
 	.bjv-form .form-landscape img {
 		transform: none;
+	}
+}
+
+@media (min-width: 1700px) {
+	.bjv-form .form-landscape {
+		display: flex;
+
+		img {
+			margin-left: auto;
+		}
 	}
 }
