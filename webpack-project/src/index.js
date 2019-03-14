@@ -59,4 +59,4 @@ if ($(selectSlider).length) {
 	  			//mdcSliders[index].listen('MDCSlider:change', () => console.log(`Value changed to ${mdcSliders[index].value}`));
 	});
 }
-
+<<<<<<< HEAD
