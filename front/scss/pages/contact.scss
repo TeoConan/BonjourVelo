@@ -1,10 +1,10 @@
 @import "../functions.scss";
 
-@media screen and (max-device-width: getRem(640)) {
+@media screen and (max-device-width: getRem(425)) {
 	body{
-
 		.formulaire {
 			padding: 0 1rem 0 1rem;
+			margin-bottom: 3.6rem;
 
 			.mdc-form-field {
 				margin: getRem(20) 0 0 0;
@@ -13,6 +13,7 @@
 
 			.mdc-text-field--textarea {
 				margin: getRem(55) 0 getRem(40) 0;
+				width: 100%;
 			}
 
 			.button {
@@ -26,14 +27,66 @@
 	}
 }
 
-@media screen and (min-device-width: getRem(641)) {
+@media screen and (min-width: getRem(426)) and (max-width: getRem(1020)) {
 	body {
-		margin-left : getRem(480);
-		margin-right: getRem(438);
 
 		.formulaire {
 			display: flex;
         	flex-direction: column;
+        	padding: 0 10rem 0 10rem;
+        	margin-bottom: 3.6rem;
+
+        	.mdc-form-field {
+				margin: getRem(20) 0 0 0;
+				width: 100%;
+			}
+
+			.mdc-text-field--textarea {
+				margin: getRem(55) 0 getRem(40) 0;
+			}
+
+        	.button {
+        		margin: auto;
+        	}
+		}
+	}
+
+}
+
+@media screen and (min-width: getRem(1021)) and (max-width: getRem(1439)) {
+	body {
+
+		.formulaire {
+			display: flex;
+        	flex-direction: column;
+        	padding: 0 18rem 0 18rem;
+        	margin-bottom: 3.6rem;
+
+        	.mdc-form-field {
+				margin: getRem(20) 0 0 0;
+				width: 100%;
+			}
+
+			.mdc-text-field--textarea {
+				margin: getRem(55) 0 getRem(40) 0;
+			}
+
+        	.button {
+        		margin: auto;
+        	}
+		}
+	}
+
+}
+
+@media screen and (min-device-width: getRem(1440)) {
+	body {
+
+		.formulaire {
+			display: flex;
+        	flex-direction: column;
+        	padding: 0 getRem(459) 0 getRem(459);
+        	margin-bottom: 3.6rem;
 
         	.mdc-form-field {
 				margin: getRem(20) 0 0 0;

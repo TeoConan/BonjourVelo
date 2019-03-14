@@ -2,72 +2,128 @@
 /* Without "rem" */
 /*  With "rem"  */
 /* Font face */
-@media screen and (max-device-width: 40rem) {
+@media screen and (max-device-width: 58.125rem) {
   body {
     background-color: #f5f5f5;
-    margin: 0 0.9375rem 0 0.9375rem;
-    /*carte type de velo*/
-    /*rayon de recherche*/ }
+    /*carte type de velo*/ }
     body h3 {
       font-family: 'Heebo';
       font-weight: bold;
       font-size: 1.5625rem;
-      display: inline-block;
       padding-bottom: 0.3125rem;
       position: relative; }
     body h4, body h5, body p {
       font-family: 'Montserrat', sans-serif; }
-    body .c-card--preset-1 {
-      padding-top: 0; }
-    body .filtre img {
-      padding-top: 1.25rem;
-      width: 100%; }
-    body .filtre .mdc-slider {
-      background-color: white;
-      border-radius: 2px; }
-      body .filtre .mdc-slider .mdc-slider__thumb-container {
-        color: #E9A816; } }
+    body .popup .inner {
+      display: none; }
+    body .block-container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      /*rayon de recherche*/
+      /*cartes magasins*/ }
+      body .block-container h3 {
+        margin: 40px 0 40px 0; }
+      body .block-container .typevelo .c-card--preset-1 {
+        padding-top: 0;
+        margin-bottom: 35px; }
+        body .block-container .typevelo .c-card--preset-1 h4 {
+          margin: 17px 0 17px 25px; }
+      body .block-container .filtre img {
+        padding-top: 1.25rem;
+        width: 100%; }
+      body .block-container .filtre .mdc-card {
+        background-color: white;
+        border-radius: 0.125rem; }
+      body .block-container .magasins .c-card--preset-2 {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem; }
+        body .block-container .magasins .c-card--preset-2 .card-image {
+          display: none; } }
 
-/*cartes magasins*/
-@media screen and (min-device-width: 40.0625rem) {
+@media screen and (min-device-width: 58.1875rem) {
   body {
     /* 	background-color: #f5f5f5; */
-    margin-left: 30rem;
-    margin-right: 27.375rem;
-    /*rayon de recherche*/
-    /**/ }
+    /*popup*/
+    /*carte type de velo*/ }
     body h3 {
       font-family: 'Heebo';
       font-weight: bold;
       font-size: 1.875rem;
-      display: inline-block;
-      padding-bottom: 0.3125rem;
       position: relative; }
     body h4, body h5, body p {
       font-family: 'Montserrat', sans-serif; }
-    body .filtre img {
-      padding-top: 1.25rem;
-      width: 100%; }
-    body .slidecontainer {
-      background-color: white;
-      height: 5rem;
-      display: flex; }
-    body .slider {
-      margin: auto;
-      -webkit-appearance: none;
-      width: 100%;
-      height: 0.4375rem;
-      border-radius: 0.3125rem;
-      background: #d3d3d3;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s; }
-    body .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 1.875rem;
-      height: 1.875rem;
-      border-radius: 50%;
-      background: #E9A816;
-      cursor: pointer; } }
+    body .popup {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      z-index: 999;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      body .popup .inner {
+        width: 31.25rem;
+        background: #ffffff;
+        border-radius: 0.5rem;
+        height: auto;
+        padding: 0 3.125rem;
+        z-index: 999;
+        position: fixed;
+        box-shadow: 0rem 0rem 1.25rem #00000054;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%; }
+        body .popup .inner .title {
+          display: flex;
+          margin-bottom: 1.25rem;
+          margin-top: 1.875rem; }
+          body .popup .inner .title h1 {
+            font-family: 'Heebo';
+            text-align: center;
+            margin: auto;
+            font-size: 1.375rem; }
+          body .popup .inner .title img {
+            height: 1.25rem;
+            width: 1.25rem;
+            cursor: pointer; }
+        body .popup .inner .message {
+          margin-bottom: 2.5rem; }
+          body .popup .inner .message img {
+            display: flex;
+            margin: auto;
+            width: 31.25rem;
+            margin-bottom: 2.5rem; }
+          body .popup .inner .message p {
+            text-align: justify;
+            line-height: 1.375rem; }
+    body .block-container {
+      padding: 0 10rem 5rem 10rem;
+      /*rayon de recherche*/
+      /*cartes magasins*/ }
+      body .block-container h3 {
+        margin: 60px 0 60px 0; }
+      body .block-container .typevelo {
+        display: flex; }
+        body .block-container .typevelo .c-card--preset-1 {
+          cursor: pointer;
+          padding-top: 0;
+          margin-right: 35px; }
+          body .block-container .typevelo .c-card--preset-1 h4 {
+            margin: 17px 0 17px 25px; }
+      body .block-container .filtre img {
+        padding-top: 1.25rem;
+        width: 100%; }
+      body .block-container .filtre .mdc-card {
+        background-color: white;
+        border-radius: 0.125rem;
+        padding: 13px; }
+      body .block-container .magasins .c-card--preset-2 {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+        body .block-container .magasins .c-card--preset-2 .card-image {
+          height: 14rem;
+          width: 22.5rem; } }
