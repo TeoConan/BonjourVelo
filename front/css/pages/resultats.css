@@ -4,7 +4,7 @@
 /* Font face */
 @media screen and (max-device-width: 58.125rem) {
   body {
-    background-color: #f5f5f5;
+    padding-top: 0;
     /*carte type de velo*/ }
     body h3 {
       font-family: 'Heebo';
@@ -16,6 +16,8 @@
       font-family: 'Montserrat', sans-serif; }
     body .popup .inner {
       display: none; }
+    body .main-viewport .main-title h1 {
+      margin-top: 9rem; }
     body .block-container {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
@@ -45,6 +47,7 @@
 @media screen and (min-device-width: 58.1875rem) {
   body {
     /* 	background-color: #f5f5f5; */
+    padding-top: 0;
     /*popup*/
     /*carte type de velo*/ }
     body h3 {
@@ -54,6 +57,8 @@
       position: relative; }
     body h4, body h5, body p {
       font-family: 'Montserrat', sans-serif; }
+    body .main-viewport .main-title h1 {
+      margin-top: 9rem; }
     body .popup {
       background-color: rgba(0, 0, 0, 0.5);
       position: fixed;

@@ -23,7 +23,13 @@
 	   			}
 	   		}
 		}
-
+		.main-viewport {
+			.main-title {
+				h1 {
+					margin-top: 9rem;
+				}
+			}
+		}
 	}
 }
 
@@ -48,6 +54,13 @@
         	.button {
         		margin: auto;
         	}
+		}
+		.main-viewport {
+			.main-title {
+				h1 {
+					margin-top: 9rem;
+				}
+			}
 		}
 	}
 
@@ -75,6 +88,13 @@
         		margin: auto;
         	}
 		}
+		.main-viewport {
+			.main-title {
+				h1 {
+					margin-top: 9rem;
+				}
+			}
+		}
 	}
 
 }
@@ -100,6 +120,13 @@
         	.button {
         		margin: auto;
         	}
+		}
+		.main-viewport {
+			.main-title {
+				h1 {
+					margin-top: 9rem;
+				}
+			}
 		}
 	}
 
