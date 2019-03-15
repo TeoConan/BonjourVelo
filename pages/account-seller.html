@@ -2,6 +2,10 @@
 <html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="../front/css/reset.css">
+  <link rel="stylesheet" href="../front/css/normalize.css">
+  <link rel="stylesheet" href="../front/css/components.css">
+  <link rel="stylesheet" href="../front/css/header.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Heebo:400,700" rel="stylesheet">
@@ -16,6 +20,20 @@
 
 <body>
   <header>
+    <input id="burger" type="checkbox" />
+    <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a href="#" ><img class="navigation-logo" src="../res/images/logo.png" alt="logo" height="81.50 px" width="197.50 px"></a>
+      <ul class="navigation-menu">
+        <li class="navigation-trouver-velo"><a href="#">trouvez votre velo</a></li>
+        <li class="navigation-magasins-velo"><a href="#">magasins de velo</a></li>
+        <li class="navigation-espace-pro"><a href="#">espace pro</a></li>
+      </ul>
+    </nav>
 
   </header>
 
@@ -164,8 +182,8 @@
     </div>
 
     <div class="card  card--z-2">
-     <h4 class="card-title">type de vélo</h4>
-   </div>
+      <h4 class="card-title">type de vélo</h4>
+    </div>
 
     <div class="card  card--z-3">
       <h4 class="card-title">contact</h4>
@@ -193,115 +211,83 @@
     </div>
 
 
-</div>
+  </div>
 
-<div class="main-image-account-seller">
-  <div class="wrapper-account-seller">
-    <div class="overlay-account-seller">
-      <div class="welcome-account-seller">
-        Ravie de vous revoir !<br><br>ESPL
+  <div class="main-image-account-seller">
+    <div class="wrapper-account-seller">
+      <div class="overlay-account-seller">
+        <div class="welcome-account-seller">
+          Ravie de vous revoir !<br><br>ESPL
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="tittle-account-seller"> information gérant
-  <div class="line-tittle-account-seller"></div>
-</div>
+  <div class="tittle-account-seller"> information gérant
+    <div class="line-tittle-account-seller"></div>
+  </div>
 
-<div class="form-account-seller">
+  <div class="form-account-seller">
 
-  <form>
-    <!-- COMPONENT INPUT -->
-    <div class="mdc-form-field">
-
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone"
-        class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">N°SIRET</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-    </div>
-
-    <div class="debug-box-line">
-      <div class="mdc-typography">
-        <p class="mdc-typography--paragraph">Raison sociale</p>
-      </div>
-
-      <!--  COMPONENT RADIO -->
-      <div class="mdc-radio-field">
-        <!-- Radio 1 -->
-        <div class="mdc-radio">
-          <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
-          <div class="mdc-radio__background">
-            <div class="mdc-radio__outer-circle"></div>
-            <div class="mdc-radio__inner-circle"></div>
-          </div>
-        </div>
-        <label for="radio-1">M.</label>
-
-        <!-- Radio 2 -->
-        <div class="mdc-radio">
-          <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
-          <div class="mdc-radio__background">
-            <div class="mdc-radio__outer-circle"></div>
-            <div class="mdc-radio__inner-circle"></div>
-          </div>
-        </div>
-        <label for="radio-2">Mme</label>
-
-        <!-- Radio 3 - Color primaire -->
-        <div class="mdc-radio c-radio-primary">
-          <input class="mdc-radio__native-control" type="radio" id="radio-3" name="radios" checked>
-          <div class="mdc-radio__background">
-            <div class="mdc-radio__outer-circle"></div>
-            <div class="mdc-radio__inner-circle"></div>
-          </div>
-        </div>
-        <label for="radio-3">Autre</label>
-      </div>
-      <!--  COMPONENT RADIO -->
-    </div>
-    <!-- COMPONENT INPUT -->
-    <div class="mdc-form-field">
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Département</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-    </div>
-    <!-- COMPONENT INPUT -->
-    <div class="mdc-form-field">
-
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">adresse</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-    </div>
-    <!-- COMPONENT INPUT -->
-    <div class="mdc-form-field">
-
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        background-profil-account    <label class="mdc-floating-label" for="thisone">localité</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
+    <form>
       <!-- COMPONENT INPUT -->
       <div class="mdc-form-field">
 
         <!-- Input 1 -->
         <div class="mdc-text-field mdc-text-field-2" id="input1">
+          <input type="text" id="thisone"
+          class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="thisone">N°SIRET</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <!-- Input 1 -->
+      </div>
+
+      <div class="debug-box-line">
+        <div class="mdc-typography">
+          <p class="mdc-typography--paragraph">Raison sociale</p>
+        </div>
+
+        <!--  COMPONENT RADIO -->
+        <div class="mdc-radio-field">
+          <!-- Radio 1 -->
+          <div class="mdc-radio">
+            <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-1">M.</label>
+
+          <!-- Radio 2 -->
+          <div class="mdc-radio">
+            <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-2">Mme</label>
+
+          <!-- Radio 3 - Color primaire -->
+          <div class="mdc-radio c-radio-primary">
+            <input class="mdc-radio__native-control" type="radio" id="radio-3" name="radios" checked>
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-3">Autre</label>
+        </div>
+        <!--  COMPONENT RADIO -->
+      </div>
+      <!-- COMPONENT INPUT -->
+      <div class="mdc-form-field">
+        <!-- Input 1 -->
+        <div class="mdc-text-field mdc-text-field-2" id="input1">
           <input type="text" id="thisone" class="mdc-text-field__input">
-          <label class="mdc-floating-label" for="thisone">site internet</label>
+          <label class="mdc-floating-label" for="thisone">Département</label>
           <div class="mdc-line-ripple"></div>
         </div>
         <!-- Input 1 -->
@@ -312,133 +298,138 @@
         <!-- Input 1 -->
         <div class="mdc-text-field mdc-text-field-2" id="input1">
           <input type="text" id="thisone" class="mdc-text-field__input">
-          <label class="mdc-floating-label" for="thisone">nom</label>
+          <label class="mdc-floating-label" for="thisone">adresse</label>
           <div class="mdc-line-ripple"></div>
         </div>
         <!-- Input 1 -->
-      </div>        <!-- COMPONENT INPUT -->
+      </div>
+      <!-- COMPONENT INPUT -->
       <div class="mdc-form-field">
 
         <!-- Input 1 -->
         <div class="mdc-text-field mdc-text-field-2" id="input1">
           <input type="text" id="thisone" class="mdc-text-field__input">
-          <label class="mdc-floating-label" for="thisone">prénom</label>
+          background-profil-account    <label class="mdc-floating-label" for="thisone">localité</label>
           <div class="mdc-line-ripple"></div>
         </div>
         <!-- Input 1 -->
-      </div>        <!-- COMPONENT INPUT -->
-      <div class="mdc-form-field">
+        <!-- COMPONENT INPUT -->
+        <div class="mdc-form-field">
 
-        <!-- Input 1 -->
-        <div class="mdc-text-field mdc-text-field-2" id="input1">
-          <input type="text" id="thisone" class="mdc-text-field__input">
-          <label class="mdc-floating-label" for="thisone">email</label>
-          <div class="mdc-line-ripple"></div>
+          <!-- Input 1 -->
+          <div class="mdc-text-field mdc-text-field-2" id="input1">
+            <input type="text" id="thisone" class="mdc-text-field__input">
+            <label class="mdc-floating-label" for="thisone">site internet</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <!-- Input 1 -->
         </div>
-        <!-- Input 1 -->
-      </div>
-    </div>
-  </form>
-</div>
-<div class="tittle-account-seller"> information magasin
-  <div class="line-tittle-account-seller"></div>
-</div>
-<div class="background-profil-account">
-  <div class="profil-image-modification" alt="#" role="button" tabindex="0" title="Compte BonjourVélo">
-  </div>
-  <div class="mdc-button-img-change">
-    <div class="line-account">Modifier la photo de votre magasin</div>
+        <!-- COMPONENT INPUT -->
+        <div class="mdc-form-field">
 
-    <button class="button-circle-account-seller">
-      <div class="border_button-circle-account-seller-account-seller"></div>
-      <div class="button">
-        <div class="overlay-button-circle-account-seller">
-        </div>
-      </div>
-    </button>
+          <!-- Input 1 -->
+          <div class="mdc-text-field mdc-text-field-2" id="input1">
+            <input type="text" id="thisone" class="mdc-text-field__input">
+            <label class="mdc-floating-label" for="thisone">nom</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <!-- Input 1 -->
+        </div>        <!-- COMPONENT INPUT -->
+        <div class="mdc-form-field">
 
-    <button class="button-circle-account-seller">
-      <div class="border_button-circle-account-seller"></div>
-      <div class="button">
-        <div class="overlay-button-circle-account-seller">
-          <i class="material-icons">delete</i>
-        </div>
-      </div>
-    </button>
+          <!-- Input 1 -->
+          <div class="mdc-text-field mdc-text-field-2" id="input1">
+            <input type="text" id="thisone" class="mdc-text-field__input">
+            <label class="mdc-floating-label" for="thisone">prénom</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <!-- Input 1 -->
+        </div>        <!-- COMPONENT INPUT -->
+        <div class="mdc-form-field">
 
-    <button class="button-circle-account-seller">
-      <div class="border_button-circle-account-seller"></div>
-      <div class="button">
-        <div class="overlay-button-circle-account-seller">
-          <i class="material-icons">add</i>
+          <!-- Input 1 -->
+          <div class="mdc-text-field mdc-text-field-2" id="input1">
+            <input type="text" id="thisone" class="mdc-text-field__input">
+            <label class="mdc-floating-label" for="thisone">email</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <!-- Input 1 -->
         </div>
       </div>
-    </button>
-
-    <div class="form-account-seller">
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">N°SIRET</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Nom</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Masse salariale</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Horaire d'ouverture</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Horaire de fermeture</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Marques des vélos vendus</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <!-- Input 1 -->
-      <div class="mdc-text-field mdc-text-field-2" id="input1">
-        <input type="text" id="thisone" class="mdc-text-field__input">
-        <label class="mdc-floating-label" for="thisone">Types des vélos vendus</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
-      <!-- Input 1 -->
-      <!-- COMPONENT BUTTON -->
-      <button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
-        <span class="mdc-button__label">Modifier</span>
-      </button>
     </form>
   </div>
-
-  <div class="type-account-seller">
-    <div class="tittle-account-seller"> type de vélo
-      <div class="line-tittle-account-seller"></div>
+  <div class="tittle-account-seller"> information magasin
+    <div class="line-tittle-account-seller"></div>
+  </div>
+  <div class="background-profil-account">
+    <div class="profil-image-modification" alt="#" role="button" tabindex="0" title="Compte BonjourVélo">
     </div>
-    <div class="form-account-seller">
-      <form>
+    <div class="mdc-button-img-change">
+      <div class="line-account">Modifier la photo de votre magasin</div>
+
+      <button class="button-circle-account-seller">
+        <div class="border_button-circle-account-seller-account-seller"></div>
+        <div class="button">
+          <div class="overlay-button-circle-account-seller">
+          </div>
+        </div>
+      </button>
+
+      <button class="button-circle-account-seller">
+        <div class="border_button-circle-account-seller"></div>
+        <div class="button">
+          <div class="overlay-button-circle-account-seller">
+            <i class="material-icons">delete</i>
+          </div>
+        </div>
+      </button>
+
+      <button class="button-circle-account-seller">
+        <div class="border_button-circle-account-seller"></div>
+        <div class="button">
+          <div class="overlay-button-circle-account-seller">
+            <i class="material-icons">add</i>
+          </div>
+        </div>
+      </button>
+
+      <div class="form-account-seller">
         <!-- Input 1 -->
         <div class="mdc-text-field mdc-text-field-2" id="input1">
           <input type="text" id="thisone" class="mdc-text-field__input">
-          <label class="mdc-floating-label" for="thisone">Types des vélos vendus</label>
+          <label class="mdc-floating-label" for="thisone">N°SIRET</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <!-- Input 1 -->
+        <!-- Input 1 -->
+        <div class="mdc-text-field mdc-text-field-2" id="input1">
+          <input type="text" id="thisone" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="thisone">Nom</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <!-- Input 1 -->
+        <div class="mdc-text-field mdc-text-field-2" id="input1">
+          <input type="text" id="thisone" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="thisone">Masse salariale</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <!-- Input 1 -->
+        <div class="mdc-text-field mdc-text-field-2" id="input1">
+          <input type="text" id="thisone" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="thisone">Horaire d'ouverture</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <!-- Input 1 -->
+        <div class="mdc-text-field mdc-text-field-2" id="input1">
+          <input type="text" id="thisone" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="thisone">Horaire de fermeture</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <!-- Input 1 -->
+        <!-- Input 1 -->
+        <div class="mdc-text-field mdc-text-field-2" id="input1">
+          <input type="text" id="thisone" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="thisone">Marques des vélos vendus</label>
           <div class="mdc-line-ripple"></div>
         </div>
         <!-- Input 1 -->
@@ -448,23 +439,51 @@
           <label class="mdc-floating-label" for="thisone">Types des vélos vendus</label>
           <div class="mdc-line-ripple"></div>
         </div>
-        <div class="mdc-button-type-account-seller">
-          <!-- Input 1 -->
-          <button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
-            <span class="mdc-button__label">Valider</span>
-          </button>
-          <button class="mdc-button c-button-secondary mdc-elevation--z3 mdc-elevation-transition">
-            <span class="mdc-button__label">Annuler</span>
-          </button>
-        </div>
+        <!-- Input 1 -->
+        <!-- COMPONENT BUTTON -->
+        <button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
+          <span class="mdc-button__label">Modifier</span>
+        </button>
       </form>
     </div>
-  </div>
-</div>
-<footer>
-</footer>
 
-<script src="../front/js/components.js"></script>
+    <div class="type-account-seller">
+      <div class="tittle-account-seller"> type de vélo
+        <div class="line-tittle-account-seller"></div>
+      </div>
+      <div class="form-account-seller">
+        <form>
+          <!-- Input 1 -->
+          <div class="mdc-text-field mdc-text-field-2" id="input1">
+            <input type="text" id="thisone" class="mdc-text-field__input">
+            <label class="mdc-floating-label" for="thisone">Types des vélos vendus</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <!-- Input 1 -->
+          <!-- Input 1 -->
+          <div class="mdc-text-field mdc-text-field-2" id="input1">
+            <input type="text" id="thisone" class="mdc-text-field__input">
+            <label class="mdc-floating-label" for="thisone">Types des vélos vendus</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <div class="mdc-button-type-account-seller">
+            <!-- Input 1 -->
+            <button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
+              <span class="mdc-button__label">Valider</span>
+            </button>
+            <button class="mdc-button c-button-secondary mdc-elevation--z3 mdc-elevation-transition">
+              <span class="mdc-button__label">Annuler</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+
+  <script src="../front/js/components.js"></script>
 
 </body>
 </html>
