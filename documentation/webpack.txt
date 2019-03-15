@@ -1,0 +1,14 @@
+Liens utiles :
+	Documentation Material Design : https://material.io
+	Documentation Material Design Develop : https://material.io/develop/web/components/
+	Tutorial webpack : https://www.alsacreations.com/tuto/lire/1754-debuter-avec-webpack.html
+	Getting started (Material Design for webpack) : https://material.io/develop/web/docs/getting-started/
+
+--------------------------
+
+Le webpack et les dépendances Material Design ont déjà été installées dans ./webpack-project/
+Il suffira d'installer localement NodeJS et de lancer le serveur webpack comme expliqué dans le tutorial webpack.
+
+Chemins utiles :
+	Liens des components material design (SCSS) : ./webpack-project/node_modules/@material/{component}/
+	Thème Material Design : ./webpack-project/node_modules/@material/theme/_variables.scss
