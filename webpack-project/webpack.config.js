@@ -1,48 +1,19 @@
-<<<<<<< HEAD
-const dev = true;
-=======
 const webpack = require("webpack");
 const path = require("path");
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 const DashboardPlugin = require("webpack-dashboard/plugin");
 const autoprefixer = require('autoprefixer');
 const dev = true;
-<<<<<<< HEAD
-=======
-const dev = true;
->>>>>>> 207b1f5ef3e75b50faea48da9d55cba4d83f8eb0
->>>>>>> master
-=======
->>>>>>> master
 
 let config = {
     entry: "./src/index.js",
     mode: "development",
-<<<<<<< HEAD
     devtool: "eval-source-map",
 
-=======
-    devtool: "eval-source-map",
-
-<<<<<<< HEAD
-=======
-    devtool: "eval-source-map",
-
->>>>>>> 207b1f5ef3e75b50faea48da9d55cba4d83f8eb0
->>>>>>> master
-=======
->>>>>>> master
     output: {
       path: path.resolve(__dirname, "./public"),
       filename: "./bundle.js"
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
-=======
->>>>>>> master
 
     module: {
         rules: [
@@ -72,13 +43,6 @@ let config = {
 		          		},
 		        	]
 		        },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
-=======
->>>>>>> master
 		        /* SCSS */
     	        /* JS */
     	        {
@@ -101,17 +65,7 @@ let config = {
 		  open: true,
 		  hot: true
 		},
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 207b1f5ef3e75b50faea48da9d55cba4d83f8eb0
->>>>>>> master
-=======
 		
->>>>>>> master
   }
   module.exports = config;
 
