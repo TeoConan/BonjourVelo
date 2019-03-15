@@ -2,29 +2,66 @@
 /* Without "rem" */
 /*  With "rem"  */
 /* Font face */
-@media screen and (max-device-width: 40rem) {
+@media screen and (max-device-width: 26.5625rem) {
   body .formulaire {
-    padding: 0 1rem 0 1rem; }
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 3.6rem; }
+    body .formulaire .mdc-form-field {
+      margin: 1.25rem 0 0 0;
+      width: 100%; }
+    body .formulaire .mdc-text-field--textarea {
+      margin: 3.4375rem 0 2.5rem 0;
+      width: 100%; }
+    body .formulaire .button .mdc-button {
+      display: flex;
+      margin: auto; }
+  body .main-viewport .main-title h1 {
+    margin-top: 9rem; } }
+
+@media screen and (min-width: 26.625rem) and (max-width: 63.75rem) {
+  body .formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem 0 10rem;
+    margin-bottom: 3.6rem; }
     body .formulaire .mdc-form-field {
       margin: 1.25rem 0 0 0;
       width: 100%; }
     body .formulaire .mdc-text-field--textarea {
       margin: 3.4375rem 0 2.5rem 0; }
-    body .formulaire .button .mdc-button {
-      display: flex;
-      margin: auto; } }
+    body .formulaire .button {
+      margin: auto; }
+  body .main-viewport .main-title h1 {
+    margin-top: 9rem; } }
 
-@media screen and (min-device-width: 40.0625rem) {
-  body {
-    margin-left: 30rem;
-    margin-right: 27.375rem; }
-    body .formulaire {
-      display: flex;
-      flex-direction: column; }
-      body .formulaire .mdc-form-field {
-        margin: 1.25rem 0 0 0;
-        width: 100%; }
-      body .formulaire .mdc-text-field--textarea {
-        margin: 3.4375rem 0 2.5rem 0; }
-      body .formulaire .button {
-        margin: auto; } }
+@media screen and (min-width: 63.8125rem) and (max-width: 89.9375rem) {
+  body .formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18rem 0 18rem;
+    margin-bottom: 3.6rem; }
+    body .formulaire .mdc-form-field {
+      margin: 1.25rem 0 0 0;
+      width: 100%; }
+    body .formulaire .mdc-text-field--textarea {
+      margin: 3.4375rem 0 2.5rem 0; }
+    body .formulaire .button {
+      margin: auto; }
+  body .main-viewport .main-title h1 {
+    margin-top: 9rem; } }
+
+@media screen and (min-device-width: 90rem) {
+  body .formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 0 28.6875rem 0 28.6875rem;
+    margin-bottom: 3.6rem; }
+    body .formulaire .mdc-form-field {
+      margin: 1.25rem 0 0 0;
+      width: 100%; }
+    body .formulaire .mdc-text-field--textarea {
+      margin: 3.4375rem 0 2.5rem 0; }
+    body .formulaire .button {
+      margin: auto; }
+  body .main-viewport .main-title h1 {
+    margin-top: 9rem; } }

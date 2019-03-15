@@ -1,109 +1,226 @@
 @import "../functions.scss";
 
-@media screen and (max-device-width: getRem(640)) {
+@media screen and (max-device-width: getRem(930)) {
 
 	body {
-		background-color: #f5f5f5;
-		margin: 0 getRem(15) 0 getRem(15);
+	padding-top: 0;
 
-			h3 {
-				font-family: 'Heebo';
-				font-weight: bold;
-				font-size: getRem(25);
-				display: inline-block;
-				padding-bottom: getRem(5);
-				position: relative;
+		h3 {
+			font-family: 'Heebo';
+			font-weight: bold;
+			font-size: getRem(25);
+	    	padding-bottom: getRem(5);
+	    	position: relative;
+		}
+
+		h4,h5,p {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.popup {
+			.inner {
+				display: none;
 			}
+		}
 
-			h4,h5,p {
-				font-family: 'Montserrat', sans-serif;
+		.main-viewport {
+			.main-title {
+				h1 {
+					margin-top: 9rem;
+				}
 			}
-
+		}
 	/*carte type de velo*/
+		
+		.block-container {
+			padding-left: 0.5rem;
+		   	padding-right: 0.5rem;
+			h3 {
+				margin: 40px 0 40px 0;
+			}
+				.typevelo{
+					.c-card--preset-1 {
+						padding-top: 0;
+						margin-bottom: 35px;
+						h4 {
+							margin: 17px 0 17px 25px;
+						}
+					}
+				}
 
-	.c-card--preset-1 {
-		padding-top: 0;
-	}
+		/*rayon de recherche*/
 
-	/*rayon de recherche*/
+			.filtre {
+				img {
+					padding-top: getRem(20);
+					width: 100%;
+				}
+				.mdc-card {
+					background-color: white;
+					border-radius: getRem(2);
 
-	.filtre {
-		img {
-			padding-top: getRem(20);
-			width: 100%;
-		}
-		.mdc-card {
-			background-color: white;
-			border-radius: 2px;	
+				}
 
-		}
+			}
 
+		/*cartes magasins*/
+
+			.magasins {
+			    .c-card--preset-2 {
+			    	width: 100%;
+			    	margin-top: 1rem;
+			    	margin-bottom: 1rem;
+			    	padding-left: 1rem;
+		      		.card-image {
+		        		display: none;
+		      		}
+		    	}
+		  	}
+	  	}
 	}
 }
-}
-/*cartes magasins*/
 
 
-
-@media screen and (min-device-width: getRem(641)) {
+@media screen and (min-device-width: getRem(931)) {
 
 	body {
 	/* 	background-color: #f5f5f5; */
-	margin-left : getRem(480);
-	margin-right: getRem(438);
+	padding-top: 0;
 
-	h3 {
-		font-family: 'Heebo';
-		font-weight: bold;
-		font-size: getRem(30);
-		display: inline-block;
-		padding-bottom: getRem(5);
-		position: relative;
+		h3 {
+			font-family: 'Heebo';
+			font-weight: bold;
+			font-size: getRem(30);
+	    	position: relative;
+		}
+
+		h4,h5,p {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.main-viewport {
+			.main-title {
+				h1 {
+					margin-top: 9rem;
+				}
+			}
+		}
+		/*popup*/
+			
+			.popup {
+				background-color: rgba(0,0,0,0.5);
+				position: fixed;
+		    	z-index: 999;
+		    	height: 100vh;
+		   	 	width: 100vw;
+				top: 0; 
+		    	left: 0;
+		    	right: 0;
+		    	bottom: 0;
+		    	
+
+				.inner{
+					width: getRem(500);
+					background: #ffffff;
+					border-radius: getRem(8);
+					height: auto;
+					padding: 0 getRem(50);
+					z-index: 999;
+					position: fixed;
+					box-shadow: getRem(0) getRem(0) getRem(20) #00000054;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					left: 50%;
+				
+					.title{
+						display: flex;
+						margin-bottom: getRem(20);
+		    			margin-top: getRem(30);
+
+		    			h1 {
+		    				font-family: 'Heebo';
+		    				text-align: center;
+		    				margin: auto;
+		    				font-size: getRem(22);
+		    			}
+
+						img {
+							height: getRem(20);
+							width: getRem(20);
+							cursor: pointer;
+						}
+					}
+
+					.message{
+						margin-bottom: getRem(40);
+
+						img {
+							display: flex;
+							margin: auto;
+							width: getRem(500);
+							margin-bottom: getRem(40);
+						}
+
+						p {
+							text-align: justify;
+							line-height: getRem(22);
+						}
+
+					}
+				} 
+			}	
+		/*carte type de velo*/
+		
+		.block-container {
+			padding: 0 10rem 5rem 10rem;
+				h3 {
+					margin: 60px 0 60px 0;
+				}
+				.typevelo{
+					display: flex;
+					.c-card--preset-1 {
+						cursor: pointer;
+						padding-top: 0;
+						margin-right: 35px;
+
+						h4 {
+							margin: 17px 0 17px 25px;
+						}
+					}
+				}
+
+			/*rayon de recherche*/
+
+			.filtre {
+				img {
+					padding-top: getRem(20);
+					width: 100%;
+				}
+				.mdc-card {
+					background-color: white;
+					border-radius: getRem(2);	
+					padding: 13px;
+
+				}
+
+			}
+
+			/*cartes magasins*/
+
+			.magasins {
+			    .c-card--preset-2 {
+			    	width: 100%;
+			    	margin-top: 1rem;
+			    	margin-bottom: 1rem;
+
+			    	.card-image {
+		        		height: 14rem;
+		        		width: 22.5rem;
+		     		 }
+		    	}
+		  	}
+		}
 	}
-
-	h4,h5,p {
-		font-family: 'Montserrat', sans-serif;
-	}
-
-
-/*rayon de recherche*/
-
-.filtre {
-	img {
-		padding-top: getRem(20);
-		width: 100%;
-	}
-}
-.slidecontainer {
-	background-color: white;
-	height: getRem(80);
-	display: flex;
+	
 }
 
-.slider {
-	margin: auto;
-	-webkit-appearance: none;
-	width: 100%;
-	height: getRem(7);
-	border-radius: getRem(5);
-	background: #d3d3d3;
-	outline: none;
-	opacity: 0.7;
-	-webkit-transition: .2s;
-	transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: getRem(30);
-	height: getRem(30);
-	border-radius: 50%;
-	background: #E9A816;
-	cursor: pointer;
-}
-
-/**/
-
-}
-}
