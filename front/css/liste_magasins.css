@@ -1,4 +1,15 @@
 @media screen and (max-width: 930px) {
+  .main-title h1 {
+    margin-top: 15rem; }
+
+  .code-postal-valider {
+    margin: auto; }
+    .code-postal-valider .input-code-postal {
+      width: 12rem;
+      margin: auto; }
+      .code-postal-valider .input-code-postal .mdc-text-field__input {
+        color: white; }
+
   .body-liste-magasins {
     background-color: #f5f5f5; }
     .body-liste-magasins .filtre {
@@ -31,6 +42,17 @@
       .body-liste-magasins .magasins-resultat .c-pagination {
         width: 13rem; } }
 @media screen and (min-width: 931px) {
+  .main-title h1 {
+    margin-top: 15rem; }
+
+  .code-postal-valider {
+    margin: auto; }
+    .code-postal-valider .input-code-postal {
+      width: 12rem;
+      margin: auto; }
+      .code-postal-valider .input-code-postal .mdc-text-field__input {
+        color: white; }
+
   .body-liste-magasins {
     background-color: #f5f5f5; }
     .body-liste-magasins .filtre {
