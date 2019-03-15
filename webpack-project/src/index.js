@@ -7,6 +7,24 @@ var selectTextFieldIcon = '.mdc-text-field-icon';
 var selectNotchedOutline = '.mdc-notched-outline';
 var selectFloatingLabel = '.mdc-floating-label';
 var selectSlider = '.mdc-slider';
+var selectPagination = '.c-pagination dot:not(.no-ripple)';
+var selectRipple = [
+	selectRipple, selectButton, selectPagination
+
+];
+
+import {MDCRipple} from '@material/ripple';
+/* Ripple */
+for (var i =0;i < selectRipple.length; i++) {
+	console.log("Ripple " + selectRipple[i]);
+	if ($(selectRipple[i]).length) {
+		$(selectButton).each(function( index ) {
+		  	new MDCRipple(this);
+		});
+	}
+}
+
+
 
 /* Buttons */
 import {MDCRipple} from '@material/ripple';
@@ -59,4 +77,4 @@ if ($(selectSlider).length) {
 	  			//mdcSliders[index].listen('MDCSlider:change', () => console.log(`Value changed to ${mdcSliders[index].value}`));
 	});
 }
-<<<<<<< HEAD
+

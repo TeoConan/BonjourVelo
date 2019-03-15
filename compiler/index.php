@@ -20,6 +20,12 @@ $output = "compile";
 
   <h1>BonjourVélo, Material Design compiler JS & CSS </h1>
 
+
+  <p>
+    Le compiler permet d'extraire le CSS et le JS des components Material Design du Webpack<br/>
+    Pour lancer le Webpack veuillez installer NodeJS et faites "npm start" dans ./webpack-projet
+  </p>
+
   <form class="" action="compiler.php" method="post">
   <div class="output" style="margin: 1rem 0;">
     <label for="fileOutput">Output files : </label>

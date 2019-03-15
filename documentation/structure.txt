@@ -1,0 +1,6 @@
+./compiler		- Ressource pour la compilation des components
+./documentation		- Stockage des docs
+./front			- Ressources JS / JSON / SCSS / CSS
+./pages			- Pages HTML
+./res			- Ressources fichiers (images, icônes...)
+./webpack-projet	- Projet webpack avec les dependances node & material
