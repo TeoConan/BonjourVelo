@@ -1,0 +1,192 @@
+@import "normalize.css";
+@import "../function.scss";
+/* ------------------------------------------------------
+Reset CSS
+-------------------------------------------------------*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+ul, ol{
+	margin:0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+  color: black;
+}
+a{
+	color: #000000;
+	text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------------------------------
+Reset CSS
+-------------------------------------------------------*/
+.block-header .inner,
+.block-nav .inner,
+.block-center .inner,
+.block-footer .inner{
+	width: 750px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+/*.clearfix{
+	clear: left;
+}*/
+.group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/*------------------------------------------------------
+ Mobile
+------------------------------------------------------*/
+
+
+/*# sourceMappingURL=header.css.map */
+
+@media screen and (max-device-width: 640px) {
+/*------------------------------------------------------
+Header
+------------------------------------------------------*/
+
+/* ------------------------------------------------------
+Body top
+-------------------------------------------------------*/
+.cgu-bjv .inner h2{
+  background: #e9a816 ;
+  background-size: auto;
+  padding: getRem(50) getRem(80);
+  color: #ffffff;
+  font-size: getRem(36);
+  font-family: Heebo;
+}
+
+/*------------------------------------------------------
+Body mid
+------------------------------------------------------*/
+.cgu-bjv .cgu-p1 ul {
+	max-width: 100%;
+	padding: getRem(15) getRem(40);
+	font-size: getRem(14);
+	font-family: Montserrat;
+}
+.cgu-bjv .inner h3{
+	max-width: 100%;
+  padding: getRem(50) getRem(15) getRem(0);
+  font-size: getRem(36);
+  font-family: Heebo;
+}
+
+.cgu-bjv .inner .cgu-p1 .cgu-subtitle{
+	max-width: 100%;
+  padding: getRem(15) getRem(40);
+	font-size: getRem(14);
+  font-family: Montserrat;
+}
+
+.cgu-bjv .inner .cgu-p1 .cgu-description{
+	max-width: 100%;
+  margin: getRem(15) getRem(25);
+	font-size: getRem(14);
+  font-family: Montserrat;
+	line-height: getRem(24);
+  border-left: getRem(2)solid black;
+	padding: getRem(0) getRem(10);
+}
+
+.cgu-bjv .inner .cgu-p1 .cgu-mail{
+	max-width: 100%;
+  padding: getRem(0) getRem(40);
+	font-size: getRem(14);
+  font-family: Montserrat;
+}
+
+.cgu-bjv .inner .cgu-p2 .cgu-description{
+	max-width: 100%;
+  padding: getRem(15) getRem(40);
+	font-size: getRem(14);
+  font-family: Montserrat;
+	line-height: getRem(24);
+}
+/*------------------------------------------------------
+footer
+------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------
+ Mobile
+------------------------------------------------------*/
+
+}
+
+/*------------------------------------------------------
+Web
+------------------------------------------------------*/
+@media screen and (min-device-width: 641px) {
+
+	/* ------------------------------------------------------
+	Body top
+	-------------------------------------------------------*/
+	.cgu-bjv .inner h2{
+	  background: #e9a816 ;
+	  background-size: auto;
+	  padding: getRem(50) getRem(200);
+	  color: #ffffff;
+	  font-size: getRem(36);
+	  font-family: Heebo;
+	}
+
+	/*------------------------------------------------------
+	Body mid
+	------------------------------------------------------*/
+	.cgu-bjv .cgu-p1 ul {
+		padding: getRem(40) getRem(287) getRem(40) getRem(50);
+		font-family: Montserrat
+	}
+
+	.cgu-bjv .inner h3{
+	  padding: getRem(50) getRem(287) getRem(0) getRem(50);
+	  font-size: getRem(36);
+	  font-family: Heebo;
+	}
+
+	.cgu-bjv .inner .cgu-p1 .cgu-subtitle{
+	  padding: getRem(40) getRem(287) getRem(40) getRem(50);
+	  font-family: Montserrat;
+	}
+
+	.cgu-bjv .inner .cgu-p1 .cgu-description{
+	  margin: getRem(20) getRem(309) getRem(20) getRem(50);
+	  font-family: Montserrat;
+	  border-left: getRem(2) solid black;
+		padding: getRem(0) getRem(10);
+	}
+
+	.cgu-bjv .inner .cgu-p1 .cgu-mail{
+	  padding: getRem(40) getRem(287) getRem(40) getRem(50);
+	  font-family: Montserrat;
+	}
+
+	.cgu-bjv .inner .cgu-p2 .cgu-description{
+	  padding: getRem(40) getRem(287) getRem(40) getRem(50);
+	  font-family: Montserrat;
+	}
+/*------------------------------------------------------
+footer
+------------------------------------------------------*/
+
+/*------------------------------------------------------
+Web
+------------------------------------------------------*/
+}
