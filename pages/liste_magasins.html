@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../front/css/footer.css">
     <link rel="stylesheet" href="../front/css/header.css">
     <link rel="stylesheet" href="../front/css/pages/viewport1.css">
-    <link rel="stylesheet" href="../front/css/liste_magasins.css">
+    <link rel="stylesheet" href="../front/css/pages/liste_magasins.css">
   </head>
   <body class="body-liste-magasins">
     <header>
@@ -33,7 +33,19 @@
     </header>
     <div class="main-viewport">
       <div class="main-title">
-        <h1>Trouvez le vélo de vos rêves</h1>
+        <h1>Liste des magasins près de chez vous !</h1>
+      </div>
+      <div class="code-postal-valider">
+  		  <div class="mdc-text-field text-field demo-text-field-outlined-shaped mdc-text-field--outlined mdc-text-field--no-label input-code-postal">
+  				<input type="text" id="text-field-outlined" class="mdc-text-field__input" aria-label="Text field aria label">
+  				<div class="mdc-notched-outline mdc-notched-outline--no-label">
+  					<div class="mdc-notched-outline__leading"></div>
+  					<div class="mdc-notched-outline__trailing"></div>
+  				</div>
+  			</div>
+        <button class="mdc-icon-button material-icons mdc-elevation--z3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+        </button>
       </div>
       <div class="button-form">
         <button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
@@ -114,7 +126,7 @@
 					</div>
 				</div>
 			</div>
-      <div class="c-pagination" style="margin: 0 auto; margin-top: 2.5rem;">
+      <div class="c-pagination" style="margin: 0 auto; margin-top: 2.5rem; display: flex;">
         <div class="pagination-control pagination--previous">
           <a href="#"><img src="../res/icons/chevron-left.svg"></a>
         </div>

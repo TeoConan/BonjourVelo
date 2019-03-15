@@ -58,7 +58,7 @@ Reset CSS
   /* ------------------------------------------------------
   Body top
   -------------------------------------------------------*/
-  .bjv-ml .inner h2 {
+  .listing-bjv .listing-title {
     background: #e9a816;
     background-size: auto;
     padding: 3.125rem 5rem;
@@ -66,57 +66,84 @@ Reset CSS
     font-size: 2.25rem;
     font-family: Heebo; }
 
+  .listing-bjv .listing-type-mobile {
+    margin: 1.25rem;
+    font-size: 0.9375rem;
+    font-family: Heebo;
+    text-align: center;
+    border-bottom: 0.125rem solid black; }
+
+  .listing-bjv .listing-type-web {
+    display: none; }
+
   /*------------------------------------------------------
   Body mid
   ------------------------------------------------------*/
-  .bjv-ml .inner h3 {
-    max-width: 100%;
-    padding: 3.125rem 0.9375rem 0rem;
-    font-size: 2.25rem;
+  .listing-bjv .c-pagination .indexation {
+    margin: auto;
+    padding: 0rem; }
+
+  .listing-bjv .c-pagination .indexation li {
+    padding: 0rem; }
+
+  .listing-bjv .c-pagination .indexation .dot {
+    width: 1rem;
+    height: 1rem; }
+
+  .listing-bjv .listing-bike {
+    margin: 1.25rem; }
+
+  .listing-bjv .listing-question {
+    margin: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: bold;
     font-family: Heebo; }
 
-  .bjv-ml .inner .p1-ml .ml-subtitle {
-    max-width: 100%;
-    padding: 0.9375rem 2.5rem;
-    font-size: 0.875rem;
-    font-family: Montserrat; }
-
-  .bjv-ml .inner .p1-ml .ml-description {
-    max-width: 100%;
-    margin: 0.9375rem 1.5625rem;
+  .listing-bjv .listing-subtitle {
+    margin: 1.25rem;
     font-size: 0.875rem;
     font-family: Montserrat;
-    line-height: 1.5rem;
-    border-left: 0.125rem solid black;
-    padding: 0rem 0.625rem; }
+    color: #757575; }
 
-  .bjv-ml .inner .p1-ml .ml-mail {
-    max-width: 100%;
-    padding: 0rem 2.5rem;
-    font-size: 0.875rem;
+  .listing-bjv .listing-desc {
+    margin: 1.25rem;
+    font-size: 0.9375rem;
     font-family: Montserrat; }
-
-  .bjv-ml .inner .p2-ml .ml-description {
-    max-width: 100%;
-    padding: 0.9375rem 2.5rem;
-    font-size: 0.875rem;
-    font-family: Montserrat;
-    line-height: 1.5rem; }
 
   /*------------------------------------------------------
   footer
-  ------------------------------------------------------*/
-  /*------------------------------------------------------
-   Mobile
   ------------------------------------------------------*/ }
 /*------------------------------------------------------
 Web
 ------------------------------------------------------*/
 @media screen and (min-device-width: 641px) {
+ /*------------------------------------------------------
+	Colonnes
+ ------------------------------------------------------*/
+  .listing-bjv .colonnes {
+    display: flex; }
+
+  .listing-bjv .colonnes .col1 {
+    width: 50%; }
+
+  .listing-bjv .colonnes .col2 {
+    width: 50%; }
+
   /* ------------------------------------------------------
   Body top
-  -------------------------------------------------------*/
-  .bjv-ml .inner h2 {
+  ------------------------------------------------------*/
+  .listing-bjv .c-pagination .indexation {
+    margin: auto;
+    padding: 0rem; }
+
+  .listing-bjv .c-pagination .indexation li {
+    padding: 0rem; }
+
+  .listing-bjv .c-pagination .indexation .dot {
+    width: 1rem;
+    height: 1rem; }
+
+  .listing-bjv .listing-title {
     background: #e9a816;
     background-size: auto;
     padding: 3.125rem 12.5rem;
@@ -124,31 +151,38 @@ Web
     font-size: 2.25rem;
     font-family: Heebo; }
 
+  .listing-bjv .listing-type-mobile {
+    display: none; }
+
+  .listing-bjv .listing-type-web {
+    margin: 1.25rem;
+    font-size: 1.5625rem;
+    font-family: Heebo;
+    text-align: left;
+    border-bottom: 0.125rem solid black; }
+
   /*------------------------------------------------------
   Body mid
   ------------------------------------------------------*/
-  .bjv-ml .inner h3 {
-    padding: 3.125rem 17.9375rem 0rem 3.125rem;
-    font-size: 2.25rem;
-    font-family: Heebo; }
+  .listing-bjv .listing-question {
+    margin: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: Heebo;
+    text-align: left; }
 
-  .bjv-ml .inner .p1-ml .ml-subtitle {
-    padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
-    font-family: Montserrat; }
+  .listing-bjv .listing-subtitle {
+    margin: 1.25rem;
+    font-size: 1.125rem;
+    font-family: Heebo;
+    text-align: left;
+    color: #757575; }
 
-  .bjv-ml .inner .p1-ml .ml-description {
-    margin: 1.25rem 19.3125rem 1.25rem 3.125rem;
+  .listing-bjv .listing-desc {
+    margin: 1.25rem;
+    font-size: 0.875rem;
     font-family: Montserrat;
-    border-left: 0.125rem solid black;
-    padding: 0rem 0.625rem; }
-
-  .bjv-ml .inner .p1-ml .ml-mail {
-    padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
-    font-family: Montserrat; }
-
-  .bjv-ml .inner .p2-ml .ml-description {
-    padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
-    font-family: Montserrat; }
+    text-align: left; }
 
   /*------------------------------------------------------
   footer
@@ -157,4 +191,4 @@ Web
   Web
   ------------------------------------------------------*/ }
 
-/*# sourceMappingURL=legal_notice.css.map */
+/*# sourceMappingURL=listing_velo.css.map */

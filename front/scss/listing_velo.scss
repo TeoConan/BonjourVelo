@@ -1,0 +1,222 @@
+@import "normalize.css";
+@import "functions.scss";
+/* ------------------------------------------------------
+Reset CSS
+-------------------------------------------------------*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+ul, ol{
+	margin:0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+  color: black;
+}
+a{
+	color: #000000;
+	text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------------------------------
+Reset CSS
+-------------------------------------------------------*/
+.block-header .inner,
+.block-nav .inner,
+.block-center .inner,
+.block-footer .inner{
+	width: 750px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+/*.clearfix{
+	clear: left;
+}*/
+.group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/*------------------------------------------------------
+ Mobile
+------------------------------------------------------*/
+
+
+/*# sourceMappingURL=header.css.map */
+
+@media screen and (max-device-width: 640px) {
+/*------------------------------------------------------
+Header
+------------------------------------------------------*/
+
+/* ------------------------------------------------------
+Body top
+-------------------------------------------------------*/
+.listing-bjv .listing-title{
+  background: #e9a816 ;
+  background-size: auto;
+  padding: getRem(50) getRem(80);
+  color: #ffffff;
+  font-size: getRem(36);
+  font-family: Heebo;
+}
+
+.listing-bjv .listing-type-mobile {
+  margin: getRem(20);
+  font-size: getRem(15);
+  font-family: Heebo;
+  text-align: center;
+  border-bottom: getRem(2)solid black;
+}
+.listing-bjv .listing-type-web {
+	display: none;
+}
+/*------------------------------------------------------
+Body mid
+------------------------------------------------------*/
+.listing-bjv .c-pagination .indexation{
+	margin: auto;
+	padding: getRem(0);
+}
+
+.listing-bjv .c-pagination .indexation li{
+	padding: getRem(0);
+}
+
+.listing-bjv .c-pagination .indexation .dot{
+	width: getRem(16);
+	height: getRem(16);
+}
+
+.listing-bjv .listing-bike{
+	margin: getRem(20);
+}
+
+.listing-bjv .listing-question{
+  margin: getRem(20);
+  font-size: getRem(18);
+	font-weight: bold;
+  font-family: Heebo;
+  // text-align: center;
+}
+
+.listing-bjv .listing-subtitle{
+  margin: getRem(20);
+  font-size: getRem(14);
+  font-family: Montserrat;
+  // text-align: center;
+	color: #757575;
+}
+
+.listing-bjv .listing-desc{
+  margin: getRem(20);
+  font-size: getRem(15);
+  font-family: Montserrat;
+  // text-align: center;
+}
+/*------------------------------------------------------
+footer
+------------------------------------------------------*/
+}
+
+/*------------------------------------------------------
+Web
+------------------------------------------------------*/
+@media screen and (min-device-width: 641px) {
+
+ /*------------------------------------------------------
+	Colonnes
+ ------------------------------------------------------*/
+ .listing-bjv .colonnes{
+	 display: flex;
+ }
+
+ .listing-bjv .colonnes .col1{
+	 width: 50%;
+ }
+
+ .listing-bjv .colonnes .col2{
+	 width: 50%;
+ }
+	/* ------------------------------------------------------
+	Body top
+	------------------------------------------------------*/
+
+	.listing-bjv .c-pagination .indexation{
+		margin: auto;
+		padding: getRem(0);
+	}
+
+	.listing-bjv .c-pagination .indexation li{
+		padding: getRem(0);
+	}
+
+	.listing-bjv .c-pagination .indexation .dot{
+		width: getRem(16);
+		height: getRem(16);
+	}
+
+	.listing-bjv .listing-title{
+	  background: #e9a816 ;
+	  background-size: auto;
+	  padding: getRem(50) getRem(200);
+	  color: #ffffff;
+	  font-size: getRem(36);
+	  font-family: Heebo;
+	}
+
+	.listing-bjv .listing-type-mobile {
+		display: none;
+	}
+	.listing-bjv .listing-type-web {
+		margin: getRem(20);
+		font-size: getRem(25);
+		font-family: Heebo;
+		text-align: left;
+		border-bottom: getRem(2)solid black;
+	}
+	/*------------------------------------------------------
+	Body mid
+	------------------------------------------------------*/
+
+	.listing-bjv .listing-question {
+		margin: getRem(20);
+ 	  font-size: getRem(20);
+ 		font-weight: bold;
+ 	  font-family: Heebo;
+ 	  text-align: left;
+	}
+
+	.listing-bjv .listing-subtitle{
+		margin: getRem(20);
+	  font-size: getRem(18);
+	  font-family: Heebo;
+	  text-align: left;
+		color: #757575;
+	}
+
+	.listing-bjv .listing-desc{
+		margin: getRem(20);
+	  font-size: getRem(14);
+	  font-family: Montserrat;
+	  text-align: left;
+	}
+
+/*------------------------------------------------------
+footer
+------------------------------------------------------*/
+
+/*------------------------------------------------------
+Web
+------------------------------------------------------*/
+}

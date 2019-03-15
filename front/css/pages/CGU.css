@@ -2,7 +2,6 @@
 /* Functions */
 /* Without "rem" */
 /*  With "rem"  */
-/* Font face */
 /* ------------------------------------------------------
 Reset CSS
 -------------------------------------------------------*/
@@ -53,35 +52,37 @@ Reset CSS
 /*# sourceMappingURL=header.css.map */
 @media screen and (max-device-width: 640px) {
   /*------------------------------------------------------
-  Header
-  ------------------------------------------------------*/
+Header
+------------------------------------------------------*/
   /* ------------------------------------------------------
-  Body top
-  -------------------------------------------------------*/
-  .bjv-ml .inner h2 {
+Body top
+-------------------------------------------------------*/
+  .cgu-bjv .inner h2 {
     background: #e9a816;
     background-size: auto;
     padding: 3.125rem 5rem;
     color: #ffffff;
     font-size: 2.25rem;
     font-family: Heebo; }
-
   /*------------------------------------------------------
-  Body mid
-  ------------------------------------------------------*/
-  .bjv-ml .inner h3 {
-    max-width: 100%;
-    padding: 3.125rem 0.9375rem 0rem;
-    font-size: 2.25rem;
-    font-family: Heebo; }
-
-  .bjv-ml .inner .p1-ml .ml-subtitle {
+Body mid
+------------------------------------------------------*/
+  .cgu-bjv .cgu-p1 ul {
     max-width: 100%;
     padding: 0.9375rem 2.5rem;
     font-size: 0.875rem;
     font-family: Montserrat; }
-
-  .bjv-ml .inner .p1-ml .ml-description {
+  .cgu-bjv .inner h3 {
+    max-width: 100%;
+    padding: 3.125rem 0.9375rem 0rem;
+    font-size: 2.25rem;
+    font-family: Heebo; }
+  .cgu-bjv .inner .cgu-p1 .cgu-subtitle {
+    max-width: 100%;
+    padding: 0.9375rem 2.5rem;
+    font-size: 0.875rem;
+    font-family: Montserrat; }
+  .cgu-bjv .inner .cgu-p1 .cgu-description {
     max-width: 100%;
     margin: 0.9375rem 1.5625rem;
     font-size: 0.875rem;
@@ -89,72 +90,65 @@ Reset CSS
     line-height: 1.5rem;
     border-left: 0.125rem solid black;
     padding: 0rem 0.625rem; }
-
-  .bjv-ml .inner .p1-ml .ml-mail {
+  .cgu-bjv .inner .cgu-p1 .cgu-mail {
     max-width: 100%;
     padding: 0rem 2.5rem;
     font-size: 0.875rem;
     font-family: Montserrat; }
-
-  .bjv-ml .inner .p2-ml .ml-description {
+  .cgu-bjv .inner .cgu-p2 .cgu-description {
     max-width: 100%;
     padding: 0.9375rem 2.5rem;
     font-size: 0.875rem;
     font-family: Montserrat;
     line-height: 1.5rem; }
+  /*------------------------------------------------------
+footer
+------------------------------------------------------*/
+  /*------------------------------------------------------
+ Mobile
+------------------------------------------------------*/ }
 
-  /*------------------------------------------------------
-  footer
-  ------------------------------------------------------*/
-  /*------------------------------------------------------
-   Mobile
-  ------------------------------------------------------*/ }
 /*------------------------------------------------------
 Web
 ------------------------------------------------------*/
 @media screen and (min-device-width: 641px) {
   /* ------------------------------------------------------
-  Body top
-  -------------------------------------------------------*/
-  .bjv-ml .inner h2 {
+	Body top
+	-------------------------------------------------------*/
+  .cgu-bjv .inner h2 {
     background: #e9a816;
     background-size: auto;
     padding: 3.125rem 12.5rem;
     color: #ffffff;
     font-size: 2.25rem;
     font-family: Heebo; }
-
   /*------------------------------------------------------
-  Body mid
-  ------------------------------------------------------*/
-  .bjv-ml .inner h3 {
+	Body mid
+	------------------------------------------------------*/
+  .cgu-bjv .cgu-p1 ul {
+    padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
+    font-family: Montserrat; }
+  .cgu-bjv .inner h3 {
     padding: 3.125rem 17.9375rem 0rem 3.125rem;
     font-size: 2.25rem;
     font-family: Heebo; }
-
-  .bjv-ml .inner .p1-ml .ml-subtitle {
+  .cgu-bjv .inner .cgu-p1 .cgu-subtitle {
     padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
     font-family: Montserrat; }
-
-  .bjv-ml .inner .p1-ml .ml-description {
+  .cgu-bjv .inner .cgu-p1 .cgu-description {
     margin: 1.25rem 19.3125rem 1.25rem 3.125rem;
     font-family: Montserrat;
     border-left: 0.125rem solid black;
     padding: 0rem 0.625rem; }
-
-  .bjv-ml .inner .p1-ml .ml-mail {
+  .cgu-bjv .inner .cgu-p1 .cgu-mail {
     padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
     font-family: Montserrat; }
-
-  .bjv-ml .inner .p2-ml .ml-description {
+  .cgu-bjv .inner .cgu-p2 .cgu-description {
     padding: 2.5rem 17.9375rem 2.5rem 3.125rem;
     font-family: Montserrat; }
-
   /*------------------------------------------------------
-  footer
-  ------------------------------------------------------*/
+footer
+------------------------------------------------------*/
   /*------------------------------------------------------
-  Web
-  ------------------------------------------------------*/ }
-
-/*# sourceMappingURL=legal_notice.css.map */
+Web
+------------------------------------------------------*/ }

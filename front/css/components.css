@@ -2599,7 +2599,7 @@ svg.mdc-button__icon {
   cursor: default;
   pointer-events: none; }
 
-/* 
+/*
 
 
 //
@@ -2670,7 +2670,7 @@ $mdc-text-field-textarea-label-position-y: 130% !default;
 
 
  */
-/* 
+/*
 
 
 //
@@ -4232,11 +4232,14 @@ p {
 .demo-text-field-outlined-shaped.mdc-text-field--fullwidth .mdc-notched-outline {
   top: 0; }
 
+<<<<<<< HEAD
+=======
 /* Correction fullwidth */
 .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input,
 .mdc-text-field--fullwidth:not(.mdc-text-field--textarea) .mdc-text-field__input {
   padding: 20px 16px 6px; }
 
+>>>>>>> master
 /* Pagination */
 .c-pagination {
   display: flex; }

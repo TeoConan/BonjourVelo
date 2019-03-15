@@ -3,17 +3,20 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bonjour Vélo </title>
+    <link rel="stylesheet" href="../front/css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="../front/css/reset.css">
     <link rel="stylesheet" href="../front/css/header.css">
     <link rel="stylesheet" href="../front/css/footer.css">
-    <link rel="stylesheet" href="../front/css/pages/legal_notice.css">
+    <link rel="stylesheet" href="../front/css/components.css">
+    <link rel="stylesheet" href="../front/js/pages/listing_velo.js">
+    <link rel="stylesheet" href="../front/css/pages/listing_velo.css">
+
   </head>
 
-  <body>
-
+  <body class="block-body" style="margin: 0;">
     <header>
       <input id="burger" type="checkbox" />
       <label for="burger">
@@ -31,51 +34,96 @@
       </nav>
     </header>
 
-    <div class="bjv-ml">
+
+    <div class="listing-bjv">
     	<div class="inner">
 
-        <h2 class="title-ml">
-           Mention légales
+        <h2 class="listing-title">
+           Type de vélo
         </h2>
 
-        <div class="p1-ml">
-          <h3 class="ml-title">
-            Lorem ipsum dolor sit amet
-          </h3>
-
-          <div class="ml-subtitle">
-            Le présent site (www.bonjourvelo.fr) est la propriété de la société XAVIER SARL
+          <div class="listing-type-mobile">
+            <h3>Vélo de route</h3>
           </div>
 
-          <div class="ml-description">
-            Société au capital social de 0.000 € </p>
-            N° SIRET 524 718 673 00020 – TVA Intracommunautaire FR67 524 718 673 </p>
-            Code APE 6202B </p>
-            RCS ANGERS 2010 B 1270 </p>
-            Siège social : </p>
-            6, Boulevard Pablo Moscow </p>
-            49000 Angers </p>
-          </div>
+          <!-- Version Web -->
 
-          <div class="ml-mail">
-            Email : contact@bonjourvelo.fr
-          </div>
+            <div class="colonnes">
+
+              <div class="col1">
+
+                <div class="listing-bike-web" >
+                  <img id="bikePreview"  src="../res/images/18826.png"   alt="Bike">
+                </div>
+
+                <div class="c-pagination">
+          				<ul class="indexation">
+          					<li>
+          						<a class="dot" id="button1">
+          							<p class="mdc-typography--paragraph"> </p>
+          						</a>
+          					</li>
+          					<li>
+          						<a class="dot" id="button2">
+          							<p class="mdc-typography--paragraph"> </p>
+          						</a>
+          					</li>
+          					<li>
+          						<a class="dot" id="button3">
+          							<p class="mdc-typography--paragraph"></p>
+          						</a>
+          					</li>
+          				</ul>
+          			</div>
+
+              </div>
+
+              <div class="col2">
+
+                <div class="listing-type-web">
+                  <h3>Vélo de route</h3>
+                </div>
+
+                <div class="listing-question">
+                  C'est quoi le vélo de route
+                </div>
+
+                <div class="listing-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+
+                <div class="listing-desc">
+                  Aliquam condimentum mi sit amet metus sagittis scelerisque id vel est. Aenean lacus ipsum, iaculis non varius eget, maximus nec libero. Fusce maximus magna ex, id mollis lorem sodales nec. Nunc ac nisi eget massa vehicula convallis. Proin fringilla eu turpis nec sollicitudin. Nulla et porta lacus. Duis posuere eros sed vehicula pharetra. Nam rutrum velit a libero viverra condimentum.
+                </div>
+
+                <div class="listing-question">
+                  Les avantages
+                </div>
+
+                <div class="listing-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+
+                <div class="listing-desc">
+                  Aliquam condimentum mi sit amet metus sagittis scelerisque id vel est. Aenean lacus ipsum, iaculis non varius eget, maximus nec libero. Fusce maximus magna ex, id mollis lorem sodales nec. Nunc ac nisi eget massa vehicula convallis. Proin fringilla eu turpis nec sollicitudin. Nulla et porta lacus. Duis posuere eros sed vehicula pharetra. Nam rutrum velit a libero viverra condimentum.Aliquam condimentum mi sit amet metus sagittis scelerisque id vel est. Aenean lacus ipsum, iaculis non varius eget, maximus nec libero. Fusce maximus magna ex, id mollis lorem sodales nec. Nunc ac nisi eget massa vehicula convallis. Proin fringilla eu turpis nec sollicitudin. Nulla et porta lacus. Duis posuere eros sed vehicula pharetra. Nam rutrum velit a libero viverra condimentum.
+                </div>
+
+                <div class="listing-question">
+                  Les problèmes
+                </div>
+
+                <div class="listing-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+
+                <div class="listing-desc">
+                  Aliquam condimentum mi sit amet metus sagittis scelerisque id vel est. Aenean lacus ipsum, iaculis non varius eget, maximus nec libero. Fusce maximus magna ex, id mollis lorem sodales nec. Nunc ac nisi eget massa vehicula convallis. Proin fringilla eu turpis nec sollicitudin. Nulla et porta lacus. Duis posuere eros sed vehicula pharetra. Nam rutrum velit a libero viverra condimentum.Aliquam condimentum mi sit amet metus sagittis scelerisque id vel est. Aenean lacus ipsum, iaculis non varius eget, maximus nec libero.
+                </div>
+              </div>
+
+            </div>
+
         </div>
-
-        <div class="p2-ml">
-          <h3 class="ml-title">
-            Sed lacinia eu lorem vel pharetra.
-          </h3>
-
-          <div class="ml-description">
-            Nulla scelerisque suscipit odio, at vulputate mi convallis in. Duis ac tempus leo. Phasellus venenatis luctus ornare. Vestibulum convallis libero nec ipsum pellentesque, vitae commodo magna auctor.
-            Phasellus sodales sapien non commodo pellentesque.  Integer gravida enim interdum rutrum fringilla. Suspendisse bibendum metus placerat vestibulum condimentum. Nullam dapibus commodo facilisis.
-            Vestibulum vulputate faucibus nisi at tincidunt. Nulla dui nisi, pellentesque nec consectetur a, faucibus viverra quam. Praesent sit amet odio sapien. Nunc mattis ante a feugiat varius. Quisque hendrerit mi vitae
-            diam convallis finibus. Duis id rutrum lorem. In placerat, mi nec elementum sagittis, ex risus posuere justo,
-          </div>
-        </div>
-
-      </div>
     </div>
     <footer>
       <div class="left-col">
@@ -126,6 +174,7 @@
       </div>
     </footer>
 
-  </body>
 
+
+  </body>
 </html>
