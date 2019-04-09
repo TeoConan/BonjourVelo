@@ -1,22 +1,26 @@
 console.log('Script form');
 
-
 /* Form */
 
+//Liste des object des questions
 var questionsList = [];
+//Adresse de récupération des données
+//	Note : le JSON peut être généré par du PHP
 var questionsURL = 'http://localhost/bonjourvelo/front/js/questions.json';
-var progressQuestion = 1;
 
+//Liste des object HTML utile
 var hud = {
 	"globalForm"	: $('#bjvForm'),
 	"title"			: $('#formTitle'),
 	"type"			: $('#formType'),
 	"description"	: $('#formDescr'),
-	"confirm"		: $('#formConfirm'),
+	"confirm"		: $('#formConfirm'),	//Button de confirmation de la question
 	"choiceList"	: $('#choiceList'),
-	"stepBack"		: $('#formStepBack')
+	"stepBack"		: $('#formStepBack')	//Button de retour en arrière
 };
 
+
+//Instance de la requête pour le JSON
 var request = new XMLHttpRequest();
 request.open('GET', questionsURL);
 request.responseType = 'json';
@@ -27,21 +31,91 @@ request.onload = function() {
 }
 
 
+
+//Première fonction appelée pour instancé le formulaire
+//Appelé par ligne 31
 function initForm(questions) {
 	console.log(Object.keys(questions.questions).length, "Lengh");
 	for(var i = 0; i < Object.keys(questions.questions).length; i++) {
+		//Instance de la totalité des questions du JSON via l'objet questionForm
 		questionsList.push(new questionForm(questions.questions[i]));
 	}
 
 	//console.log("Forms", questionsList);
 
-	//Display first question
+	//Affichage de la première question
 	questionsList[0].displayQuestion();
 
 
+	//Dynamisation des button "c-toggle-button" dans les cartes de choix
 	initButtonToggle();
 }
 
+/*
+
+Question
+
+*/
+
+
+/*
+	Exemple
+
+	var jsonQuestion = 
+		{
+			"position": 1,
+			"question": "Que voulez-vous faire avec votre vélo ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "radio",
+			"display": "card",
+			"additionnalClass" : "",
+			"canSkip": false,
+			"minChoices": 1,
+			"clientChoice": null,
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Me déplacer",
+					"additionnalClass" : "",
+					"subText": "Lorem ipsum dolor sit amet,",
+					"textButton": "default"
+				},
+				{
+					"position": 2,
+					"icon": "res/icons/river.svg",
+					"text": "Me balader",
+					"subText": "Lorem ipsum dolor sit amet,"
+				},
+				{
+					"position": 3,
+					"icon": "res/icons/soccer-player.svg",
+					"text": "Faire du sport",
+					"subText": "Lorem ipsum dolor sit amet,"
+				},
+				{
+					"position": 4,
+					"icon": "res/icons/beach.svg",
+					"text": "Voyager",
+					"subText": "Lorem ipsum dolor sit amet,"
+				}
+			]
+		}
+
+	var questionObj = new questionForm(jsonQuestion);
+
+	//Array des choix sous forme d'objet
+	var choices = questionObj.choices;
+
+	//Afficher la question
+	questionObj.displayQuestion();
+*/
+
+//Objet des choix
+/*
+	Cet objet stocke les informations concernant les choix, tel que l'icône,
+	le nom du choix, son statut (selectionné ou non)...
+*/
 function choiceForm(choice, parent) {
 	this.typeObject = "FORM.QUESTION.CHOICE";
 	this.parent = parent;
@@ -51,7 +125,7 @@ function choiceForm(choice, parent) {
 	this.icon = choice.icon;
 	this.subText = choice.subText;
 	this.textButton = choice.textButton;
-	this.clientChoice = [];
+	this.clientChoice = false;
 	this.html = "";
 
 	//console.log('New choice : ', choice);
@@ -94,20 +168,26 @@ function choiceForm(choice, parent) {
 	}
 
 	//Listeners on action buttons
-	//à faire
+	//[todo]
 	this.listen = function() {
-		var that = this;
-
-		$('#formChoice' + this.position).click(function(){
+		//Selection des button des cartes de choix
+		$('#formChoice' + this.position).click({choiceObj: this}, function(){
+			//Si le bouton est checké, alors stocker l'information
 			if ($('#formChoice' + this.position).attr("checked")) {
-				that.clientChoice[this.position] = false;
+				choiceObj.clientChoice = false;
 			} else {
-				that.clientChoice[this.position] = true;
+				choiceObj.clientChoice = true;
 			}
 		});
 	}
 }
 
+//Objet des questions
+/*
+	Cet objet stocke les informations relative à la question, tel que le
+	titre, le type mais aussi les choix
+	Cependant les choix sont aussi de leurs côtés des objets (ligne 61)
+*/
 
 function questionForm (objQuestion) {
 	this.typeObject = "FORM.QUESTION";
@@ -118,6 +198,7 @@ function questionForm (objQuestion) {
 	this.additionnalClass = objQuestion.additionnalClass;
 	this.canSkip = objQuestion.canSkip;
 	this.minChoice = objQuestion.minChoice;
+	//Boolean array
 	this.clientChoice = objQuestion.clientChoice;
 	this.display = objQuestion.display;
 	this.choices = objQuestion.choices;
@@ -127,6 +208,7 @@ function questionForm (objQuestion) {
 		var tempChoices = [];
 
 		for(var i = 0; i < this.choices.length; i++) {
+			//Instance des différents choix disponible dans la question
 			tempChoices.push(new choiceForm(this.choices[i], this));
 		}
 

@@ -1,0 +1,105 @@
+{
+	"version": 1,
+	"questions" : [
+
+		{
+			"position": 1,
+			"question": "Que voulez-vous faire avec votre vélo ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "radio",			//Type de question, unique ou multiple : radio ou checkox (ou input)
+			"display": "card",			//Type d'affichage
+			"additionnalClass" : "",
+			"canSkip": false,			//La question ne peut pas être laissée sans réponse
+			"minChoices": 1,
+			"clientChoice": null,		//Liste des choix que l'utilisateur à fait, array boolean
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Me déplacer",
+					"additionnalClass" : "",
+					"subText": "Lorem ipsum dolor sit amet,",
+					"textButton": "default"//Pas prit en compte si "default"
+				},
+				{
+					"position": 4,
+					"icon": "res/icons/beach.svg",
+					"text": "Voyager",
+					"subText": "Lorem ipsum dolor sit amet,"
+				}
+			]
+		},
+
+		{
+			"position": 2,
+			"question": "Dans le cadre d'un déplacement, quelle est la distance quotidienne envisagée ? (aller + retour)",
+			"subText": "Lorem ipsum dolor sit amet",
+			"type": "input",
+			"canSkip": true
+		},
+
+		{
+			"position": 3,
+			"question": "Dans le cadre d'un déplacement, allez-vous le combiner avec un autre moyen de transport ?",
+			"subText": "Lorem ipsum dolor sit amet",
+			"type": "radio",
+			"canSkip": false,
+			"choices": [
+				{
+					"position": 1,
+					"text": "Oui"
+				},
+				{
+					"position": 2,
+					"text": "Non"
+				}
+			]
+		},
+
+		{
+			"position": 4,
+			"question": "Quel type de moyen de transport combiné ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "checkbox",
+			"display": "card",
+			"require": "response 3.2",	//[todo] s'affiche uniquement si la question 3.2[checked] == true
+			"canSkip": false,
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Train"
+				},
+				{
+					"position": 7,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Avion"
+				}
+			]
+		},
+
+		{
+			"position": 5,
+			"question": "Sur votre futur vélo, vous vous voyez plutôt comment ?",
+			"subText": "Loem ipsum dolor sit amet",
+			"type": "radio",
+			"display": "card",
+			"canSkip": false,
+			"choices": [
+				{
+					"position": 1,
+					"icon": "res/icons/cityscape.svg",
+					"text": "Sportive route",
+					"subText": "Guidon de type \"dropbar\"",
+					"textButton": "default"
+				},
+				{
+					"position": 5,
+					"icon": "res/icons/beach.svg",
+					"text": "Hollandais",
+					"subText": "Lorem ipsum dolor sit amet,"
+				}
+			]
+		}
+	]
+}
