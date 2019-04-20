@@ -1,0 +1,56 @@
+header {
+  margin-top: 0;
+}
+@media screen and (min-width: 641px) {
+
+  .mdp-oublé-mobile{
+    display: none;
+  }
+
+  .mdp-oublié {
+    margin-left: 25%;
+    .mdc-card {
+      .inner {
+        .col{
+          .card-title{
+          }
+        }
+      }
+    }
+  }
+  .card-subtitle{
+    padding-left: .5%;
+    width: 100%;
+  }
+  input {
+    padding: 5rem 5rem 5rem 5rem;
+
+  }
+  button{
+    margin-left: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+
+  .mdp-oublié {
+    display: none;
+  }
+    .mdp-oublié-mobile {
+      padding-left: 15%;
+    }
+    .mdc-card{
+      width: 100%;
+    }
+    .card-subtitle {
+      width: 100%
+    }
+    input{
+      padding: 5rem 5rem 5rem 5rem;
+
+    }
+
+    .card-subtitle{
+      padding-left: .5%;
+      width: 100%;
+    }
+}
