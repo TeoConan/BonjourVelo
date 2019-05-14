@@ -1,31 +1,26 @@
-@charset "UTF-8";
-header {
-  margin-top: 0; }
+body {
+  background-color: #f5f5f5; }
 
-@media screen and (min-width: 641px) {
-  .mdp-oublé-mobile {
-    display: none; }
-  .mdp-oublié {
-    margin-left: 25%; }
-  .card-subtitle {
-    padding-left: .5%;
-    width: 100%; }
-  input {
-    padding: 5rem 5rem 5rem 5rem; }
-  button {
-    margin-left: 80%; } }
+.forgot-password {
+  display: flex;
+  padding: 40px; }
+  .forgot-password .mdc-card {
+    margin: auto;
+    padding: 20px;
+    max-width: 450px; }
+    .forgot-password .mdc-card .card-title {
+      margin-top: 0; }
+    .forgot-password .mdc-card form {
+      display: flex;
+      flex-wrap: wrap; }
+      .forgot-password .mdc-card form .mdc-floating-label {
+        text-overflow: clip;
+        width: auto; }
+    .forgot-password .mdc-card .card-tools {
+      margin-left: auto;
+      display: flex;
+      margin-top: 20px; }
+      .forgot-password .mdc-card .card-tools .mdc-button {
+        margin: auto; }
 
-@media screen and (max-width: 640px) {
-  .mdp-oublié {
-    display: none; }
-  .mdp-oublié-mobile {
-    padding-left: 15%; }
-  .mdc-card {
-    width: 100%; }
-  .card-subtitle {
-    width: 100%; }
-  input {
-    padding: 5rem 5rem 5rem 5rem; }
-  .card-subtitle {
-    padding-left: .5%;
-    width: 100%; } }
+/*# sourceMappingURL=mdp.css.map */

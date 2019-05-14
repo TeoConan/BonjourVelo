@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mot de passe oublié</title>
+	<title>Mot de passe oublie</title>
 	<link rel="stylesheet" href="../front/css/header.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500" rel="stylesheet">
@@ -34,54 +34,35 @@
 		</nav>
 	</header>
 
-	<div class="mdp-oublié">
-		<div class="mdc-card c-card--preset-2">
+	<div class="forgot-password">
+		<div class="mdc-card">
 			<div class="inner">
-				<div class="col">
-					<h4 class="card-title">Mot de passe oublié ?</h4>
-					<p class="card-subtitle">Veuillez renseiger votre adresse email afin de recevoir votre mot de passe.</p>
-					<form class="" action="index.html" method="post">
-						<div class="mdc-text-field">
-							<input type="text" id="thistwo" class="mdc-text-field__input">
-							<label class="mdc-floating-label" for="thistwo">Adresse email</label>
-							<div class="mdc-line-ripple"></div>
-						</div>
-						<div class="card-tools">
-							<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
-								<span class="mdc-button__label">Envoyer</span>
-							</button>
-						</div>
-					</form>
-				</div>
+				<h4 class="card-title">Mot de passe oublié</h4>
+				<p class="card-subtitle">Veuillez entrer votre adresse email ci-dessous pour réinitialiser votre mot de passe</p>
+				<form class="" action="./" method="post">
+					<div class="mdc-text-field">
+					  <input type="text" id="forgotPassword" class="mdc-text-field__input">
+					  <label class="mdc-floating-label" for="forgotPassword">Adresse email</label>
+					  <div class="mdc-line-ripple"></div>
+					</div>
+
+					<div class="card-tools">
+						<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
+							<span class="mdc-button__label">Envoyer</span>
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
+	</div>
 
-	</div>
-<div class="mdp-oublé-mobile">
-	<div class="mdc-card c-card--preset-1">
-		<h4 class="card-title">Mot de passe oublié ?</h4>
-		<p class="card-subtitle">Veuillez renseiger votre adresse email afin de recevoir votre mot de passe.</p>
-		<form class="" action="index.html" method="post">
-			<div class="mdc-text-field">
-				<input type="text" id="thistwo" class="mdc-text-field__input">
-				<label class="mdc-floating-label" for="thistwo">Adresse email</label>
-				<div class="mdc-line-ripple"></div>
-			</div>
-			<div class="card-tools">
-				<button class="mdc-button mdc-elevation--z3 mdc-elevation-transition">
-					<span class="mdc-button__label">Envoyer</span>
-				</button>
-			</div>
-		</form>
-	</div>
-</div>
 	<footer>
 		<div class="left-col">
 			<h3 class="liens-titre">Liens utiles</h3>
 			<ul class="liens">
 				<li class="contact"><a href="#">Contact</a></li>
-				<li class="mentions"><a href="#">Mentions légales</a></li>
-				<li class="conditions"><a href="#">Conditions généreales d'utilisation</a></li>
+				<li class="mentions"><a href="#">Mentions legales</a></li>
+				<li class="conditions"><a href="#">Conditions genereales d'utilisation</a></li>
 				<li class="weelz"><a href="#">Weelz.fr</a></li>
 				<li class="propos"><a href="#">À propos</a></li>
 			</ul>
@@ -102,7 +83,7 @@
 					<li><a href="#">VTT</a></li>
 					<li><a href="#">Gravel</a></li>
 					<li><a href="#">Cyclocross</a></li>
-					<li><a href="#">Spéciaux (couchés)</a></li>
+					<li><a href="#">Speciaux (couches)</a></li>
 				</ul>
 			</div>
 		</div>
@@ -123,6 +104,8 @@
 			</ul>
 		</div>
 	</footer>
+
+	<script src="../front/js/components.js"></script>
 
 </body>
 
